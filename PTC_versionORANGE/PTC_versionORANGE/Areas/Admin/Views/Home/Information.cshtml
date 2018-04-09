@@ -1,0 +1,25 @@
+﻿@model PTC_versionORANGE.Models.User_Basic
+
+<h6>@Html.DisplayFor(model => model.User_First_Name) @Html.DisplayFor(model => model.User_Last_Name)</h6>
+
+<div>
+    Ngày sinh: @Html.DisplayFor(model => model.User_DoB_Day)/
+    @Html.DisplayFor(model => model.User_DoB_Month)/
+    @Html.DisplayFor(model => model.User_DoB_Year)
+</div>
+
+
+
+@*<div>
+    Giới tính: @Html.DisplayFor(model => model.Gender)
+</div>*@
+
+@*<div>Địa chỉ: @Html.DisplayFor(model => model.Address_Detail)</div>*@
+<div>Số điện thoại: @Html.DisplayFor(model => model.Phone)</div>
+<div>
+    <small>
+       @Html.DisplayFor(model => model.Email)
+    </small>
+</div>
+
+

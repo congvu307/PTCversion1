@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="google-site-verification" content="6V8-lG3qAUh9innt10E1dVesW8ubCniB-P114ERrdVQ" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+</head>
+<body>
+    <nav class="mybackground navbar navbar-expand-lg fixed-top">
+        <a class="navbar-brand" href="~/Home"><img style="width:1.7em;height:auto;" src="~/Content/Index/logo-PTC-white.png" /></a>
+        <button style="background-color:white;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link text-white layout-nav-item" href="~/Home"> <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link text-white layout-nav-item" href="~/Home">@PTC_versionORANGE.Resources.Resource.menuHome <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link text-white layout-nav-item" href="~/Home/Contact">@PTC_versionORANGE.Resources.Resource.menuContact <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link text-white layout-nav-item" href="~/Home/About">@PTC_versionORANGE.Resources.Resource.menuAbout <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class=" layout-nav-item nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        SBU
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item text-orange" href="~/Home/Public_Aministration">@PTC_versionORANGE.Resources.Resource.Public_Administration</a>
+                        <a class="dropdown-item text-orange" href="~/Home/Life_Skill">@PTC_versionORANGE.Resources.Resource.Life_Skills</a>
+                        <a class="dropdown-item text-orange" href="~/Home/Statistic">@PTC_versionORANGE.Resources.Resource.Statistics</a>
+                    </div>
+                </li>
+
+            </ul>
+            @*<form class="form-inline my-2 my-lg-0">
+                    <button style="border-color:white;" class="text-white btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
+                </form>*@
+        </div>
+    </nav>
+    <div class="container-fluid body-content">
+        @RenderBody()
+        <footer class="mybackground text-white">
+            <div class="row">
+                <div class="col-lg-4" style="padding-top:2em;padding-left:2em;">
+                    <p>&copy; @PTC_versionORANGE.Resources.Resource.Footer_CopyRight</p>
+                    <p>PTC Investment and Education JSC</p>
+
+                </div>
+                <div class="col-lg-4" style="text-align:center;padding-top:2em;">
+                    <a class="text-white" href="~/Home/Public_Aministration">@PTC_versionORANGE.Resources.Resource.Public_Administration</a><br />
+                    <a class="text-white" href="~/Home/Life_Skill">@PTC_versionORANGE.Resources.Resource.Life_Skills</a><br />
+                    <a class="text-white" href="~/Home/Statistic">@PTC_versionORANGE.Resources.Resource.Statistics</a>
+                    <br />
+                    <br />
+                    <button class="index-intro-button" onclick="@("window.location.href='" + @Url.Action("Contact", "Home") + "'");">
+                        @PTC_versionORANGE.Resources.Resource.menuContact
+                    </button>
+                </div>
+                <div style="padding:1em;" class="col-lg-4">
+                    <div>
+                        <img src="~/Content/footer-location.png" />
+                        @PTC_versionORANGE.Resources.Resource.Footer_FirstFloor<br />
+
+                        <p style="padding-left:2.3em;">  @PTC_versionORANGE.Resources.Resource.Footer_Street<br /></p>
+                        <p style="padding-left:2.3em;">   @PTC_versionORANGE.Resources.Resource.Footer_City</p>
+                    </div>
+                    <div style="margin-top:1em;">
+                        <img src="~/Content/footer-email.png" />
+                        ceo.ptcvn@gmail.com
+                    </div>
+                    <div style="margin-top:1em;">
+                        <img src="~/Content/footer-phone.png" />
+                        (028) 222 02 084
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/owl-carousel")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

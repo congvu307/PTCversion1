@@ -1,0 +1,543 @@
+﻿
+@{
+    ViewBag.Title = "PTC - " + PTC_versionORANGE.Resources.Resource.Public_Administration;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script>
+    $(document).ready(function () {
+        $("#education-program-show").hide();
+        $("#education-program-read-more").click(function () {
+            $("#education-program-show").show();
+            $("#education-program-read-more").hide();
+        });
+    });
+</script>
+
+<h1 style="margin-bottom:2em;" class="text-orange index-header">@PTC_versionORANGE.Resources.Resource.PA_Name</h1>
+<!--Method-->
+<section>
+    <div class="row">
+        <div id="accordion" class="col-lg-6">
+            <div style="border:none;" class="card">
+                <div style="border:none;" class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <strong class="text-orange">@PTC_versionORANGE.Resources.Resource.PA_GroupOfExperts</strong>
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <ul>
+                            <li>
+                                @PTC_versionORANGE.Resources.Resource.PA_GroupOfExperts_Discription_1
+                            </li>
+                            <li>
+                                @PTC_versionORANGE.Resources.Resource.PA_GroupOfExperts_Discription_2
+                            </li>
+                            <li>
+                                @PTC_versionORANGE.Resources.Resource.PA_GroupOfExperts_Discription_3
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div style="border:none;" class="card">
+                <div style="border:none;" class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <strong class="text-orange">@PTC_versionORANGE.Resources.Resource.PA_TrainingMethod</strong>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        <ul>
+                            <li>@PTC_versionORANGE.Resources.Resource.PA_TrainingMethod_Discription_1</li>
+                            <li>@PTC_versionORANGE.Resources.Resource.PA_TrainingMethod_Discription_2</li>
+                            <li>@PTC_versionORANGE.Resources.Resource.PA_TrainingMethod_Discription_3</li>
+                            <li>@PTC_versionORANGE.Resources.Resource.PA_TrainingMethod_Discription_4</li>
+                            <li>@PTC_versionORANGE.Resources.Resource.PA_TrainingMethod_Discription_5</li>
+                            <li>@PTC_versionORANGE.Resources.Resource.PA_TrainingMethod_Discription_6</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <img style="margin-top:0,5em; width:90%; height:80%; border-radius:0.5em;" src="~/Content/Public_Amin/PA-img.jpg" />
+        </div>
+    </div>
+
+</section>
+<section style="margin-bottom:2em;">
+    <div class="row">
+        <div class="col-lg-4 col-sm-12 TA-center">
+            <h2 class="text-orange text-lowercase" style="font-variant:small-caps;">@PTC_versionORANGE.Resources.Resource.PA_StudentHaveJoined</h2>
+            <p class="text-gray text-lowercase">@PTC_versionORANGE.Resources.Resource.PA_StudentHaveJoined_Discription</p>
+            <img style="width:90%;" src="~/Content/Public_Amin/PA.studentpng.png" />
+        </div>
+        <div class="col-lg-4 col-sm-12 TA-center">
+            <h2 class="text-orange text-lowercase" style="font-variant:small-caps;">@PTC_versionORANGE.Resources.Resource.PA_ProviceHaveBeenContacted</h2>
+            <p class="text-gray text-lowercase">@PTC_versionORANGE.Resources.Resource.PA_ProviceHaveBeenContacted_Discription</p>
+            <img style="width:90%;" src="~/Content/Public_Amin/PA-province.png" />
+        </div>
+        <div class="col-lg-4 col-sm-12 TA-center">
+            <h2 class="text-orange text-lowercase" style="font-variant:small-caps;">@PTC_versionORANGE.Resources.Resource.PA_LectureHaveJoined</h2>
+            <p class="text-gray text-lowercase">@PTC_versionORANGE.Resources.Resource.PA_LectureHaveJoined_Discription</p>
+            <img style="width:90%;" src="~/Content/Public_Amin/PA-lecture.png" />
+        </div>
+    </div>
+</section>
+<section style="margin-bottom: 3em;">
+    <div class="row">
+        <!--Successful Business-->
+        <div style="text-align:center;" class="col-lg-6 col-sm-12">
+            <img src="~/Content/Public_Amin/Soft-skill.jpg" alt="Avatar" class="PA-image">
+            <h4 class="text-orange LS-content-header text-lowercase" style="font-variant: small-caps;">@PTC_versionORANGE.Resources.Resource.PA_Class1_Name</h4>
+            <p class="text-gray">
+                @PTC_versionORANGE.Resources.Resource.PA_Class1_Message_1<br />
+                @PTC_versionORANGE.Resources.Resource.PA_Class1_Message_2
+            </p>
+            <div id="LS-kindergarten-accordion">
+                <button type="button" aria-expanded="true" aria-controls="LS-kindergarten-collapseOne" data-toggle="collapse" data-target="#LS-kindergarten-collapseOne" class="btn btn-warning mybackground text-white">@PTC_versionORANGE.Resources.Resource.PA_Target</button>
+                <button type="button" aria-expanded="true" aria-controls="LS-kindergarten-collapseTwo" data-toggle="collapse" data-target="#LS-kindergarten-collapseTwo" class="btn btn-warning mybackground collapsed  text-white">@PTC_versionORANGE.Resources.Resource.PA_Customer</button>
+                <div style="border:none;" class="card">
+
+                    <div id="LS-kindergarten-collapseOne" class="collapse show" data-parent="#LS-kindergarten-accordion">
+                        <div class="card-body text-gray LS-card-body">
+                            @PTC_versionORANGE.Resources.Resource.PA_Class1_Target_1 <br />
+                            @PTC_versionORANGE.Resources.Resource.PA_Class1_Target_2<br />
+                            @PTC_versionORANGE.Resources.Resource.PA_Class1_Target_3
+                        </div>
+                    </div>
+                </div>
+                <div style="border:none;" class="card">
+                    <div id="LS-kindergarten-collapseTwo" class="collapse" data-parent="#LS-kindergarten-accordion">
+                        <div class="LS-card-body text-gray  card-body">
+                            @PTC_versionORANGE.Resources.Resource.PA_Class1_Customer
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--soft skill-->
+        <div style="text-align:center;" class="col-lg-6 col-sm-12">
+            <div class="LS-container">
+                <img src="~/Content/Public_Amin/successful-business.jpg" alt="Avatar" class="PA-image">
+
+            </div>
+            <h4 class="text-orange LS-content-header text-lowercase" style="font-variant: small-caps;">@PTC_versionORANGE.Resources.Resource.PA_Class2_Name</h4>
+            <p class="text-gray">
+                @PTC_versionORANGE.Resources.Resource.PA_Class2_Message
+            </p>
+            <div id="LS-kid-accordion">
+
+                <button type="button" aria-expanded="true" aria-controls="LS-kid-collapseOne" data-toggle="collapse" data-target="#LS-kid-collapseOne" class="btn btn-warning mybackground text-white">@PTC_versionORANGE.Resources.Resource.PA_Target</button>
+                <button type="button" aria-expanded="true" aria-controls="LS-kid-collapseTwo" data-toggle="collapse" data-target="#LS-kid-collapseTwo" class="btn btn-warning mybackground collapsed  text-white">@PTC_versionORANGE.Resources.Resource.PA_Customer</button>
+
+                <div style="border:none;" class="card">
+                    <div id="LS-kid-collapseOne" class="collapse show" data-parent="#LS-kid-accordion">
+                        <div class="card-body text-gray LS-card-body">
+                            @PTC_versionORANGE.Resources.Resource.PA_Class2_Target_1<br />
+                            @PTC_versionORANGE.Resources.Resource.PA_Class2_Target_2<br />
+                            @PTC_versionORANGE.Resources.Resource.PA_Class2_Target_3
+                        </div>
+                    </div>
+                </div>
+                <div style="border:none;" class="card">
+                    <div id="LS-kid-collapseTwo" class="collapse" data-parent="#LS-kid-accordion">
+                        <div class="LS-card-body text-gray  card-body">
+                            @PTC_versionORANGE.Resources.Resource.PA_Class2_Customer
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Why ptc-->
+<section>
+    <div style="background-image: url(/Content/Public_Amin/background-WhyPTC.jpg)">
+        <h1 style="margin-bottom:2em; padding-top:1em;" class="text-white index-header">@PTC_versionORANGE.Resources.Resource.PA_WhyPTC</h1>
+        <div class="row">
+            <div class="col-lg-4 PA-whyPTC">
+                <div class="PA-whyPTC-inside">
+                    <p class="text-gray" style="padding:1em;">
+                        @PTC_versionORANGE.Resources.Resource.PA_WhyPTC_Content_1
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 PA-whyPTC">
+                <div class="PA-whyPTC-inside">
+                    <p class="text-gray" style="padding:1em;">
+                        @PTC_versionORANGE.Resources.Resource.PA_WhyPTC_Content_2
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 PA-whyPTC">
+                <div class="PA-whyPTC-inside">
+                    <p class="text-gray" style="padding:1em;">
+                        @PTC_versionORANGE.Resources.Resource.PA_WhyPTC_Content_3
+                    </p>
+                </div>
+            </div>
+        </div>
+        <p style="text-align:center; padding:1em 10%;" class="text-white">
+            @PTC_versionORANGE.Resources.Resource.PA_WhyPTC_Ending
+        </p>
+    </div>
+</section>
+<section>
+    <div id="education-program-modal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div style="background-color:rgba(183, 183, 183, 0.5);" class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Hình ảnh tiêu biểu</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body education-program-modal-body">
+                    <div class="education-program-modal-body">
+                        <img class="education-program-modal-body-img1" src="~/Content/Public_Amin/2017-08-21/002.JPG" />
+                        <img class="education-program-modal-body-img2" src="~/Content/Public_Amin/2017-08-21/003.JPG" />
+
+                        <img class="education-program-modal-body-img3" src="~/Content/Public_Amin/2017-08-21/004.JPG" />
+
+                        <img class="education-program-modal-body-img4" src="~/Content/Public_Amin/2017-08-21/005.JPG" />
+
+                    </div>
+                    <br /><br /> <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary education-program-modal-footer-closebutton" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <h1 style="margin-top:2em;" class="index-header text-orange">@PTC_versionORANGE.Resources.Resource.PA_SomeActivities_Header</h1>
+    <p class="text-gray" style="text-align:center; margin-bottom:2em;">
+        @PTC_versionORANGE.Resources.Resource.PA_SomeActivities_Content
+    </p>
+</section>
+<section>
+    <div class="container">
+        <!--Hàng 1-->
+        <div class="row d-flex justify-content-between">
+            <!--24/07/2014-->
+            <div class="col-lg-4">
+                <div class="card mb-4 box-shadow">
+                    <img class="card-img-top" src="~/Content/Public_Amin/2017-07-24/001-main.jpg" />
+                    <div class="card-body">
+                        <p class="card-text">
+                            @PTC_versionORANGE.Resources.Resource.PA_SomeActivities_Class1
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <button type="button" data-toggle="modal" data-target="#education-program-modal" class="btn btn-primary btn-sm">See More</button>
+                            <small class="text-muted"> <strong>Đắk Lắk</strong>, 24/07/2017</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--19-07-2017-->
+            <div class="col-lg-4">
+                <div class="card mb-4 box-shadow">
+                    <img class="card-img-top" src="~/Content/Public_Amin/2017-07-19/001-main.jpg" />
+                    <div class="card-body">
+                        <p class="card-text">
+                            @PTC_versionORANGE.Resources.Resource.PA_SomeActivities_Class2
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <button type="button" class="btn btn-primary btn-sm">See More</button>
+                            <small class="text-muted"> <strong>Bình Định</strong>, 19/07/2017</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--22-05-2017-->
+            <div class="col-lg-4">
+                <div class="card mb-4 box-shadow">
+                    <img class="card-img-top" src="~/Content/Public_Amin/2017-05-22/001-main.jpg" />
+                    <div class="card-body">
+                        <p class="card-text">
+                            @PTC_versionORANGE.Resources.Resource.PA_SomeActivities_Class3
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <button type="button" class="btn btn-primary btn-sm">See More</button>
+                            <small class="text-muted"> <strong>Kiên Giang</strong>, 22/05/2017</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!--row 2-->
+        <div class="row d-flex justify-content-between">
+            <!--21-08-2017-->
+            <div class="col-lg-4">
+                <div class="card mb-4 box-shadow">
+                    <img class="card-img-top" src="~/Content/Public_Amin/2017-08-21/001-main.jpg" />
+                    <div class="card-body">
+                        <p class="card-text">
+                            @PTC_versionORANGE.Resources.Resource.PA_SomeActivities_Class4
+
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <button type="button" class="btn btn-primary btn-sm">See More</button>
+                            <small class="text-muted"> <strong>Kiên Giang</strong>, 21/08/2017</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--07/06/2017-->
+            <div class="col-lg-4">
+                <div class="card mb-4 box-shadow">
+                    <img class="card-img-top" src="~/Content/Public_Amin/2017-06-07/001-main.jpg" />
+                    <div class="card-body">
+                        <p class="card-text  my-card-text">
+                            @PTC_versionORANGE.Resources.Resource.PA_SomeActivities_Class5
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <button type="button" class="btn btn-primary btn-sm">See More</button>
+                            <small class="text-muted"> <strong>Bà Rịa - Vũng Tàu</strong>, 07/06/2017</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--10/05/2017-->
+            <div class="col-lg-4">
+                <div class="card mb-4 box-shadow">
+                    <img class="card-img-top" src="~/Content/Public_Amin/2017-05-10/001-main.jpg" />
+                    <div class="card-body">
+                        <p class="card-text my-card-text">
+                            @PTC_versionORANGE.Resources.Resource.PA_SomeActivities_Class6                          <strong style="opacity:0">.</strong>
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <button type="button" class="btn btn-primary btn-sm">See More</button>
+                            <small class="text-muted"> <strong>Kiên Giang</strong>, 10/05/2017</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center"><button id="education-program-read-more">See More</button></div>
+</section>
+
+<section>
+    <div id="education-program-show" class="container">
+        <!--Hàng 3-->
+        <div class="row d-flex justify-content-between">
+            <!--26/08/2016-->
+            <div class="col-lg-4">
+                <div class="card mb-4 box-shadow">
+                    <img class="card-img-top" src="~/Content/Public_Amin/2016-08-26/001-main.jpg" />
+                    <div class="card-body">
+                        <p class="card-text my-card-text">
+                            @PTC_versionORANGE.Resources.Resource.PA_SomeActivities_Class7
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <button type="button" data-toggle="modal" data-target="#education-program-modal" class="btn btn-primary btn-sm">See More</button>
+                            <small class="text-muted"> <strong>Tân Châu</strong>, 26/08/2016    </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--29-08-2016-->
+            <div class="col-lg-4">
+                <div class="card mb-4 box-shadow">
+                    <img class="card-img-top" src="~/Content/Public_Amin/2016-08-29/001-main.jpg" />
+                    <div class="card-body">
+                        <p class="card-text my-card-text">
+                            @PTC_versionORANGE.Resources.Resource.PA_SomeActivities_Class8
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <button type="button" class="btn btn-primary btn-sm">See More</button>
+                            <small class="text-muted"> <strong>An Giang</strong>, 29-31/07/2017</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--21/10/2016-->
+            <div class="col-lg-4">
+                <div class="card mb-4 box-shadow">
+                    <img class="card-img-top" src="~/Content/Public_Amin/2016-10-21/001-main.jpg" />
+                    <div class="card-body">
+                        <p class="card-text my-card-text">
+                            @PTC_versionORANGE.Resources.Resource.PA_SomeActivities_Class9
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <button type="button" class="btn btn-primary btn-sm">See More</button>
+                            <small class="text-muted"> <strong>Bình Định</strong>, 21/10/2016</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!--Hàng 4  -->
+        <div class="row d-flex justify-content-between">
+            <!--07/07/2015-->
+            <div class="col-lg-4">
+                <div class="card mb-4 box-shadow">
+                    <img class="card-img-top" src="~/Content/Public_Amin/2015-07-07/001-main.jpg" />
+                    <div class="card-body">
+                        <p class="card-text my-card-text">
+                            @PTC_versionORANGE.Resources.Resource.PA_SomeActivities_Class10
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <button type="button" class="btn btn-primary btn-sm">See More</button>
+                            <small class="text-muted"> <strong>An Giang</strong>, 7-10/07/2015</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--31/3/2015-->
+            <div class="col-lg-4">
+                <div class="card mb-4 box-shadow">
+                    <img class="card-img-top" src="~/Content/Public_Amin/2015-03-31/001-main.jpg" />
+                    <div class="card-body">
+                        <p class="card-text my-card-text">
+                            @PTC_versionORANGE.Resources.Resource.PA_SomeActivities_Class11
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <button type="button" class="btn btn-primary btn-sm">See More</button>
+                            <small class="text-muted"> <strong>An Giang</strong>, 31/3 đến 2/4/2015</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--6/10/2015-->
+            <div class="col-lg-4">
+                <div class="card mb-4 box-shadow">
+                    <img class="card-img-top" src="~/Content/Public_Amin/2017-05-10/001-main.jpg" />
+                    <div class="card-body">
+                        <p class="card-text my-card-text">
+                            @PTC_versionORANGE.Resources.Resource.PA_SomeActivities_Class12
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <button type="button" class="btn btn-primary btn-sm">See More</button>
+                            <small class="text-muted"> <strong>Châu Phú</strong>, 6-8/10/2015</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--publicAdministration-->
+<section>
+    <h1 style="margin-bottom:1em;" class="text-orange index-header">
+        @PTC_versionORANGE.Resources.Resource.PA_Name <br />@PTC_versionORANGE.Resources.Resource.PA_CouncilOfScience
+    </h1>
+    <div class="row">
+        <div class="col-lg-6 col-sm-12 TA-center">
+            <img style="width:60%;height:auto;" src="~/Content/About/about-chairman.png" />
+        </div>
+        <div class="col-lg-6 col-sm-12" style="padding-top:5%;">
+            <h3 class="text-gray">@PTC_versionORANGE.Resources.Resource.PA_DirectorOfInstitute</h3>
+            <h2>@PTC_versionORANGE.Resources.Resource.PA_NguyenKhanhTrung</h2>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.PA_NguyenKhanhTrung_Discription</p>
+        </div>
+    </div>
+    <div style="margin-top:2em;" class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12 TA-center">
+            <img style="width:60%;height:auto;" src="~/Content/About/about-deputy.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.PA_DeputyDirectorOfInstitute</h5>
+            <h3 style="min-height:66px;">@PTC_versionORANGE.Resources.Resource.PA_TranLong</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.PA_TranLong_Discription</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 TA-center">
+            <img style="width:60%;height:auto;" src="~/Content/About/about-deputy.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.PA_DeputyDirectorOfInstitute</h5>
+            <h3 style="min-height:66px;">@PTC_versionORANGE.Resources.Resource.PA_NguyenHongTin</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.PA_NguyenHongTin_Discription</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 TA-center">
+            <img style="width:60%;height:auto;" src="~/Content/About/about-deputy.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.PA_DeputyDirectorOfInstitute</h5>
+            <h3 style="min-height:66px;">@PTC_versionORANGE.Resources.Resource.PA_NguyenThanhDung</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.PA_NguyenThanhDung_Discription</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 TA-center">
+            <img style="width:60%;height:auto;" src="~/Content/About/about-deputy.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.PA_DeputyDirectorOfInstitute</h5>
+            <h3 style="min-height:66px;">@PTC_versionORANGE.Resources.Resource.PA_NguyenVanThu</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.PA_NguyenVanThu_Discription</p>
+        </div>
+    </div>
+</section>
+
+<!--Member-->
+<section>
+    <h1 style="margin-bottom:1em;" class="text-orange index-header">Institute council of Science</h1>
+    <div class="row">
+        <div class="col-lg-4 col-sm-12 TA-center">
+            <img style="width:60%;height:auto;" src="~/Content/About/about-member.png" />
+            <h5 class="text-gray">Member</h5>
+            <h3 style="min-height:66px;">@PTC_versionORANGE.Resources.Resource.PA_HuynhVanThong</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.PA_HuynhVanThong_Discription</p>
+        </div>
+
+        <div class="col-lg-4 col-sm-12 TA-center">
+            <img style="width:60%;height:auto;" src="~/Content/About/about-member.png" />
+            <h5 class="text-gray">Member</h5>
+            <h3 style="min-height:66px;">@PTC_versionORANGE.Resources.Resource.PA_PhamVanChat</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.PA_PhamVanChat_Discription</p>
+        </div>
+
+        <div class="col-lg-4 col-sm-12 TA-center">
+            <img style="width:60%;height:auto;" src="~/Content/About/about-member.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.PA_Member</h5>
+            <h3 style="min-height:66px;">@PTC_versionORANGE.Resources.Resource.PA_NguyenVanBang</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.PA_NguyenVanBang_Discription</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-4 col-sm-12 TA-center">
+            <img style="width:60%;height:auto;" src="~/Content/About/about-member.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.PA_Member</h5>
+            <h3 style="min-height:66px;">@PTC_versionORANGE.Resources.Resource.PA_LeMinhCong</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.PA_LeMinhCong_Discription</p>
+        </div>
+
+        <div class="col-lg-4 col-sm-12 TA-center">
+            <img style="width:60%;height:auto;" src="~/Content/About/about-member.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.PA_Member</h5>
+            <h3 style="min-height:66px;">@PTC_versionORANGE.Resources.Resource.PA_NgoThanhCan</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.PA_NgoThanhCan_Discription</p>
+        </div>
+
+        <div class="col-lg-4 col-sm-12 TA-center">
+            <img style="width:60%;height:auto;" src="~/Content/About/about-member.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.PA_Member</h5>
+            <h3 style="min-height:66px;">@PTC_versionORANGE.Resources.Resource.PA_DinhDuyHoa</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.PA_DinhDuyHoa_Discription</p>
+        </div>
+    </div>
+</section>

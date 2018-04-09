@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "UploadFile";
+}
+<div id="myform">
+    <h2>Cập nhật hàng loạt</h2>
+
+    <form role="form" id="xxx" enctype="multipart/form-data" method="post">
+        <input id="myfile" type="file" name="file"/>
+        <br />
+        <input type="submit" value="Tải lên" />
+    </form>
+    @if ((ViewBag.ErrorEMListFileName != "") && (ViewBag.ErrorEMListFileName != null))
+    {
+        <div>
+            @Html.ActionLink("File lỗi", "UserBasic_Download", "Home", new { filename = ViewBag.ErrorFileName }, null)
+        </div>
+
+    }
+    @ViewBag.Message
+    @Html.ActionLink("Download template", "UserBasic_Download", "Home", new { filename = "EMList_Template.xlsx" }, null)
+</div>
+<script type="text/javascript">
+   
+    $('form').on('submit', function (e) {
+        e.preventDefault();
+        $.ajax({
+            type: 'POST',
+            url: 'Admin/Home/EMList_MultiUpload',   
+            contentType: 'multipart/form-data',
+            processData: false,
+            success: function (data) {
+                $('#myform').html(data);
+            }
+        });
+    });
+</script>

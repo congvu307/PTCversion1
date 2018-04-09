@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PTCModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Client_Information">
+    <Key>
+      <PropertyRef Name="Client_ID" />
+    </Key>
+    <Property Name="Client_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Client_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Client_Short_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Client_Full_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Approach_Year" Type="Int32" />
+    <Property Name="EM_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="EM_Full_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="CL_Field_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="CL_Field_Full_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Client_Phone" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Client_website" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Client_mail" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Client_Owner" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Client_Owner_Phone" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Client_Owner_Email" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Client_Principal" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Client_Principal_Phone" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Client_Principal_Email" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Address_Detail" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Address_District" Type="Int32" />
+    <Property Name="Status" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Note" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Type" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="CreateDate" Type="DateTime" Precision="3" />
+    <Property Name="CreateBy" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="EM_List">
+    <Key>
+      <PropertyRef Name="EM_ID" />
+    </Key>
+    <Property Name="EM_Position_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="EM_Position_Full_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="EM_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="User_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="EM_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="EM_Full_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Contract_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Signal_Day" Type="Int32" />
+    <Property Name="Signal_Month" Type="Int32" />
+    <Property Name="Signal_Year" Type="Int32" />
+    <Property Name="EM_Status" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Note" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="CreateDate" Type="DateTime" Precision="3" />
+    <Property Name="CreateBy" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Ref_District">
+    <Key>
+      <PropertyRef Name="District_ID" />
+    </Key>
+    <Property Name="District_ID" Type="Int32" Nullable="false" />
+    <Property Name="District_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Level" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Province_ID" Type="Int32" />
+    <Property Name="Status" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Note" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Ref_Province" Relationship="Self.FK_Ref_District_Ref_Province" FromRole="Ref_District" ToRole="Ref_Province" />
+  </EntityType>
+  <EntityType Name="Ref_Province">
+    <Key>
+      <PropertyRef Name="Province_ID" />
+    </Key>
+    <Property Name="Province_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Province_ID" Type="Int32" Nullable="false" />
+    <Property Name="Province_Short_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Province_Level" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Region_ID" Type="Int32" />
+    <Property Name="Status" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Note" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Ref_District" Relationship="Self.FK_Ref_District_Ref_Province" FromRole="Ref_Province" ToRole="Ref_District" />
+    <NavigationProperty Name="Ref_Region" Relationship="Self.FK_Ref_Province_Ref_Region" FromRole="Ref_Province" ToRole="Ref_Region" />
+  </EntityType>
+  <EntityType Name="Ref_Region">
+    <Key>
+      <PropertyRef Name="Region_ID" />
+    </Key>
+    <Property Name="Region_ID" Type="Int32" Nullable="false" />
+    <Property Name="Region_Full_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Region_Short_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Status" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Note" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Ref_Province" Relationship="Self.FK_Ref_Province_Ref_Region" FromRole="Ref_Region" ToRole="Ref_Province" />
+  </EntityType>
+  <EntityType Name="User_Basic">
+    <Key>
+      <PropertyRef Name="User_ID" />
+    </Key>
+    <Property Name="User_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="User_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="User_First_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="User_Last_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="User_Alternative_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="User_DoB_Day" Type="Int32" />
+    <Property Name="User_DoB_Month" Type="Int32" />
+    <Property Name="User_DoB_Year" Type="Int32" />
+    <Property Name="Gender" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Address_Detail" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Address_District" Type="Int32" />
+    <Property Name="Email" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Role" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Client_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Education_Type_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Job_Type_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Job_Detail" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Status" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Note" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="CreateDate" Type="DateTime" Precision="3" />
+    <Property Name="CreateBy" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="FK_Ref_District_Ref_Province">
+    <End Role="Ref_Province" Type="Self.Ref_Province" Multiplicity="0..1" />
+    <End Role="Ref_District" Type="Self.Ref_District" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ref_Province">
+        <PropertyRef Name="Province_ID" />
+      </Principal>
+      <Dependent Role="Ref_District">
+        <PropertyRef Name="Province_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ref_Province_Ref_Region">
+    <End Role="Ref_Region" Type="Self.Ref_Region" Multiplicity="0..1" />
+    <End Role="Ref_Province" Type="Self.Ref_Province" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ref_Region">
+        <PropertyRef Name="Region_ID" />
+      </Principal>
+      <Dependent Role="Ref_Province">
+        <PropertyRef Name="Region_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="PTCEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Client_Information" EntityType="Self.Client_Information" />
+    <EntitySet Name="EM_List" EntityType="Self.EM_List" />
+    <EntitySet Name="Ref_District" EntityType="Self.Ref_District" />
+    <EntitySet Name="Ref_Province" EntityType="Self.Ref_Province" />
+    <EntitySet Name="Ref_Region" EntityType="Self.Ref_Region" />
+    <EntitySet Name="User_Basic" EntityType="Self.User_Basic" />
+    <AssociationSet Name="FK_Ref_District_Ref_Province" Association="Self.FK_Ref_District_Ref_Province">
+      <End Role="Ref_Province" EntitySet="Ref_Province" />
+      <End Role="Ref_District" EntitySet="Ref_District" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ref_Province_Ref_Region" Association="Self.FK_Ref_Province_Ref_Region">
+      <End Role="Ref_Region" EntitySet="Ref_Region" />
+      <End Role="Ref_Province" EntitySet="Ref_Province" />
+    </AssociationSet>
+    <FunctionImport Name="Check_EMPosition" ReturnType="Collection(String)">
+      <Parameter Name="User_Code" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Check_Login" ReturnType="Collection(Boolean)">
+      <Parameter Name="Username" Mode="In" Type="String" />
+      <Parameter Name="Password" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Check_Role" ReturnType="Collection(String)">
+      <Parameter Name="usercode" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Find_Region_By_District" ReturnType="Collection(Int32)">
+      <Parameter Name="District_ID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="FindIDbyUserCode" ReturnType="Collection(Int32)">
+      <Parameter Name="User_Code" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+</Schema>

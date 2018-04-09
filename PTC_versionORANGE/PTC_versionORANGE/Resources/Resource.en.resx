@@ -1,0 +1,1168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ABC_Address" xml:space="preserve">
+    <value>District 9, HCMC</value>
+  </data>
+  <data name="ABC_topic7Name" xml:space="preserve">
+    <value>Distinguishing Hobbies and Nutrients at ABC Kindergarten</value>
+  </data>
+  <data name="FieldOperation" xml:space="preserve">
+    <value>Field Operation</value>
+  </data>
+  <data name="FieldOperation_Discription" xml:space="preserve">
+    <value>In order to manage a stable structure, we divide our operation into three parts</value>
+  </data>
+  <data name="LetUs" xml:space="preserve">
+    <value>Let us – PTC walk with you on the way toward your success and development!</value>
+  </data>
+  <data name="Life_Skills" xml:space="preserve">
+    <value>life skills</value>
+  </data>
+  <data name="LS_Discription" xml:space="preserve">
+    <value>Educating and Training life skills, soft skills, and providing vocational guidances for pre-school students, primary students, secondary students, high school students as well as university students.</value>
+  </data>
+  <data name="menuAbout" xml:space="preserve">
+    <value>about</value>
+  </data>
+  <data name="menuContact" xml:space="preserve">
+    <value>contact</value>
+  </data>
+  <data name="menuHome" xml:space="preserve">
+    <value>home</value>
+  </data>
+  <data name="OurClient" xml:space="preserve">
+    <value>Our Clients</value>
+  </data>
+  <data name="OurLastNew" xml:space="preserve">
+    <value>Our Latest News And Events</value>
+  </data>
+  <data name="PA_Discription" xml:space="preserve">
+    <value>Consulting and Training soft skills for government staffs, officers and trainers of trainers (TOT) in not only domestic companies but also foreign owned companies.</value>
+  </data>
+  <data name="Potential_Network" xml:space="preserve">
+    <value>Potential and Operating network</value>
+  </data>
+  <data name="Potential_Network_Discription_1" xml:space="preserve">
+    <value>We have a group of qualified experts, who were carefully considered and had specific skills, knowledge in particular fields they are in charge</value>
+  </data>
+  <data name="PTC4thAnniversary" xml:space="preserve">
+    <value>PTC 4th anniversary</value>
+  </data>
+  <data name="PTC4thDate" xml:space="preserve">
+    <value>Jan 10th, 2014 – Jan 10th, 2018</value>
+  </data>
+  <data name="PTC4thDiscription" xml:space="preserve">
+    <value>We – PTC are different and special thank to the cutiness, talent and different thinking of every single of our member, partner and guest. Thank you for your support and co-operating with us for previous years and even now to the future!
+Thank you for coming to our Anniversary today to celebrate the day when us – PTC was born!
+
+Thank you – our members, every smile on your face will broaden our image to more and more not only customers but also potential partners which is a HAPPY HOUSE and a HAPPY JOB, a place where you belong. We hope that our commitment will always make you believe and co-operate with us until we gain our successes together! Yours faithfully,</value>
+  </data>
+  <data name="PTCname" xml:space="preserve">
+    <value>INVESTMENT &amp; EDUCATION JSC.</value>
+  </data>
+  <data name="Public_Administration" xml:space="preserve">
+    <value>public administration</value>
+  </data>
+  <data name="Readmore" xml:space="preserve">
+    <value>Read more</value>
+  </data>
+  <data name="Statistics" xml:space="preserve">
+    <value>statistics</value>
+  </data>
+  <data name="ST_Discription_1" xml:space="preserve">
+    <value>Finding more brand new researching field. 
+</value>
+  </data>
+  <data name="Companies" xml:space="preserve">
+    <value>Companies</value>
+  </data>
+  <data name="Over" xml:space="preserve">
+    <value>Over</value>
+  </data>
+  <data name="Over250teacher" xml:space="preserve">
+    <value>Over 250 experts, teachers, lecturers from many different fields of teaching with high quality, pratical experiences, extensive knowledge , various of teaching method and especially thay all want to enhance Vietnamese image in worldwide education system.</value>
+  </data>
+  <data name="Over25company_Discription" xml:space="preserve">
+    <value>Over 25 companies including domestic companies and foreign owned companies have been being consulted, trained.</value>
+  </data>
+  <data name="Potential_Network_Discription_2" xml:space="preserve">
+    <value>We have administrators, scientists, doctors who have real experience, reputation and extensive knowledge that suitable with the program and materials.</value>
+  </data>
+  <data name="ST_Discription_2" xml:space="preserve">
+    <value>Approaching new researching method of the world
+</value>
+  </data>
+  <data name="ST_Discription_3" xml:space="preserve">
+    <value>Providing academic knowledge which can be applied.</value>
+  </data>
+  <data name="Teacher" xml:space="preserve">
+    <value>experts, teachers, lecturers</value>
+  </data>
+  <data name="With" xml:space="preserve">
+    <value>With</value>
+  </data>
+  <data name="With10years" xml:space="preserve">
+    <value>10 years experience in training in Vietnam and even in other countries.</value>
+  </data>
+  <data name="YearExperience" xml:space="preserve">
+    <value>years experience</value>
+  </data>
+  <data name="About_100years_1" xml:space="preserve">
+    <value>100 years oriented company</value>
+  </data>
+  <data name="About_100years_2" xml:space="preserve">
+    <value>We aim to develop PTC become a stable company, which can exist over 100 years.</value>
+  </data>
+  <data name="About_100years_3" xml:space="preserve">
+    <value>Together, we want to contribute our helps, our capabilities to improve our country, go forward a modern and developed country!</value>
+  </data>
+  <data name="About_Anymore" xml:space="preserve">
+    <value>And many more ...</value>
+  </data>
+  <data name="About_AuXuanDon" xml:space="preserve">
+    <value>Dr. Au Xuan Don</value>
+  </data>
+  <data name="About_AuXuanDon_Discription" xml:space="preserve">
+    <value>Deputy Director of Department of Culture, Sports and Tourism An Giang. More than 30 years of work and teaching in the field of culture, sports.</value>
+  </data>
+  <data name="About_BuiHongQuan" xml:space="preserve">
+    <value>Dr. Bui Hong Quan</value>
+  </data>
+  <data name="About_BuiHongQuan_Discription" xml:space="preserve">
+    <value>Deputy Head of Vocational Training Department of Labor, Invalids and Social Affairs of Ho Chi Minh City. Having over 15 years working and teaching in the field of applied psychology, soft skills.</value>
+  </data>
+  <data name="About_CaoMinhNhut" xml:space="preserve">
+    <value>Master Cao Minh Nhut</value>
+  </data>
+  <data name="About_CaoMinhNhut_Discription" xml:space="preserve">
+    <value>Lecturer in Marketing, Tourism and Commerce, University of Finance - Marketing. Having over 20 years of teaching and working in the field of marketing management, customer behavior, organizational behavior.</value>
+  </data>
+  <data name="About_ChauDinhLinh" xml:space="preserve">
+    <value>Master Chau Dinh Linh</value>
+  </data>
+  <data name="About_ChauDinhLinh_Discription" xml:space="preserve">
+    <value>Lecturer, Faculty of Finance and Banking, Banking University of HCMC. Having over 15 years of experience in banking and finance, systemic risk, and portfolio management.</value>
+  </data>
+  <data name="About_CoreValue" xml:space="preserve">
+    <value>Core Value</value>
+  </data>
+  <data name="About_CoreValue_Discription_1" xml:space="preserve">
+    <value>Warm heart, bright mind</value>
+  </data>
+  <data name="About_CoreValue_Discription_2" xml:space="preserve">
+    <value>Different thinking</value>
+  </data>
+  <data name="About_CoreValue_Discription_3" xml:space="preserve">
+    <value>Completing personality</value>
+  </data>
+  <data name="About_CoreValue_Discription_4" xml:space="preserve">
+    <value>Following your passion until the end of the world</value>
+  </data>
+  <data name="About_CuThiThanhHuyen" xml:space="preserve">
+    <value>Master Cu Thi Thanh Huyen</value>
+  </data>
+  <data name="About_CuThiThanhHuyen_Discription" xml:space="preserve">
+    <value>Lecturer of Journalism College of Radio and Television II Ho Chi Minh City. Having over 20 years of work and teaching in the field of communications, journalism and applied psychology.</value>
+  </data>
+  <data name="About_Deliverer" xml:space="preserve">
+    <value>Deliverer</value>
+  </data>
+  <data name="About_DevelopmentOrientation" xml:space="preserve">
+    <value>Development orientation</value>
+  </data>
+  <data name="About_DevelopmentOrientation_Discription" xml:space="preserve">
+    <value>In the future, PTC will make every single effort to focus on building and improving Lifeskill; Career orientation – Vocational; consulting structure and strategic plan for businesses; Educating and specializing university curriculum not only in Vietnam but also other nearby countries.</value>
+  </data>
+  <data name="About_Development_1" xml:space="preserve">
+    <value>In order to catch up with the world developing trend, Viet Nam has made a lot of effort to apply latest modern technology into Economics and Social activities.</value>
+  </data>
+  <data name="About_Development_2" xml:space="preserve">
+    <value>However, there are troubles due to lack of essential abilities, skills and managing system. By recognizing this current status of our country, We – PTC Investment and Education were born in order not only to stablize government policies and managing capability but also to provide services for government’s human resources</value>
+  </data>
+  <data name="About_Development_3" xml:space="preserve">
+    <value>Coming along with what we have done within 10 years, We – PTC are reinforcing our mission by developing people and education system. That’s the reason why LifeSkill Institute was established.</value>
+  </data>
+  <data name="About_Development_4" xml:space="preserve">
+    <value>By recognizing ethical values and human capabilities, LifeSkill Institue was designed with training programs that are suitable with a variety of types of people, which are before engagement course, soft-skills and lifeskills for kindergarten children, primary children, secondary children and teenagers courses.</value>
+  </data>
+  <data name="About_Development_5" xml:space="preserve">
+    <value>By committing to improve within science base, PTC created Statistics Institute in order to update, apply and develop research methods that are being used all over the world.</value>
+  </data>
+  <data name="About_Development_6" xml:space="preserve">
+    <value>Statistics Institue is a core element in our system, especially it provides modern and professional research methods and skills for those who are strongly interested in analyzing datas for making business decisions or building business stategies.</value>
+  </data>
+  <data name="About_DinhVietHoa" xml:space="preserve">
+    <value>Dr. Dinh Viet Hoa</value>
+  </data>
+  <data name="About_DinhVietHoa_Discription" xml:space="preserve">
+    <value>Lecturer, Institute of Management and Leadership Asia-Pacific (PAILEMA). More than 20 years of experience in teaching and leadership skills, corporate modeling, philosophy and start-up.</value>
+  </data>
+  <data name="About_DuongAnhSon" xml:space="preserve">
+    <value>Assoc.Dr. Duong Anh Son</value>
+  </data>
+  <data name="About_DuongAnhSon_Discription" xml:space="preserve">
+    <value>Head of Economic Law Faculty, Head of Department of International Business Law University of Economics - Law. Having over 25 years of work and teaching in the field of civil law, international trade law and contract law.</value>
+  </data>
+  <data name="About_Expert" xml:space="preserve">
+    <value>Expert</value>
+  </data>
+  <data name="About_GrowupDate_1" xml:space="preserve">
+    <value>December 30th, 2016</value>
+  </data>
+  <data name="About_GrowupDate_2" xml:space="preserve">
+    <value>June 20th, 2016</value>
+  </data>
+  <data name="About_GrowupDate_3" xml:space="preserve">
+    <value>April 26th, 2016</value>
+  </data>
+  <data name="About_GrowupDate_4" xml:space="preserve">
+    <value>September 16th, 2015</value>
+  </data>
+  <data name="About_GrowupDate_5" xml:space="preserve">
+    <value>June 08th, 2015</value>
+  </data>
+  <data name="About_GrowupDate_6" xml:space="preserve">
+    <value>June 02nd, 2014</value>
+  </data>
+  <data name="About_GrowupDate_7" xml:space="preserve">
+    <value>January 10th, 2014</value>
+  </data>
+  <data name="About_GrowupDate_8" xml:space="preserve">
+    <value>From 2004 to 2014</value>
+  </data>
+  <data name="About_GrowupDiscription_1" xml:space="preserve">
+    <value>PTC changed its head office location to Rosana Building, at Ground Floor, on 60 Nguyen Dinh Chieu Street, Dakao Ward, District 1, HCMC</value>
+  </data>
+  <data name="About_GrowupDiscription_2" xml:space="preserve">
+    <value>: PTC changed its name from PTC Training and Education Joint Stock Company to PTC Investment and Education Joint Stock Company</value>
+  </data>
+  <data name="About_GrowupDiscription_3" xml:space="preserve">
+    <value>PTC had its first subsidiary</value>
+  </data>
+  <data name="About_GrowupDiscription_4" xml:space="preserve">
+    <value>PTC registered business operation with 32 careers</value>
+  </data>
+  <data name="About_GrowupDiscription_5" xml:space="preserve">
+    <value>PTC established its first head office in district 7, HCMC</value>
+  </data>
+  <data name="About_GrowupDiscription_6" xml:space="preserve">
+    <value>PTC registered business operation with 29 careers</value>
+  </data>
+  <data name="About_GrowupDiscription_7" xml:space="preserve">
+    <value>PTC Training and Education Joint Stock Company was established.</value>
+  </data>
+  <data name="About_GrowupDiscription_8" xml:space="preserve">
+    <value>together, PTC’s board of chairmans created and formed business plans up to 10 years.</value>
+  </data>
+  <data name="About_HoangAnhTuan" xml:space="preserve">
+    <value>Dr. Hoang Anh Tuan</value>
+  </data>
+  <data name="About_HoangAnhTuan_Discription" xml:space="preserve">
+    <value>Deputy General Director of Taihan-Sacom Cable Co., Lecturer in finance and accounting, Vietnam CFO Association. Over 15 years of operation and teaching in the field of finance and accounting.</value>
+  </data>
+  <data name="About_HoThiSongQuynh" xml:space="preserve">
+    <value>Dr. Ho Thi Song Quynh</value>
+  </data>
+  <data name="About_HoThiSongQuynh_Discription" xml:space="preserve">
+    <value>Lecturer, Faculty of Social Psychology and Psychology, Academy of Politics and Administration Region II. More than 20 years working and teaching in the field of Sociology and psychology.</value>
+  </data>
+  <data name="About_HuynhQuocAnh" xml:space="preserve">
+    <value>Master Huynh Quoc Anh</value>
+  </data>
+  <data name="About_HuynhQuocAnh_Discription" xml:space="preserve">
+    <value>Lecturer, Faculty of Business Administration, Binh Duong University. Having over 15 years of business and teaching in the field of business administration, international economic relations.</value>
+  </data>
+  <data name="About_LaThiMai" xml:space="preserve">
+    <value>Master La Thi Mai</value>
+  </data>
+  <data name="About_LaThiMai_Discription" xml:space="preserve">
+    <value>Lecturer in Public Finance, National Academy of Public Administration, HCMC. Having over 15 years of operating and teaching finance and accounting, finance and credit.</value>
+  </data>
+  <data name="About_Lecture" xml:space="preserve">
+    <value>Lecture</value>
+  </data>
+  <data name="About_LeQuangCuong" xml:space="preserve">
+    <value>Dr. Le Quang Cuong</value>
+  </data>
+  <data name="About_LeQuangCuong_Discription" xml:space="preserve">
+    <value>Head of Tax Department, Faculty of Public Finance, University of Economics, HCMC. More than 15 years working and teaching in the field of taxation, tax planning and tax policy analysis.</value>
+  </data>
+  <data name="About_LeThiTrucAnh" xml:space="preserve">
+    <value>Dr. Le Thi Truc Anh</value>
+  </data>
+  <data name="About_LeThiTrucAnh_Discription" xml:space="preserve">
+    <value>Lecturer, Department of Culture - Society, School of Ho Chi Minh City. More than 20 years of teaching and working in the field of clerical, cultural, urban culture, business culture and applied culture.</value>
+  </data>
+  <data name="About_LeTuanPhuoc" xml:space="preserve">
+    <value>Dr. Le Tan Phuoc</value>
+  </data>
+  <data name="About_LeTuanPhuoc_Discription" xml:space="preserve">
+    <value>Lecturer of University of Economics, HCMC. Having over 20 years working and teaching in the field of credit quality improvement in banking, real estate, risk management.</value>
+  </data>
+  <data name="About_LeVanBay" xml:space="preserve">
+    <value>Dr. Le Van Bay</value>
+  </data>
+  <data name="About_LeVanBay_Discription" xml:space="preserve">
+    <value>Lecturer of Management School of VCCI (CBAM). More than 30 years of operation and teaching in the field of contract drafting, international trade, business negotiation, logistics and supply chain.</value>
+  </data>
+  <data name="About_LeVuNam" xml:space="preserve">
+    <value>Assoc. Dr. Le Vu Nam</value>
+  </data>
+  <data name="About_LeVuNam_Discription" xml:space="preserve">
+    <value>Head of Law Faculty, University of Economics and Law. More than 30 years working and teaching in the field of economic law, banking - securities, research and development securities market.</value>
+  </data>
+  <data name="About_LuuVanPhu" xml:space="preserve">
+    <value>Dr. Luu Van Phu</value>
+  </data>
+  <data name="About_LuuVanPhu_Discription" xml:space="preserve">
+    <value>Senior Lecturer and Academic Officer of Ho Chi Minh City Academy of Sciences. Having over 30 years working and teaching in the field of management and human resources.</value>
+  </data>
+  <data name="About_Misson" xml:space="preserve">
+    <value>Misson</value>
+  </data>
+  <data name="About_Misson_Discription" xml:space="preserve">
+    <value>Creating unlimited source of energy for customers to discover their potential, as well as creating their own brand image, targets and follow their life goals until the end of the world</value>
+  </data>
+  <data name="About_NguyenChiMai" xml:space="preserve">
+    <value>Master Nguyen Chi Mai</value>
+  </data>
+  <data name="About_NguyenChiMai_Discription" xml:space="preserve">
+    <value>Deputy Director of Public Finance - National Academy of Public Administration, HCMC. Having over 20 years of teaching in the field of financial accounting, value added tax, credit finance, monetary circulation.</value>
+  </data>
+  <data name="About_NguyenDangPhuongTruyen" xml:space="preserve">
+    <value>Master Nguyen Dang Phuong Truyen</value>
+  </data>
+  <data name="About_NguyenDangPhuongTruyen_Discription" xml:space="preserve">
+    <value>Lecturer in literature and administrative technology, National Academy of Public Administration, Ho Chi Minh City campus. Over 10 years of work and teaching in the field of administrative documents, PAR in the one-stop shop, one door.</value>
+  </data>
+  <data name="About_NguyenDuyVinh" xml:space="preserve">
+    <value>Mr. Nguyen Duy Vinh</value>
+  </data>
+  <data name="About_NguyenDuyVinh_Discription" xml:space="preserve">
+    <value>Lecturer of Intermediate School of Archives. Having over 15 years of work and teaching in the field of text editing, management and archives.</value>
+  </data>
+  <data name="About_NguyenHungThi" xml:space="preserve">
+    <value>Mr. Nguyen Hung Thi</value>
+  </data>
+  <data name="About_NguyenHungThi_Discription" xml:space="preserve">
+    <value>Head of Personnel Department, Department of Home Affairs of Daklak province. Having over 20 years working in the field of public administration reform, staffing.</value>
+  </data>
+  <data name="About_NguyenLyLai" xml:space="preserve">
+    <value>Master Nguyen Ly Lai</value>
+  </data>
+  <data name="About_NguyenLyLai_Discription" xml:space="preserve">
+    <value>Focusing mainly on Operating Social Activities, Manage and Coordinate social groups and individuals, besides support practising social activities. Lecturer of Open University, HCMC. Participating in researhing about social working area.</value>
+  </data>
+  <data name="About_NguyenNgocToan" xml:space="preserve">
+    <value>Master Nguyen Ngoc Toan</value>
+  </data>
+  <data name="About_NguyenNgocToan_Discription" xml:space="preserve">
+    <value>Lecturer, Department of State and Law, National Academy of Public Administration, HCMC. Having over 15 years of teaching in the state sector, law, state management, judicial administration, inspection and settlement of complaints and denunciations.</value>
+  </data>
+  <data name="About_NguyenThiThanhHang" xml:space="preserve">
+    <value>Master Nguyen Thi Thanh Hang</value>
+  </data>
+  <data name="About_NguyenThiThanhHang_Discription" xml:space="preserve">
+    <value>Deputy Director, Department of Psychology, University of Social Sciences and Humanities, HCMC. Having over 25 years of work and teaching in the field of psychology, educational psychology.</value>
+  </data>
+  <data name="About_NguyenThiThuHuong" xml:space="preserve">
+    <value>Dr. Nguyen Thi Thu Huong</value>
+  </data>
+  <data name="About_NguyenThiThuHuong_Discription" xml:space="preserve">
+    <value>Lecturer, Department of State Budget Management, Department of Public Finance Management, Logistic Institute - Ministry of Defense. More than 15 years of teaching and training in the field of budget management, technical capacity building, training programs</value>
+  </data>
+  <data name="About_NguyenThiTuyetMai" xml:space="preserve">
+    <value>Dr. Nguyen Thi Tuyet Mai</value>
+  </data>
+  <data name="About_NguyenThiTuyetMai_Discription" xml:space="preserve">
+    <value>Director of Agriculture Seed Center, Department of Agriculture and Rural Development, Vinh Long. More than 20 years working and teaching in the field of geographical indications of plant varieties, soft skills are involved.</value>
+  </data>
+  <data name="About_NguyenVanNhut" xml:space="preserve">
+    <value>Dr. Nguyen Van Nhut</value>
+  </data>
+  <data name="About_NguyenVanNhut_Discription" xml:space="preserve">
+    <value>Dean of Public Administration Department, HCMC cadres Academy. Having over 30 years in working and teaching in the field of management of state administrative organizations.</value>
+  </data>
+  <data name="About_NguyenVanTri" xml:space="preserve">
+    <value>Master Nguyen Van Tri</value>
+  </data>
+  <data name="About_NguyenVanTri_Discription" xml:space="preserve">
+    <value>Lecturer, Faculty of Law, State Administration of Law, University of Law, HCMC. Having over 10 years of operating in the field of inspection, disputes resolution, complaints and denunciations.</value>
+  </data>
+  <data name="About_OrganizationStructure" xml:space="preserve">
+    <value>Organization Structure</value>
+  </data>
+  <data name="About_PhamBinhAn" xml:space="preserve">
+    <value>Master Pham Binh An</value>
+  </data>
+  <data name="About_PhamBinhAn_Discription" xml:space="preserve">
+    <value>Director, Center for WTO Integration Support, Ho Chi Minh City. Having over 30 years of work and teaching in the fields of medicine, law, economic management, advising new economic policies/models, international economic integration.</value>
+  </data>
+  <data name="About_PhanHaiHo" xml:space="preserve">
+    <value>Dr. Phan Hai Ho</value>
+  </data>
+  <data name="About_PhanHaiHo_Discription" xml:space="preserve">
+    <value>Lecturer in law, Ho Chi Minh City Academy of Sciences. More than 15 years of work and teaching in the field of civil justice</value>
+  </data>
+  <data name="About_PhanNgocTu" xml:space="preserve">
+    <value>Master Phan Ngoc Tu</value>
+  </data>
+  <data name="About_PhanNgocTu_Discription" xml:space="preserve">
+    <value>Deputy Head of Personnel Department, National Academy of Public Administration, Ho Chi Minh City campus. Having over 25 years of work and teaching in the field of personnel organization, office culture, administrative reform.</value>
+  </data>
+  <data name="About_PhanVanNhu" xml:space="preserve">
+    <value>Master Phan Van Nhu</value>
+  </data>
+  <data name="About_PhanVanNhu_Discription" xml:space="preserve">
+    <value>Lecturer in Organization and Personnel Management, National Academy of Public Administration, Hanoi. Having over 25 years of work and teaching in the field of public management, organization and personnel management.</value>
+  </data>
+  <data name="About_Specialists" xml:space="preserve">
+    <value>Specialists and lectures profile</value>
+  </data>
+  <data name="About_TaThiThanhTam" xml:space="preserve">
+    <value>Dr. Ta Thi Thanh Tam</value>
+  </data>
+  <data name="About_TaThiThanhTam_Discription" xml:space="preserve">
+    <value>Deputy Director of Scientific Management Department, National Academy of Public Administration, Ho Chi Minh City. More than 15 years working and teaching in the field of science and training, fostering and building scientific research staff.</value>
+  </data>
+  <data name="About_ToNhiA" xml:space="preserve">
+    <value>Master To Nhi A</value>
+  </data>
+  <data name="About_ToNhiA_Discription" xml:space="preserve">
+    <value>Lecturer at the Central College of Education in Ho Chi Minh City. Having over 15 years of working and teaching in the field of applied psychology, communication, presentation skills and other soft skills</value>
+  </data>
+  <data name="About_TonThatHoangHai" xml:space="preserve">
+    <value>Dr. Ton That Hoang Hai</value>
+  </data>
+  <data name="About_TonThatHoangHai_Discription" xml:space="preserve">
+    <value>Lecturer of Saigon University of Technology, HCMC. More than 15 years working and teaching in the field of brand management, strategic management, technology transfer, promotion management.</value>
+  </data>
+  <data name="About_TranThiNga" xml:space="preserve">
+    <value>Master Tran Thi Nga</value>
+  </data>
+  <data name="About_TranThiNga_Discription" xml:space="preserve">
+    <value>Lecturer, Faculty of Human Resource Management, National Academy of Public Administration, HCMC. Having over 20 years of working and teaching in the field of Public Administration, Ethics and Public Affair.</value>
+  </data>
+  <data name="About_TranThiThanhTra" xml:space="preserve">
+    <value>Master Tran Thi Thanh Tra</value>
+  </data>
+  <data name="About_TranThiThanhTra_Discription" xml:space="preserve">
+    <value>Lecturer, Faculty of Sociology, Social Work and Southeast Asian Studies, Open University, HCMC. Having over 15 years of working and teaching in the field of social work, psychological counseling and soft skills, implementation policies in enterprises.</value>
+  </data>
+  <data name="About_TrinhVietDung" xml:space="preserve">
+    <value>Master Trinh Viet Dung</value>
+  </data>
+  <data name="About_TrinhVietDung_Discription" xml:space="preserve">
+    <value>Lecturer of Ton Duc Thang University, HCMC. Having over 20 years of teaching in business administration, public finance, urban management.</value>
+  </data>
+  <data name="About_TruongDinhTuyen" xml:space="preserve">
+    <value>Dr. Truong Dinh Tuyen</value>
+  </data>
+  <data name="About_TruongDinhTuyen_Discription" xml:space="preserve">
+    <value>Vietnam's Minister of Trade, Head of the Government Negotiations on International Economics and Trade. More than 50 years of work and reporting in the field of international economics and trade.</value>
+  </data>
+  <data name="About_VanThiLoan" xml:space="preserve">
+    <value>Dr. Van Thi Loan</value>
+  </data>
+  <data name="About_VanThiLoan_Discription" xml:space="preserve">
+    <value>Lecturer of University of Economics, HCMC. Having over 25 years in working and teaching in the field of statistics: principles of statistics, statistics of trade, statistics of enterprises, statistics applied in business.</value>
+  </data>
+  <data name="About_Vison" xml:space="preserve">
+    <value>Vison</value>
+  </data>
+  <data name="About_Vison_Discription" xml:space="preserve">
+    <value>Becoming a brand symbol of education and skill development in Viet Nam. Contributing the spirit of creating self-indentities for individuals, organizations and the society</value>
+  </data>
+  <data name="About_VoKimSon" xml:space="preserve">
+    <value>Assoc.Dr. Vo Kim Son</value>
+  </data>
+  <data name="About_VoKimSon_Discription" xml:space="preserve">
+    <value>Dean of Organization and Human Resources Management, National Academy of Public Administration, Hanoi. Having over 25 years in working and teaching in the field of state management, administrative reform.</value>
+  </data>
+  <data name="About_VoThanhThu" xml:space="preserve">
+    <value>Professor Vo Thanh Thu</value>
+  </data>
+  <data name="About_VoThanhThu_Discription" xml:space="preserve">
+    <value>Senior Lecturer, University of Economics, Ho Chi Minh City. More than 30 years working and teaching in the field of economic relations, business, investment, international payment.</value>
+  </data>
+  <data name="About_VoTrungTin" xml:space="preserve">
+    <value>Master Vo Trung Tin</value>
+  </data>
+  <data name="About_VoTrungTin_Discription" xml:space="preserve">
+    <value>Lecturer, Faculty of Commercial Law, HCMC University of Law. Having over 15 years working and teaching in the field of economic law and arbitration.</value>
+  </data>
+  <data name="About_VuAnhPhap" xml:space="preserve">
+    <value>Dr. Vu Anh Phap</value>
+  </data>
+  <data name="About_VuAnhPhap_Discription" xml:space="preserve">
+    <value>Deputy Director, Mekong Delta Research and Development Institute, Can Tho University. More than 25 years working and teaching in the field of rice science research and application of biotechnology in agriculture.</value>
+  </data>
+  <data name="About_VuVanHai" xml:space="preserve">
+    <value>Master Vu Van Hai</value>
+  </data>
+  <data name="About_VuVanHai_Discription" xml:space="preserve">
+    <value>Lecturer, Van Lang University. More than 20 years working and teaching in the field of trading and service.</value>
+  </data>
+  <data name="Letter_Header" xml:space="preserve">
+    <value>Message from PTC chairman</value>
+  </data>
+  <data name="Letter_p1" xml:space="preserve">
+    <value>Dear our potential client,</value>
+  </data>
+  <data name="Letter_p2" xml:space="preserve">
+    <value>We, PTC – Investment and Education Joined Stock Company, are
+                    honoured to be one of your partners in co-operating, supporting,
+                    building training programs and organizing events for years.</value>
+  </data>
+  <data name="Letter_p3" xml:space="preserve">
+    <value>We have over 250 qualified lecturers, experts – who have particular
+                    experiences in their fields, grew up from failures and gained
+                    specific successes which proved their talents. They were selected
+                    carefully with high demands in major, experience and skills. They
+                    also have to satisfy company’s core values, which are having warm
+                    heart, bright mind and different thinking. Regarding to PTC vision
+                    and mission, we have already created a lot of programs realting to
+                    life skills, soft skills which are suitable with a wide range of
+                    customers. We also modify and improve them in order to catch up
+                    with the world modern trend in global education system. Our
+                    mission is to create unlimited source of energy for customers to
+                    discover their potential, as well as create their own brand image,
+                    targets and follow their life goals until the end of the world. That is
+                    the reason why we always upgrade our training models, fill in
+                    missing pieces in our products so that when they are launched, our
+                    customers will receive every single value we created</value>
+  </data>
+  <data name="Letter_p4" xml:space="preserve">
+    <value>We, PTC, are proud of our training models, which help lots of companies, especially administrative businesses, domestic companies and foregin owned companies succeed in training and teaching. We have done that through our consulting and training programs, which help change a lot in our partners’ strategies, working environment and even specific methods in descirbing, motivating their employees also. Regarding to those things mentioned above, employees have more reasons to stay, to dedicate their talents, their time and their heart for their organization.</value>
+  </data>
+  <data name="Letter_p5" xml:space="preserve">
+    <value>We, PTC, are always happy to be your partner not only at the present, not only when we are both success, but we also hope to co-operate in long-term. We are not just partners, we are friends, we are parts of a big network - education.</value>
+  </data>
+  <data name="Letter_p6" xml:space="preserve">
+    <value>Last but not least, we strongly want to wish you succeed in your path, always reinforce and upgrade in the future and become a big reputation corporation as your vision has pointed out!</value>
+  </data>
+  <data name="Letter_p7" xml:space="preserve">
+    <value>Yours faithfully</value>
+  </data>
+  <data name="Letter_p8" xml:space="preserve">
+    <value>Chairman</value>
+  </data>
+  <data name="Letter_p9" xml:space="preserve">
+    <value>Dr. Nguyễn Khánh Trung</value>
+  </data>
+  <data name="About_GrowthAndDevelopment" xml:space="preserve">
+    <value>Growth And Development</value>
+  </data>
+  <data name="Footer_City" xml:space="preserve">
+    <value>DaKao Ward, District 1, HCMC</value>
+  </data>
+  <data name="Footer_CopyRight" xml:space="preserve">
+    <value>Copyright belongs to PTC Investment and Education JSC</value>
+  </data>
+  <data name="Footer_FirstFloor" xml:space="preserve">
+    <value>Ground floor, Rosana building,</value>
+  </data>
+  <data name="Footer_Street" xml:space="preserve">
+    <value>60 Nguyen Dinh Chieu Street</value>
+  </data>
+  <data name="LS_Class1_Age" xml:space="preserve">
+    <value>(from 3 to 6 years old)</value>
+  </data>
+  <data name="LS_Class1_Customer" xml:space="preserve">
+    <value>Kindergarten children from 3 to 6 years old</value>
+  </data>
+  <data name="LS_Class1_Lecture" xml:space="preserve">
+    <value>Doctors, Specialists, Psychiatrists , Psychology, Sociology teachers</value>
+  </data>
+  <data name="LS_Class1_Message" xml:space="preserve">
+    <value>How children from 03 to 06 years old can transfer passive activities at school into true Life skills in order to perform a distinct identity, perfect personality, morality, lifestyle in the goal that PTC Life Skills Institute towards.</value>
+  </data>
+  <data name="LS_Class1_Name" xml:space="preserve">
+    <value>Life skills for kindergarten course</value>
+  </data>
+  <data name="LS_Class1_Target_1" xml:space="preserve">
+    <value>Life skills education not only enriches the skills needed for a child's life but also helps them to improve their personality, morals and lifestyle</value>
+  </data>
+  <data name="LS_Class1_Target_2" xml:space="preserve">
+    <value>In order to form this foundation, the program not only requires newborn children to attend school but must be implemented from birth and parents are first and most important teachers to teach children those skill.</value>
+  </data>
+  <data name="LS_Class1_Target_3" xml:space="preserve">
+    <value>ake the future wing for the young generation of VietNam - Rich knowledge - Understand skill- Immersive personality and ethics as human being.</value>
+  </data>
+  <data name="LS_Class2_Age" xml:space="preserve">
+    <value>(from 7 to 12 years old)</value>
+  </data>
+  <data name="LS_Class2_Customer" xml:space="preserve">
+    <value>Primary children from 7 to 12 years old</value>
+  </data>
+  <data name="LS_Class2_Message" xml:space="preserve">
+    <value>It can’t be denied that kids from 6 – 12 years old often meet psychological and physical impacts, what are they? Afterward, when it comes to grade one, there are bunches of change in studying method and environment: more activitites, more outdoor interaction, more friends,…And when preparing for one of the most important time in a child life: PUBERTY. What should parents prepare for their kids in every single stage?</value>
+  </data>
+  <data name="LS_Class2_Name" xml:space="preserve">
+    <value>Life skills for kids course</value>
+  </data>
+  <data name="LS_Class2_Target_1" xml:space="preserve">
+    <value>- Providing suficient skills which help prevent and reduce school violence.</value>
+  </data>
+  <data name="LS_Class2_Target_2" xml:space="preserve">
+    <value>- Providing methods to build life goals.</value>
+  </data>
+  <data name="LS_Class2_Target_3" xml:space="preserve">
+    <value>- Applying concentration skills and effective examining methods</value>
+  </data>
+  <data name="LS_Class3_Age" xml:space="preserve">
+    <value>(from 13 to 15 years old)</value>
+  </data>
+  <data name="LS_Class3_Customer" xml:space="preserve">
+    <value>Secondary children from 13 to 15 years old</value>
+  </data>
+  <data name="LS_Class3_Message" xml:space="preserve">
+    <value>Personalities and hobbies start being formed while children growing up, they will observe and identify social problems around them. Kids begin to behave like adult and recognize the differences between them and their parents. Besides, they may lie to their parents and want to live independently. Thus, are they wrong? What kind of skills should parents provide for their children?</value>
+  </data>
+  <data name="LS_Class3_Name" xml:space="preserve">
+    <value>Life skills for children course</value>
+  </data>
+  <data name="LS_Class3_Target_1" xml:space="preserve">
+    <value>-	Providing suficient skills relating to personal finance management.</value>
+  </data>
+  <data name="LS_Class3_Target_2" xml:space="preserve">
+    <value>-	Providing knowledge about sexual equality, gender and behavior while children growing up.</value>
+  </data>
+  <data name="LS_Class3_Target_3" xml:space="preserve">
+    <value>-	Understanding Vietnam civil law – rights and responsibilities while children growing up.</value>
+  </data>
+  <data name="LS_Class4_Age" xml:space="preserve">
+    <value>(from 16 to 20 years old)</value>
+  </data>
+  <data name="LS_Class4_Customer" xml:space="preserve">
+    <value>adolescent from 16 to 20 years old</value>
+  </data>
+  <data name="LS_Class4_Message" xml:space="preserve">
+    <value>In the age of 16 to 20, there are significant changes in both physical and psychological of a child. This is the most sensitive time when children are completely vulnerable. In this range of age, children are able to identify themselves and don’t want to be treated like a kid, also want to prove that they are independent from their family and their friends. In order to do that, they tend to act and behave like an adult. So, the question is: what kind of skills should parents equip for their children?</value>
+  </data>
+  <data name="LS_Class4_Name" xml:space="preserve">
+    <value>Life skills for adolescent course</value>
+  </data>
+  <data name="LS_Class4_Target_1" xml:space="preserve">
+    <value>-	Providing suficient skills relating to persuasing and negotiating</value>
+  </data>
+  <data name="LS_Class4_Target_2" xml:space="preserve">
+    <value>-	Practising effective time management skill.</value>
+  </data>
+  <data name="LS_Class4_Target_3" xml:space="preserve">
+    <value>-	Providing self-management skill and building personal brand image skill.</value>
+  </data>
+  <data name="LS_Class5_Age" xml:space="preserve">
+    <value>(from 18 years old and above)</value>
+  </data>
+  <data name="LS_Class5_Customer" xml:space="preserve">
+    <value>(from 18 years old and above)</value>
+  </data>
+  <data name="LS_Class5_Lecture" xml:space="preserve">
+    <value>Specialists, Business structure consultants, Startup entrepreneurs, Economic trainers</value>
+  </data>
+  <data name="LS_Class5_Message" xml:space="preserve">
+    <value>In start-up zone, there is a lot of friends who succeeded with their start-up projects, who used to be school mates, who used to spend 10 hours a day just to find out start-up idea. Despite the diffrences in their paths, they all have strong commitments. But, what is the most amazing and meaningful things of starting up? And how to start-up successfully?</value>
+  </data>
+  <data name="LS_Class5_Name" xml:space="preserve">
+    <value>soft skill and start-up skill for adolescent course</value>
+  </data>
+  <data name="LS_Class5_Target_1" xml:space="preserve">
+    <value>-	Providing sufficient knowledge about economics, such as: strategies management, business plan development,… in order to create and put an idea into action, which is available and feasible to execute.</value>
+  </data>
+  <data name="LS_Class5_Target_2" xml:space="preserve">
+    <value>-	Practising essential skills to design and create a detail business plan so as to present, introduce it to the potential investors and besides be able to operate the company depends on that plan.</value>
+  </data>
+  <data name="LS_Class5_Target_3" xml:space="preserve">
+    <value>-	Practising through exercises/real projects in order to form professional attitude and especially the passion to succeed on your own career path.</value>
+  </data>
+  <data name="LS_Class6_Age" xml:space="preserve">
+    <value>Source lectures or those who aspire to become proffessional trainers in the future.</value>
+  </data>
+  <data name="LS_Class6_Customer" xml:space="preserve">
+    <value>Source lectures or those who aspire to become proffessional trainers in the future.</value>
+  </data>
+  <data name="LS_Class6_Lecture" xml:space="preserve">
+    <value>Experts on training, Teaching and quality assessment, Proffessor, Senior specialists</value>
+  </data>
+  <data name="LS_Class6_Message" xml:space="preserve">
+    <value>A successful education system is a system concerned with finding the right person who wants to do this job for life! There is no special "recipe" for education as well as there is no secret formula for judging lecturers whether he or she doing it right or wrong? It's just simply that we try to create and innovative thing in a very conductive way, empower teachers more and more! Look for learners to know the quality of teaching! Education policy has to evidence-based!</value>
+  </data>
+  <data name="LS_Class6_Name" xml:space="preserve">
+    <value>Life skills and knowledge for source lectures</value>
+  </data>
+  <data name="LS_Class6_Target_1" xml:space="preserve">
+    <value>- Be equipped with the knowledge, skills and pedagogical research programs.</value>
+  </data>
+  <data name="LS_Class6_Target_2" xml:space="preserve">
+    <value>- Practice internships at school at affiliated institutions to develop the skills of future teachers in variety of classes, ages, and pupils.</value>
+  </data>
+  <data name="LS_Class6_Target_3" xml:space="preserve">
+    <value>- Adding the skills and knowledge to teach each subject or teaching a variety of topics can change the work by adding only the missing certificate, but do not need to re-learn</value>
+  </data>
+  <data name="LS_CouncilOfScience" xml:space="preserve">
+    <value>PTC Life skills Institute council of Science</value>
+  </data>
+  <data name="LS_DoHongQuan" xml:space="preserve">
+    <value>Master Do Hong Quan</value>
+  </data>
+  <data name="LS_DoHongQuan_Discription" xml:space="preserve">
+    <value>Lecturer of Open University, HCMC. Having over 15 years in working and teaching in sociology</value>
+  </data>
+  <data name="LS_DuongVanThang" xml:space="preserve">
+    <value>Dr. Duong Van Thang</value>
+  </data>
+  <data name="LS_DuongVanThang_Discription" xml:space="preserve">
+    <value>Lecturer of University of Education, VNU-HN.</value>
+  </data>
+  <data name="LS_Function" xml:space="preserve">
+    <value>Function of Life skills</value>
+  </data>
+  <data name="LS_Function_Content" xml:space="preserve">
+    <value>Regarding to our mission is to help improve Vietnamese’ personality, enhance your potential, contribute to social development, we – PTC commit to make every effort to train and walk with you through every single stage of your life.</value>
+  </data>
+  <data name="LS_Function_Discription" xml:space="preserve">
+    <value>Walking with you through every single stage of your life</value>
+  </data>
+  <data name="LS_Name" xml:space="preserve">
+    <value>Viện kỹ năng sống PTC</value>
+  </data>
+  <data name="LS_Number_1a" xml:space="preserve">
+    <value>Developing a group of</value>
+  </data>
+  <data name="LS_Number_1b" xml:space="preserve">
+    <value>lectures</value>
+  </data>
+  <data name="LS_Number_2a" xml:space="preserve">
+    <value>Training for over</value>
+  </data>
+  <data name="LS_Number_2b" xml:space="preserve">
+    <value>schools</value>
+  </data>
+  <data name="LS_Number_3a" xml:space="preserve">
+    <value>Organizing</value>
+  </data>
+  <data name="LS_Number_3b" xml:space="preserve">
+    <value>Life skills classes</value>
+  </data>
+  <data name="LS_Number_4a" xml:space="preserve">
+    <value>Training for over</value>
+  </data>
+  <data name="LS_Number_4b" xml:space="preserve">
+    <value>students</value>
+  </data>
+  <data name="LS_PhamVanTru" xml:space="preserve">
+    <value>Doctor Pham Van Tru</value>
+  </data>
+  <data name="LS_PhamVanTru_Discription" xml:space="preserve">
+    <value>Deputy Director of HCMC mental hospital. Expert of Psychiatric department and medical psychology department.</value>
+  </data>
+  <data name="LS_Premarried_Customer" xml:space="preserve">
+    <value>Adolescent, young couples who are in love or about to marry.</value>
+  </data>
+  <data name="LS_Premarried_Discription" xml:space="preserve">
+    <value>Before you say “I Do”, family happiness is now a challenge for young couples, who dare to break every limitation, who have zero knowledge about sex and gender, who are going beyond social norms and destroy their own happiness. According to PTC reseach result, almost young couples who are in relationships or about to marry haven’t had enough knowledges, skill and attitude about love, about life after marriage. So, how to have a real love? Who to build your family happiness? And how to create a bright and smart future for young couples nowsaday?</value>
+  </data>
+  <data name="LS_Premarried_Lecture" xml:space="preserve">
+    <value>Group of specialists, doctors, psychiatry experts, psychologic lecturers, socialogy lecturers.</value>
+  </data>
+  <data name="LS_Premarried_Name" xml:space="preserve">
+    <value>Life skills and Pre-marriage essential knowledge</value>
+  </data>
+  <data name="LS_Premarried_Target_1" xml:space="preserve">
+    <value>To help young generation understand clearly about love and have suitable attitude in marriage.</value>
+  </data>
+  <data name="LS_Premarried_Target_2" xml:space="preserve">
+    <value>To support sufficient knowledges about young love, about love after marriage.</value>
+  </data>
+  <data name="LS_Premarried_Target_3" xml:space="preserve">
+    <value>To prove how important are parents in building their children future.</value>
+  </data>
+  <data name="LS_WalkWithYou" xml:space="preserve">
+    <value>PTC - walk with you through every single stage of you life</value>
+  </data>
+  <data name="PA_Class1_Customer" xml:space="preserve">
+    <value>Leaders and Entrepreneurs or those who asprire to become leaders in the future.</value>
+  </data>
+  <data name="PA_Class1_Message_1" xml:space="preserve">
+    <value>Modifying a underlying system platform and existing enterprise functional systems to create new system models with the lastest functionalities and features that are highly competitive and optimized.</value>
+  </data>
+  <data name="PA_Class1_Message_2" xml:space="preserve">
+    <value>Customer orientation and focus on promoting and the advantages of enterprises to bring added value for customers to develop sustainable business.</value>
+  </data>
+  <data name="PA_Class1_Name" xml:space="preserve">
+    <value>soft skill &amp; leadership knowledge
+for businessman course</value>
+  </data>
+  <data name="PA_Class1_Target_1" xml:space="preserve">
+    <value>- Establish organizational structure and operating mechanism consistent with the orientation to develop and re-establish customer-oriented and effective business proccess.</value>
+  </data>
+  <data name="PA_Class1_Target_2" xml:space="preserve">
+    <value>- Improved statistical processes (SPCs) and process control indicators (KPIs).</value>
+  </data>
+  <data name="PA_Class1_Target_3" xml:space="preserve">
+    <value>- Build an improved cultural environment and adapt to change.</value>
+  </data>
+  <data name="PA_Class2_Customer" xml:space="preserve">
+    <value>Officials, 
+Civil servants, 
+Government Officers, 
+Staffs</value>
+  </data>
+  <data name="PA_Class2_Message" xml:space="preserve">
+    <value>How to innovate the govement system? How to build and improve the quality of the contingent of cadres and civil servants, focusing strongly on the reform of wage policy in order to conduct a real motivation for officials and public servants to perfrom public duties. Quality and efficiency? How to improve the quality of administrative services and tha quality of public services?</value>
+  </data>
+  <data name="PA_Class2_Name" xml:space="preserve">
+    <value>soft skill and knowledge 
+of public administration</value>
+  </data>
+  <data name="PA_Class2_Target_1" xml:space="preserve">
+    <value>-	To equip and update officials and civil servants with common knowledge about managerment and leadership.</value>
+  </data>
+  <data name="PA_Class2_Target_2" xml:space="preserve">
+    <value>-	Training, fostering and training of essential soft skills attached to tittles and job placement requirements of cadres and civil servants at all levels.</value>
+  </data>
+  <data name="PA_Class2_Target_3" xml:space="preserve">
+    <value>-	Contribute to build appropriate behaviors and attitudes of cadres, civil servants and officials at all levels.</value>
+  </data>
+  <data name="PA_CouncilOfScience" xml:space="preserve">
+    <value>Council of Science</value>
+  </data>
+  <data name="PA_Customer" xml:space="preserve">
+    <value>Customer</value>
+  </data>
+  <data name="PA_DeputyDirectorOfInstitute" xml:space="preserve">
+    <value>Deputy Director of Institute</value>
+  </data>
+  <data name="PA_DinhDuyHoa" xml:space="preserve">
+    <value>Dr. Dinh Duy Hoa</value>
+  </data>
+  <data name="PA_DinhDuyHoa_Discription" xml:space="preserve">
+    <value>Director of Ministry of Home Affairs (MOHA), Administration Innovating department. Having over 35 years working and teaching in Innovating administration, establishing organization culture and ethic</value>
+  </data>
+  <data name="PA_DirectorOfInstitute" xml:space="preserve">
+    <value>Director of Institute</value>
+  </data>
+  <data name="PA_GroupOfExperts" xml:space="preserve">
+    <value>Group Of Experts</value>
+  </data>
+  <data name="PA_GroupOfExperts_Discription_1" xml:space="preserve">
+    <value>Deliverer, Head of Minister, Institute that are suitable with courses type</value>
+  </data>
+  <data name="PA_GroupOfExperts_Discription_2" xml:space="preserve">
+    <value>Macro–policies managers, managers – operators of business organizations, Institute and developed business inside and outside the country.</value>
+  </data>
+  <data name="PA_GroupOfExperts_Discription_3" xml:space="preserve">
+    <value>Scientists with high quality and experiences as well as talent that are suitable with programs, training courses.</value>
+  </data>
+  <data name="PA_HuynhVanThong" xml:space="preserve">
+    <value>Dr. Huynh Van Thong</value>
+  </data>
+  <data name="PA_HuynhVanThong_Discription" xml:space="preserve">
+    <value>Head of and Faculty of Journalism Communication, University of Social Sciences and Humanities. Having over 20 years working and teaching in linguistics, journalism and communication, tourism, administrative language, assistant and communication skill.</value>
+  </data>
+  <data name="PA_Institute" xml:space="preserve">
+    <value>Institute council of Science</value>
+  </data>
+  <data name="PA_LectureHaveJoined" xml:space="preserve">
+    <value>lecture have joined through years</value>
+  </data>
+  <data name="PA_LectureHaveJoined_Discription" xml:space="preserve">
+    <value>lecture have joined through years (from 2014 to 2017)</value>
+  </data>
+  <data name="PA_LeMinhCong" xml:space="preserve">
+    <value>Dr. Le Minh Cong</value>
+  </data>
+  <data name="PA_LeMinhCong_Discription" xml:space="preserve">
+    <value>Leturer of Psychology Department, University of Social Sciences and Humanities, HCM City. Having over 10 years working and teaching in psychology, psychiatry, and other relating to mentor problems.</value>
+  </data>
+  <data name="PA_Member" xml:space="preserve">
+    <value>Member</value>
+  </data>
+  <data name="PA_Name" xml:space="preserve">
+    <value>PTC Public Administration Institute</value>
+  </data>
+  <data name="PA_NgoThanhCan" xml:space="preserve">
+    <value>Assoc.Prof, Dr. Ngo Thanh Can</value>
+  </data>
+  <data name="PA_NgoThanhCan_Discription" xml:space="preserve">
+    <value>Vice Dean of organizing and human resources department, National Academy of Public Administration, Ha Noi capital. Having over 30 years working and teaching in organizing, human resources management, administrative ethic, and corporating culture.</value>
+  </data>
+  <data name="PA_NguyenHongTin" xml:space="preserve">
+    <value>Dr. Nguyen Hong Tin</value>
+  </data>
+  <data name="PA_NguyenHongTin_Discription" xml:space="preserve">
+    <value>Lecturer of NC Institue – Mekong Delta Improvement (MDI) – Can Tho University. Having over 15 years working and teaching in Conservating and Improving Mekong Delta’s ecosystem, dealing with global warming.</value>
+  </data>
+  <data name="PA_NguyenKhanhTrung" xml:space="preserve">
+    <value>Dr. Nguyen Khanh Trung</value>
+  </data>
+  <data name="PA_NguyenKhanhTrung_Discription" xml:space="preserve">
+    <value>Lecturer of Business Administration at University of Economics and Law, Ho Chi Minh city. Having over 20 years in working and teaching about Franchise consulting, establing business strategies, operating and developing business models.</value>
+  </data>
+  <data name="PA_NguyenThanhDung" xml:space="preserve">
+    <value>Master Nguyen Thanh Dung</value>
+  </data>
+  <data name="PA_NguyenThanhDung_Discription" xml:space="preserve">
+    <value>Head of Transport Administration Subject at College of Transportation No 3. Having over 10 years working and teaching in transport manament, social economic inspector.</value>
+  </data>
+  <data name="PA_NguyenVanBang" xml:space="preserve">
+    <value>Meritorious teacher.
+Dr. Nguyen Van Bang</value>
+  </data>
+  <data name="PA_NguyenVanBang_Discription" xml:space="preserve">
+    <value>Senior lecturer of Ho Chi Minh National University system. Having over 40 years working and teaching in Political Theory, united social activities.</value>
+  </data>
+  <data name="PA_NguyenVanThu" xml:space="preserve">
+    <value>Assoc. Prof, Dr. Nguyen Van Thu</value>
+  </data>
+  <data name="PA_NguyenVanThu_Discription" xml:space="preserve">
+    <value>Senior lecturer of Organizing and Human Resources Department of National Academy of Public Administration, Ho Chi Minh City. Having 30 years working and teaching in organizing and training civil cardes, officers, and employees.</value>
+  </data>
+  <data name="PA_PhamVanChat" xml:space="preserve">
+    <value>Dr. Pham Van Chat</value>
+  </data>
+  <data name="PA_PhamVanChat_Discription" xml:space="preserve">
+    <value>Deliverer of Vietnam Ministry of Industry and Trade (MOIT). Having over 40 years working and teaching in international economics law arbitration, international integration.</value>
+  </data>
+  <data name="PA_ProviceHaveBeenContacted" xml:space="preserve">
+    <value>provine have been contacted and cooperated</value>
+  </data>
+  <data name="PA_ProviceHaveBeenContacted_Discription" xml:space="preserve">
+    <value>provine have been contacted and cooperated with PTC</value>
+  </data>
+  <data name="PA_SomeActivities_Class1" xml:space="preserve">
+    <value>Communication skill for officers, government staffs – 2017</value>
+  </data>
+  <data name="PA_SomeActivities_Class10" xml:space="preserve">
+    <value>Professional training of grassroots cadres and civil servants in 2015</value>
+  </data>
+  <data name="PA_SomeActivities_Class11" xml:space="preserve">
+    <value>Identifying organization vision, mission, brand image and PR</value>
+  </data>
+  <data name="PA_SomeActivities_Class12" xml:space="preserve">
+    <value>Intensive training in communication skills, office culture and job ethic</value>
+  </data>
+  <data name="PA_SomeActivities_Class2" xml:space="preserve">
+    <value>General skill, business planning skill and reporting</value>
+  </data>
+  <data name="PA_SomeActivities_Class3" xml:space="preserve">
+    <value>Leadership and Management skill, the 2nd season</value>
+  </data>
+  <data name="PA_SomeActivities_Class4" xml:space="preserve">
+    <value>Leadership and Management skill, the 3rd season</value>
+  </data>
+  <data name="PA_SomeActivities_Class5" xml:space="preserve">
+    <value>Public opinion</value>
+  </data>
+  <data name="PA_SomeActivities_Class6" xml:space="preserve">
+    <value>Leadership and Management skill, the 1st season .</value>
+  </data>
+  <data name="PA_SomeActivities_Class7" xml:space="preserve">
+    <value>Communication skill, Organization culture and Job ethic - 2016</value>
+  </data>
+  <data name="PA_SomeActivities_Class8" xml:space="preserve">
+    <value>Communication skill, Organization culture and Job ethic - 2016</value>
+  </data>
+  <data name="PA_SomeActivities_Class9" xml:space="preserve">
+    <value>Fostering training courses for staffing issues at communal level</value>
+  </data>
+  <data name="PA_SomeActivities_Content" xml:space="preserve">
+    <value>Soft skill courses for employees, staffs and officers in some provinces.</value>
+  </data>
+  <data name="PA_SomeActivities_Header" xml:space="preserve">
+    <value>Introduction of some popular activities</value>
+  </data>
+  <data name="PA_StudentHaveJoined" xml:space="preserve">
+    <value>student have joined through years</value>
+  </data>
+  <data name="PA_StudentHaveJoined_Discription" xml:space="preserve">
+    <value>student have joined through years (from 2014 to 2017)</value>
+  </data>
+  <data name="PA_Target" xml:space="preserve">
+    <value>Target</value>
+  </data>
+  <data name="PA_TrainingMethod" xml:space="preserve">
+    <value>Training Method</value>
+  </data>
+  <data name="PA_TrainingMethod_Discription_1" xml:space="preserve">
+    <value>Brainstorming, Teamworking with Experts.</value>
+  </data>
+  <data name="PA_TrainingMethod_Discription_2" xml:space="preserve">
+    <value>Case Study Analyzing</value>
+  </data>
+  <data name="PA_TrainingMethod_Discription_3" xml:space="preserve">
+    <value>Self – Assessment exercises.</value>
+  </data>
+  <data name="PA_TrainingMethod_Discription_4" xml:space="preserve">
+    <value>Individual/group practising exercises, Roling play</value>
+  </data>
+  <data name="PA_TrainingMethod_Discription_5" xml:space="preserve">
+    <value>Learning through Games.</value>
+  </data>
+  <data name="PA_TrainingMethod_Discription_6" xml:space="preserve">
+    <value>Mini-lecture</value>
+  </data>
+  <data name="PA_TranLong" xml:space="preserve">
+    <value>Dr. Tran Long</value>
+  </data>
+  <data name="PA_TranLong_Discription" xml:space="preserve">
+    <value>Head of Vietnamese culture department at University of Social Sciences and Humanities – Vietnam National University of Ho Chi Minh city. Having over 20 years working and teaching about Culture, Linguistics, Editor of Political Science magazines.</value>
+  </data>
+  <data name="PA_WhyPTC" xml:space="preserve">
+    <value>Why PTC?</value>
+  </data>
+  <data name="PA_WhyPTC_Content_1" xml:space="preserve">
+    <value>We have over 10 years experiences in consulting and training inside and outside the country with successful training module which customers can practise with Experts and also apply it into daily life.</value>
+  </data>
+  <data name="PA_WhyPTC_Content_2" xml:space="preserve">
+    <value>We have groups of qualified experts, who were carefully recruited and were enthusiatic with their mission – our vision.</value>
+  </data>
+  <data name="PA_WhyPTC_Content_3" xml:space="preserve">
+    <value>We commit to provide qualified documents, studying papers which were written and updated by our group of experts. Our documents will be carefully researched so that will be really close to global education system before launching.</value>
+  </data>
+  <data name="PA_WhyPTC_Ending" xml:space="preserve">
+    <value>No matter if you are finding your job or you are running your own business, we – PTC always commit to provide you not only essential knowledges but also practical skills to improve your work and your career path. we commit that our training courses are flexible and practical enough for you to choose, and our Certificate is highly appreciated by top recruiters in not only Vietnam but also foreign companies.</value>
+  </data>
+  <data name="ST_Bussiness" xml:space="preserve">
+    <value>businesses</value>
+  </data>
+  <data name="ST_CouncilOfScience" xml:space="preserve">
+    <value>PTC Statistics Institute council of Science</value>
+  </data>
+  <data name="ST_Discription" xml:space="preserve">
+    <value>In 2018, PTC Statistics Institute aims to develop our core lecturer team with quality verified and a wide range of teaching field. Besides, we will expand the number of students, increase the number of businesses that need consultant and especially firgure out more and more research methods that are close to the world science council. Regarding to that, we also want to help apply these knowledges into daily life.</value>
+  </data>
+  <data name="ST_Function" xml:space="preserve">
+    <value>Function of PTC Statistics Insitute</value>
+  </data>
+  <data name="ST_LeMinhTruong" xml:space="preserve">
+    <value>Master Le Minh Truong</value>
+  </data>
+  <data name="ST_LeMinhTruong_Discription" xml:space="preserve">
+    <value>Professional in anaylyzing statistic datas in Mathematical Statistics Department. Teaching data analysis with SPSS, AMOS. Supporting classes which are related to research in business, datas analysis and be a partner of Data Analysis Centre in University of Economics, HCMC.</value>
+  </data>
+  <data name="ST_Name" xml:space="preserve">
+    <value>Statistics Institute</value>
+  </data>
+  <data name="ST_ScientificPapers" xml:space="preserve">
+    <value>scientific papers</value>
+  </data>
+</root>

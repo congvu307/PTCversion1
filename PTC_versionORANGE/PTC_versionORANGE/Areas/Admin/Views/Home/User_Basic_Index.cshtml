@@ -1,0 +1,100 @@
+﻿
+@model IEnumerable<PTC_versionORANGE.Models.User_Basic>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = null;
+}
+
+<h2>Index</h2>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#UserBasicTable").DataTable({
+            "autoWidth": true
+        });
+    });
+</script>
+
+<table id="UserBasicTable" class="display">
+    <thead>
+        <tr>
+            <th style="width:20% !important;">
+                Họ và tên
+            </th>
+            <th style="width:12%;">
+                Ngày sinh
+            </th>
+            <th style="width:8%;">
+                @Html.DisplayNameFor(model => model.Gender)
+            </th>
+            <th style="width:10%;">
+                @Html.DisplayNameFor(model => model.Phone)
+            </th>
+            <th style="width:40%;">
+                @Html.DisplayNameFor(model => model.Address_Detail)
+            </th>
+            <th style="width:10%; background:none;"></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            if (item.Status != "Disable")
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.User_First_Name) &nbsp;@Html.DisplayFor(modelItem => item.User_Last_Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.User_DoB_Day) /  @Html.DisplayFor(modelItem => item.User_DoB_Month)/@Html.DisplayFor(modelItem => item.User_DoB_Year)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.User_Code)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Phone)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Address_Detail)
+                    </td>
+
+                    <td>
+                        <a onclick="ShowClientEdit(@item.User_ID)" data-toggle="modal" href="#" data-target="#Large_Modal">Edit</a>
+                        @* @Html.ActionLink("Edit", "Edit", new { id = item.User_ID },new { data_toggle="#modal",data_target="#Large_Modal" }) |*@
+                        @Html.ActionLink("Details", "Details", new { id = item.User_ID }) |
+                        <a onclick="ShowDeleteModalWarning(@item.User_ID)" data-toggle="modal" href="#" data-target="#Small_Modal">Delete</a>
+                    </td>
+
+                </tr>
+            }
+        }
+    </tbody>
+
+</table>
+<script>
+    function ShowClientEdit(id) {
+        $.ajax({
+            url: 'Admin/Home/User_Basic_Edit/' + id,
+            success: function (data) {
+                $('#Large_Modal .modal-dialog .modal-content').html(data);
+            }
+        });
+    }
+    function ShowDeleteModalWarning(id) {
+        $.ajax({
+            url: 'Admin/Home/User_Basic_Delete/' + id,
+            success: function (data) {
+                $('#Small_Modal .modal-dialog .modal-content').html(data);
+            }
+        });
+    }
+</script>
+<style>
+    .paging_simple_numbers a {
+        color: white !important;
+    }
+
+    #mytable {
+        width: 100% !important;
+    }
+</style>

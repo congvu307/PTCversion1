@@ -1,0 +1,17 @@
+﻿@model PTC_versionORANGE.Models.User_Basic
+@{ 
+    Layout = null;
+}
+<div class="row">
+    Bạn có muốn xóa người dùng <br />
+    @Model.User_First_Name &nbsp;@Model.User_Last_Name ?
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color" style="padding:10px;">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

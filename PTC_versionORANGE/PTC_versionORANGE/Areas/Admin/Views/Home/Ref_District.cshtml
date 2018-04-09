@@ -1,0 +1,53 @@
+﻿@model IEnumerable<PTC_versionORANGE.Models.Ref_District>
+<script>
+    $(document).ready(function () {
+        $("#Ref_District").DataTable({
+            "autoWidth": true
+        });
+    });
+</script>
+<table id="Ref_District" class="display">
+    <thead>
+        <tr>
+
+            <th style="width:15%;">
+                @Html.DisplayNameFor(model => model.District_ID)
+            </th>
+            <th style="width:20%;">
+                @Html.DisplayNameFor(model => model.District_Name)
+            </th>
+            <th style="width:12%;">
+                @Html.DisplayNameFor(model => model.Province_ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ref_Province.Province_Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ref_Province.Ref_Region.Region_Full_Name)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.District_ID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.District_Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Province_ID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ref_Province.Province_Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ref_Province.Ref_Region.Region_Full_Name)
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

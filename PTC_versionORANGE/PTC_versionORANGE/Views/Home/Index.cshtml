@@ -1,0 +1,425 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PTC - @PTC_versionORANGE.Resources.Resource.PTCname</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 5
+                    }
+                }
+            })
+            $("#index-button-FO").click(function () {
+                $('html, body').animate({
+                    scrollTop: $("#index-FO").offset().top - 100
+                }, 800);
+            });
+            $("#index-button-last-new").click(function () {
+                $('html, body').animate({
+                    scrollTop: $("#index-last-new").offset().top - 100
+                }, 800);
+            });
+        });
+
+
+
+        $(document).ready(function () {
+            $("#index-tittle").show(1500);
+            //console.log($(window).scrollTop());
+            //if ($("#index-SBU-discription").offset().top == $(window).scrollTop()) {
+            //    alert("nothing");
+            //};
+
+            //$(window).on('scroll', function () {
+
+            //    if ($(window).scrollTop() > $("#index-FO-PA").offset().top - 180) {
+            //        $("#index-FO-PA").show(1000);
+            //    };
+
+            //    if ($(window).scrollTop() > $("#index-FO-LS").offset().top - 180) {
+            //        $("#index-FO-LS").show(1500);
+            //    };
+
+            //    if ($(window).scrollTop() > $("#index-FO-ST").offset().top - 180) {
+            //        $("#index-FO-ST").show(2000);
+            //    };
+            //});
+
+        });
+    </script>
+</head>
+
+<body style="padding-top:0;">
+
+    <div class="container-fluid">
+        <!--section intro-->
+        <section>
+            <div id="index-intro">
+                <a href=""><img id="mynav-logo" src="~/Content/Index/logo-PTC-full-white.png" /></a>
+                <nav id="mynav" class="navbar navbar-expand-lg navbar-light bg-light">
+                    <button style="position:absolute; right:1em; top:2em;" class="navbar-toggler maynav-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false" aria-controls="navbarSupportedContent">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="mynav-ul collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link mynav-text text-lowercase" href="~/Home">@PTC_versionORANGE.Resources.Resource.menuHome <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mynav-text text-lowercase" href="~/Home/Contact">@PTC_versionORANGE.Resources.Resource.menuContact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mynav-text text-lowercase" href="~/Home/About">@PTC_versionORANGE.Resources.Resource.menuAbout</a>
+                            </li>
+                            @*<li class="nav-item">
+                                    <a class="nav-link mynav-text" href="#">recruit</a>
+                                </li>*@
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle mynav-text text-white  text-lowercase" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    sbu
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item text-orange" href="~/Home/Public_Aministration">@PTC_versionORANGE.Resources.Resource.Public_Administration</a>
+                                    <a class="dropdown-item text-orange" href="~/Home/Life_Skill">@PTC_versionORANGE.Resources.Resource.Life_Skills</a>
+                                    <a class="dropdown-item text-orange" href="~/Home/Statistic">@PTC_versionORANGE.Resources.Resource.Statistics</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle mynav-text text-white  text-lowercase" href="#" id="languageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    language
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                                    @Html.ActionLink("English", "Change", "Home", new { @class = "", LanguageAbbrevation = "en" }, new { @class = "dropdown-item text-orange" })
+                                    @Html.ActionLink("Tiếng việt", "Change", "Home", new { @class = "", LanguageAbbrevation = "vi" }, new { @class = "dropdown-item text-orange" })
+                                </div>
+                            </li>
+                        </ul>
+                        <span>
+                            <a><img /></a>
+                        </span>
+                    </div>
+                </nav>
+                <h1 id="index-tittle" style="display:none;" class="text-white">PTC</h1>
+                <h1 id="index-tittle2" class="text-white">@PTC_versionORANGE.Resources.Resource.PTCname</h1>
+
+                <div id="index-hr" class="row" style="border-bottom: 0.025em solid white; width: 40%; margin-top: 0.5em;margin-bottom:0.5em; margin-left:30%;"> <hr /> </div>
+                <p class="text-white" style="text-align:center;">
+                    @PTC_versionORANGE.Resources.Resource.LetUs
+                </p>
+                <div class="d-flex justify-content-center">
+                    <button id="index-button-FO" class="index-intro-button">
+                        @PTC_versionORANGE.Resources.Resource.FieldOperation
+                    </button>
+                    <div style="width:2em;"></div>
+                    <button id="index-button-last-new" class="index-intro-button">
+                        @PTC_versionORANGE.Resources.Resource.LastNew
+                    </button>
+                </div>
+            </div>
+        </section>
+
+
+        <!--3 SBU-->
+        <section id="index-FO" style="margin:0 2em;">
+            <h1 class="text-orange index-header text-upper">@PTC_versionORANGE.Resources.Resource.FieldOperation</h1>
+            <p id="index-SBU-discription" class="text-gray">@PTC_versionORANGE.Resources.Resource.FieldOperation_Discription</p>
+            <div class="row">
+                <!--SBU public administrator-->
+                <div id="index-FO-PA" class="TA-center col-lg-4 col-sm-12">
+                    <div style="margin-bottom:1em;">
+                        <img class="mybackground index-SBU-img" src="~/Content/Index/SBU-public-administration.png" />
+                    </div>
+                    <h4 class="index-SBU-header text-lower">@PTC_versionORANGE.Resources.Resource.Public_Administration</h4>
+                    <p class="text-gray index-SBU-p">
+                        @PTC_versionORANGE.Resources.Resource.PA_Discription
+                    </p>
+                    <button class="index-SBU-button text-orange" onclick="@("window.location.href='" + @Url.Action("Public_Aministration", "Home") + "'");">@PTC_versionORANGE.Resources.Resource.Readmore</button>
+
+                </div>
+                <!--SBU life sill-->
+                <div id="index-FO-LS" class="TA-center col-lg-4  col-sm-12">
+                    <div style="margin-bottom:1em;">
+                        <img class="mybackground index-SBU-img" src="~/Content/Index/sbu-life-skill.png" />
+                    </div>
+                    <h4 class="index-SBU-header text-lower">@PTC_versionORANGE.Resources.Resource.Life_Skills</h4>
+                    <p class="text-gray index-SBU-p">
+                        @PTC_versionORANGE.Resources.Resource.LS_Discription
+                    </p>
+                    <button class="index-SBU-button text-orange" onclick="@("window.location.href='" + @Url.Action("Life_Skill", "Home") + "'");">@PTC_versionORANGE.Resources.Resource.Readmore</button>
+                </div>
+
+                <!--SBU statitis-->
+                <div id="index-FO-ST" class="TA-center col-lg-4  col-sm-12">
+                    <div style="margin-bottom:1em;">
+                        <img class="mybackground index-SBU-img" src="~/Content/Index/SBU-statistics.png" />
+                    </div>
+                    <h4 class="index-SBU-header text-lower">@PTC_versionORANGE.Resources.Resource.Statistics</h4>
+                    <p class="text-gray index-SBU-p">
+
+                        @PTC_versionORANGE.Resources.Resource.ST_Discription_1 <br />
+                        @PTC_versionORANGE.Resources.Resource.ST_Discription_2 <br />
+                        @PTC_versionORANGE.Resources.Resource.ST_Discription_3
+
+                    </p>
+                    <button class="index-SBU-button text-orange" onclick="@("window.location.href='" + @Url.Action("Statistic", "Home") + "'");">@PTC_versionORANGE.Resources.Resource.Readmore</button>
+
+                </div>
+            </div>
+        </section>
+        <!--lasst new-->
+        <section id="index-last-new">
+            <h1 class="text-orange index-header">@PTC_versionORANGE.Resources.Resource.OurLastNew</h1>
+
+            <!--16/3/2018-->
+            <div class="row m-1em"  style="margin-top:2em;">
+                <div class="col-lg-6 col-md-6 TA-center">
+                    <img style="width:90%;height:auto;" src="~/Content/Index/ABC/2018-16-03/index-ABC16-3-2018-0.JPG" />
+                </div>
+                <div class="col-lg-6 col-md-6 TA-center">
+                    <h3 class="text-orange">Không khí lớp học kỹ năng cho trẻ mầm non sôi nổi và vui vẻ</h3>
+                    <p class="text-gray" style="padding:3% 10%;">
+                        Một chuyên đề trong 12 chuyên đề của khóa học kĩ năng sống cho trẻ mầm non. Chương trình đào tạo kĩ năng tại PTC đều thiết kế các chuyên đề hoàn toàn dưới dạng hoạt động thực tiễn, phù hợp với nhu cầu phát triển ngôn ngữ và biểu đạt hình thể của lứa tuổi mầm non. Với đội ngũ chuyên gia hiểu rõ tâm lý trẻ, giúp trẻ tiếp thu các kiến thức kĩ năng một cách tự nhiên trong không khí lớp học vui vẻ, sôi nổi để trẻ có thể mạnh dạn bộc lộ cá tính, bản sắc riêng để hoàn thiện nhân cách của bé trong tương lai.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-lg-6 m-1em TA-center">
+                    <iframe style="width:90%" height="300" src="https://www.youtube.com/embed/4Gu9LlgfdVY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                <div class="col-lg-6 m-1em TA-center">
+                    <iframe width="90%" height="300" src="https://www.youtube.com/embed/mmfapka-lQE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="owl-carousel owl-theme">
+                <div class="item"><img src="~/Content/Index/ABC/2018-16-03/index-ABC16-3-2018-2.JPG" /></div>
+                <div class="item"><img src="~/Content/Index/ABC/2018-16-03/index-ABC16-3-2018-3.JPG" /></div>
+                <div class="item"><img src="~/Content/Index/ABC/2018-16-03/index-ABC16-3-2018-4.JPG" /></div>
+                <div class="item"><img src="~/Content/Index/ABC/2018-16-03/index-ABC16-3-2018-6.JPG" /></div>
+                <div class="item"><img src="~/Content/Index/ABC/2018-16-03/index-ABC16-3-2018-5.JPG" /></div>
+                <div class="item"><img src="~/Content/Index/ABC/2018-16-03/index-ABC16-3-2018-7.JPG" /></div>
+                <div class="item"><img src="~/Content/Index/ABC/2018-16-03/index-ABC16-3-2018-8.JPG" /></div>
+                <div class="item"><img src="~/Content/Index/ABC/2018-16-03/index-ABC16-3-2018-9.JPG" /></div>
+                <div class="item"><img src="~/Content/Index/ABC/2018-16-03/index-ABC16-3-2018-10.JPG" /></div>
+                <div class="item"><img src="~/Content/Index/ABC/2018-16-03/index-ABC16-3-2018-11.JPG" /></div>
+                <div class="item"><img src="~/Content/Index/ABC/2018-16-03/index-ABC16-3-2018-12.JPG" /></div>
+
+            </div>
+    <div>
+        <div class="row" style="margin:3em 0;">
+            <div class="col-lg-6 col-sm-12 TA-center">
+                <img style="width:90%;border-radius:0.2em;" src="~/Content/Index/ABC/owl-carousel-003.jpg" />
+            </div>
+            <div class="col-lg-6 col-sm-12 TA-center">
+                <h2 class="text-orange">@PTC_versionORANGE.Resources.Resource.ABC_topic7Name</h2>
+                <h6 class="text-gray">@PTC_versionORANGE.Resources.Resource.ABC_Address</h6>
+            </div>
+        </div>
+        <div class="owl-carousel owl-theme">
+            <div class="item"><img src="~/Content/Index/ABC/owl-carousel-001.jpg" /></div>
+            <div class="item"><img src="~/Content/Index/ABC/owl-carousel-002.jpg" /></div>
+            <div class="item"><img src="~/Content/Index/ABC/owl-carousel-003.jpg" /></div>
+            <div class="item"><img src="~/Content/Index/ABC/owl-carousel-004.jpg" /></div>
+            <div class="item"><img src="~/Content/Index/ABC/owl-carousel-005.jpg" /></div>
+            <div class="item"><img src="~/Content/Index/ABC/owl-carousel-006.jpg" /></div>
+            <div class="item"><img src="~/Content/Index/ABC/owl-carousel-007.jpg" /></div>
+            <div class="item"><img src="~/Content/Index/ABC/owl-carousel-007.jpg" /></div>
+        </div>
+    </div>
+
+    <!--ptc 4th anniversary-->
+    <div>
+        <div class="row" style="margin:2em 0;">
+
+            <div class="col-lg-6 col-sm-12 TA-center">
+                <h2 class="text-orange">@PTC_versionORANGE.Resources.Resource.PTC4thAnniversary </h2>
+                <h6 class="text-gray">@PTC_versionORANGE.Resources.Resource.PTC4thDate</h6>
+                <p style="padding: 0 3em;" class="text-gray">
+                    @Html.Raw(PTC_versionORANGE.Resources.Resource.PTC4thDiscription)
+                </p>
+            </div>
+            <div class="col-lg-6 col-sm-12 TA-center">
+                <img style="width:90%;border-radius:0.2em;" src="~/Content/Index/4thAnni/4th-000.jpg" />
+            </div>
+        </div>
+        <div class="owl-carousel owl-theme">
+            <div class="item"><img src="~/Content/Index/4thAnni/4th-001.jpg" /></div>
+            <div class="item"><img src="~/Content/Index/4thAnni/4th-002.jpg" /></div>
+            <div class="item"><img src="~/Content/Index/4thAnni/4th-003.jpg" /></div>
+            <div class="item"><img src="~/Content/Index/4thAnni/4th-004.jpg" /></div>
+            <div class="item"><img src="~/Content/Index/4thAnni/4th-005.jpg" /></div>
+            <div class="item"><img src="~/Content/Index/4thAnni/4th-006.jpg" /></div>
+            <div class="item"><img src="~/Content/Index/4thAnni/4th-007.jpg" /></div>
+            <div class="item"><img src="~/Content/Index/4thAnni/4th-008.jpg" /></div>
+        </div>
+    </div>
+
+    <!--other lastnew-->
+    @*<div class="row TA-center">
+            <div class="col-lg-6 TA-center">
+                <img style="margin:1em 0;border-radius:0.7em; width:90%;" src="~/Content/Index/index-newfeed1.jpg" />
+                <h3 class=" text-gray">Communication skills for officers, government staffs class – 2017</h3>
+                <p><strong>Đak Lak</strong>, 24/07/2017</p>
+            </div>
+            <div class="col-lg-6 TA-center">
+                <img style="margin:1em 0;border-radius:0.7em; width:90%;" src="~/Content/Index/index-newfeed2.jpg" />
+                <h3 class=" text-gray">Leadership and Management skill, the 2<sup>nd</sup>  season – 2017</h3>
+                <p><strong>Kien Giang</strong>, 22/05/2017</p>
+            </div>
+        </div>*@
+    </section>
+
+    <!--our client-->
+    <section>
+        <h1 style="margin-bottom:2em;" class="text-orange index-header">@PTC_versionORANGE.Resources.Resource.OurClient</h1>
+
+        <div class="row">
+            <div class="offset-1 offset-lg-1 col-lg-2 offset-sm-1 col-sm-2 col-md-2 col-2">
+                <a title="Blue Dimond Hotel(Sai Gon)" target="_blank" href="http://bluediamondhotel.com.vn/"><img class="index-our-client" src="~/Content/Index/logo-buedimond.gif" /></a>
+            </div>
+            <div class="col-lg-2 col-sm-2  col-md-2 col-2">
+                <a title="Phu Yen Electronic Joint Stock Company" target="_blank" href="https://pcphuyen.cpc.vn/"><img class="index-our-client" src="~/Content/Index/logo-EVN.png" /></a>
+            </div>
+            <div class="col-lg-2 col-sm-2  col-md-2 col-2">
+                <a title="" target="_blank" href="http://xskt.com.vn/"><img class="index-our-client" src="~/Content/Index/logo-dalat.jpg" /></a>
+            </div>
+            <div class="col-lg-2 col-sm-2  col-md-2 col-2">
+                <a title="SAVICO Joint Stock Company" target="_blank" href="http://savico.com.vn/trang-chu.html"><img class="index-our-client" src="~/Content/Index/logo-savico.jpg" /></a>
+            </div>
+            <div class="col-lg-2 col-sm-2  col-md-2 col-2">
+                <a title="Ngoc Suong Joint Stock Company" target="_blank" href="https://www.foody.vn/ho-chi-minh/ngoc-suong-ben-thuyen-nguyen-van-troi"> <img class="index-our-client" src="~/Content/Index/logo-NgocSuong.png" /></a>
+            </div>
+        </div>
+    </section>
+    <!--poential and operating-->
+    <section>
+        <h1 class="text-orange index-header">@PTC_versionORANGE.Resources.Resource.Potential_Network</h1>
+        <p style="text-align:center; margin-bottom:4em;" class="text-gray" xml:space="preserve">
+                @PTC_versionORANGE.Resources.Resource.Potential_Network_Discription_1 <br />
+
+                @PTC_versionORANGE.Resources.Resource.Potential_Network_Discription_2
+            </p>
+        <div class="row">
+            <div class="col-lg-6">
+                <img style="width:90%; border-radius:0.5em;" src="~/Content/Index/index-Potential.jpg" />
+            </div>
+            <div class="col-lg-6" style="">
+                <h1 style="font-size:300%;" class="text-orange">
+                    <small class="text-gray">@PTC_versionORANGE.Resources.Resource.Over</small>
+                    <strong>25</strong>
+                    <small class="text-gray">@PTC_versionORANGE.Resources.Resource.Companies</small>
+                </h1>
+                <p class="text-gray">
+                    @PTC_versionORANGE.Resources.Resource.Over25company_Discription
+                </p>
+                <h1 style="font-size:300%;" class="text-gray">
+                    <small>@PTC_versionORANGE.Resources.Resource.With </small>
+                    <strong class="text-orange">10</strong>
+                    <small>@PTC_versionORANGE.Resources.Resource.YearExperience</small>
+                </h1>
+                <p class="text-gray">
+                    @PTC_versionORANGE.Resources.Resource.With10years
+                </p>
+                <h1 style="font-size:300%;" class="text-orange">
+                    <small class="text-gray">@PTC_versionORANGE.Resources.Resource.Over</small>
+                    <strong>250</strong>
+                    <small class="text-gray">@PTC_versionORANGE.Resources.Resource.Teacher</small>
+                </h1>
+                <p class="text-gray">
+                    @PTC_versionORANGE.Resources.Resource.Over250teacher
+                </p>
+            </div>
+        </div>
+    </section>
+    <!--Message from chair main-->
+    <section>
+        <div id="index-letter" style="margin-bottom:2em;">
+            <h1 class="text-orange index-header">@PTC_versionORANGE.Resources.Resource.Letter_Header</h1>
+            <p class="text-gray" style="margin:0 10%;">
+                @PTC_versionORANGE.Resources.Resource.Letter_p1<br />
+                @PTC_versionORANGE.Resources.Resource.Letter_p2
+                <br /><br />
+                @PTC_versionORANGE.Resources.Resource.Letter_p3
+                <br /><br />
+                @PTC_versionORANGE.Resources.Resource.Letter_p4
+                <br /><br />
+                @PTC_versionORANGE.Resources.Resource.Letter_p5
+                <br /><br />
+                @PTC_versionORANGE.Resources.Resource.Letter_p6
+                <br /> <br />
+
+                @PTC_versionORANGE.Resources.Resource.Letter_p7 <br />
+                @PTC_versionORANGE.Resources.Resource.Letter_p8<br />
+                @PTC_versionORANGE.Resources.Resource.Letter_p9<br />
+            </p>
+        </div>
+    </section>
+    </div>
+
+    <footer class="mybackground text-white">
+        <div class="row">
+            <div class="col-lg-4" style="padding-top:2em;padding-left:2em;">
+                <p>&copy; @PTC_versionORANGE.Resources.Resource.Footer_CopyRight</p>
+                <p>PTC Investment and Education JSC</p>
+
+            </div>
+            <div class="col-lg-4" style="text-align:center;padding-top:2em;">
+                <a class="text-white" href="~/Home/Public_Aministration">@PTC_versionORANGE.Resources.Resource.Public_Administration</a><br />
+                <a class="text-white" href="~/Home/Life_Skill">@PTC_versionORANGE.Resources.Resource.Life_Skills</a><br />
+                <a class="text-white" href="~/Home/Statistic">@PTC_versionORANGE.Resources.Resource.Statistics</a>
+                <br />
+                <br />
+                <button class="index-intro-button" onclick="@("window.location.href='" + @Url.Action("Contact", "Home") + "'");">
+                    @PTC_versionORANGE.Resources.Resource.menuContact
+                </button>
+            </div>
+            <div style="padding:1em;" class="col-lg-4">
+                <div>
+                    <img src="~/Content/footer-location.png" />
+                    @PTC_versionORANGE.Resources.Resource.Footer_FirstFloor<br />
+
+                    <p style="padding-left:2.3em;">  @PTC_versionORANGE.Resources.Resource.Footer_Street<br /></p>
+                    <p style="padding-left:2.3em;">   @PTC_versionORANGE.Resources.Resource.Footer_City</p>
+                </div>
+                <div style="margin-top:1em;">
+                    <img src="~/Content/footer-email.png" />
+                    ceo.ptcvn@gmail.com
+                </div>
+                <div style="margin-top:1em;">
+                    <img src="~/Content/footer-phone.png" />
+                    (028) 222 02 084
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/owl-carousel")
+</body>
+
+</html>

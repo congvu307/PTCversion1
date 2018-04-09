@@ -1,0 +1,1184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ABC_Address" xml:space="preserve">
+    <value>quận 9, TP.HCM</value>
+  </data>
+  <data name="ABC_topic7Name" xml:space="preserve">
+    <value>Chuyên đề Phân biệt Sở thích và dinh dưỡng tại trường Mầm Non ABC </value>
+  </data>
+  <data name="FieldOperation" xml:space="preserve">
+    <value>Các Viện</value>
+  </data>
+  <data name="FieldOperation_Discription" xml:space="preserve">
+    <value>Để quản lý một hệ thống ổn định, chúng tôi chia thành 3 viện</value>
+  </data>
+  <data name="LetUs" xml:space="preserve">
+    <value>Kỹ năng sống PTC luôn bên bạn trên con đường thành công</value>
+  </data>
+  <data name="Life_Skills" xml:space="preserve">
+    <value>Viện Kỹ năng sống</value>
+  </data>
+  <data name="LS_Discription" xml:space="preserve">
+    <value>Giáo dục và đào tạo kỹ
+năng sống, kỹ năng
+mềm và hướng nghiệp
+cho trẻ em mầm non,
+học sinh cấp 1,2,3 và
+sinh viên đại học.</value>
+  </data>
+  <data name="menuAbout" xml:space="preserve">
+    <value>Về chúng tôi</value>
+  </data>
+  <data name="menuContact" xml:space="preserve">
+    <value>Liên hệ</value>
+  </data>
+  <data name="menuHome" xml:space="preserve">
+    <value>Trang chủ</value>
+  </data>
+  <data name="OurClient" xml:space="preserve">
+    <value>Các đối tác của chúng tôi</value>
+  </data>
+  <data name="OurLastNew" xml:space="preserve">
+    <value>Tin tức và sự kiện mới</value>
+  </data>
+  <data name="PA_Discription" xml:space="preserve">
+    <value>Tư vấn và đào tạo kỹ năng
+mềm cho các cán bộ, công
+chức viên chức nhà nước và
+các nhân sự nguồn tại các
+Doanh nghiệp trong và
+ngoài nước.</value>
+  </data>
+  <data name="Potential_Network" xml:space="preserve">
+    <value>Tiềm lực và mạng lưới hoạt động</value>
+  </data>
+  <data name="Potential_Network_Discription_1" xml:space="preserve">
+    <value>Đội ngũ chuyên gia chất lượng được tuyển chọn kỹ lưỡng và có
+trình độ sư phạm cũng như kinh nghiệm thực tế cho từng lĩnh vực
+cụ thể. 
+</value>
+  </data>
+  <data name="PTC4thAnniversary" xml:space="preserve">
+    <value>Kỷ niệm 4 năm thành lập PTC</value>
+  </data>
+  <data name="PTC4thDate" xml:space="preserve">
+    <value>10/1/2014 - 10/1/2018</value>
+  </data>
+  <data name="PTC4thDiscription" xml:space="preserve">
+    <value>PTC chúng tôi khác biệt chính nhờ sự khác biệt "đáng yêu" của mỗi thành viên, mỗi đối tác, mỗi khách hàng của PTC. 
+Cảm ơn sự ủng hộ và đồng hành của Quý vị trong những năm vừa qua và cả những năm tiếp theo!
+Cảm ơn Quý khách mời đã đến và chia sẻ ngày vui này của PTC!
+
+Cảm ơn các thành viên của PTC, nụ cười trên môi của các bạn đã làm cho nhiều người sẽ biết đến PTC - HAPPY HOUSE &amp; HAPPY JOB - Một nơi mà các bạn đã thuộc về! 
+Mong rằng sự cam kết của PTC chúng tôi mãi là chỗ dựa vững vàng nhất để Quý vị đặt niềm tin!
+Trân trọng,</value>
+  </data>
+  <data name="PTCname" xml:space="preserve">
+    <value>CÔNG TY CỔ PHẦN
+ĐẦU TƯ VÀ GIÁO DỤC </value>
+  </data>
+  <data name="Public_Administration" xml:space="preserve">
+    <value>Viện Hành chính công</value>
+  </data>
+  <data name="Readmore" xml:space="preserve">
+    <value>Xem thêm</value>
+  </data>
+  <data name="Statistics" xml:space="preserve">
+    <value>Viện Thống kê ứng dụng</value>
+  </data>
+  <data name="ST_Discription_1" xml:space="preserve">
+    <value>Tìm tòi lĩnh vực nghiên cứu mới.</value>
+  </data>
+  <data name="Companies" xml:space="preserve">
+    <value>Doanh nghiệp</value>
+  </data>
+  <data name="LastNew" xml:space="preserve">
+    <value>Tin mới</value>
+  </data>
+  <data name="Over" xml:space="preserve">
+    <value>Trên</value>
+  </data>
+  <data name="Over250teacher" xml:space="preserve">
+    <value>Đội ngũ chuyên gia chất lượng được tuyển chọn kỹ lưỡng và có
+trình độ sư phạm cũng như kinh nghiệm thực tế cho từng lĩnh vực
+cụ thể.</value>
+  </data>
+  <data name="Over25company_Discription" xml:space="preserve">
+    <value>Trên 25 doanh nghiệp trong – ngoài nước được tư vấn, đào
+tạo.</value>
+  </data>
+  <data name="Potential_Network_Discription_2" xml:space="preserve">
+    <value>Nhà quản lý, khoa học, bác sỹ có kinh nghiệm, uy tín và trình độ
+chuyên môn phù hợp với nội dung chương trình, tài liệu.</value>
+  </data>
+  <data name="ST_Discription_2" xml:space="preserve">
+    <value>Tiệm cận phương pháp nghiên cứu mới của thế giới. 
+</value>
+  </data>
+  <data name="ST_Discription_3" xml:space="preserve">
+    <value>Truyền tải kiến thức hàng lâm ứng dụng.</value>
+  </data>
+  <data name="Teacher" xml:space="preserve">
+    <value>chuyên gia, giảng viên.</value>
+  </data>
+  <data name="With" xml:space="preserve">
+    <value>Với</value>
+  </data>
+  <data name="With10years" xml:space="preserve">
+    <value>10 năm kinh nghiệm đào tạo trong – ngoài nước.</value>
+  </data>
+  <data name="YearExperience" xml:space="preserve">
+    <value>Năm kinh nghiệp</value>
+  </data>
+  <data name="About_100years_1" xml:space="preserve">
+    <value>Doanh nghiệp 100 năm</value>
+  </data>
+  <data name="About_100years_2" xml:space="preserve">
+    <value>Phương châm xây dựng và phát triển PTC là trở thành một doanh nghiệp bền vững, tồn tại trăm năm.</value>
+  </data>
+  <data name="About_100years_3" xml:space="preserve">
+    <value>Cùng góp sức xây dựng một đất nước, một tương lai văn minh, tiến bộ!</value>
+  </data>
+  <data name="About_Anymore" xml:space="preserve">
+    <value>Và còn nhiều Chuyên gia &amp; Giảng viên khác...</value>
+  </data>
+  <data name="About_AuXuanDon" xml:space="preserve">
+    <value>TS. Âu Xuân Đôn</value>
+  </data>
+  <data name="About_AuXuanDon_Discription" xml:space="preserve">
+    <value>Nguyên Phó Giám đốc sở Văn hóa, thể thao và du lịch An Giang. Hơn 30 năm công tác và giảng dạy trong lĩnh vực văn hóa, thể thao</value>
+  </data>
+  <data name="About_BuiHongQuan" xml:space="preserve">
+    <value>TS. Bùi Hồng Quân</value>
+  </data>
+  <data name="About_BuiHongQuan_Discription" xml:space="preserve">
+    <value>Phó Trưởng phòng dạy nghề Sở Lao động thương binh và xã hội Tp.HCM. Hơn 15 năm công tác và giảng dạy trong lĩnh vực tâm lý học ứng dụng, kỹ năng mềm</value>
+  </data>
+  <data name="About_CaoMinhNhut" xml:space="preserve">
+    <value>ThS. Cao Minh Nhựt</value>
+  </data>
+  <data name="About_CaoMinhNhut_Discription" xml:space="preserve">
+    <value>Giảng viên khoa Marketing, Thương mại du lịch, Đại học Tài chính-Marketing. Hơn 20 năm công tác và giảng dạy trong lĩnh vực quản trị marketing, hành vi khách hàng, hành vi tổ chức.</value>
+  </data>
+  <data name="About_ChauDinhLinh" xml:space="preserve">
+    <value>ThS. Châu Đình Linh</value>
+  </data>
+  <data name="About_ChauDinhLinh_Discription" xml:space="preserve">
+    <value>Giảng viên Khoa tài chính ngân hàng, Đại học Ngân hàng Tp.HCM. Hơn 15 năm công tác và giảng dạy trong lĩnh vực tài chính ngân hàng, rủi ro hệ thống, quản trị danh mục tín dụng chủ động.</value>
+  </data>
+  <data name="About_CoreValue" xml:space="preserve">
+    <value>Giá trị cốt lõi</value>
+  </data>
+  <data name="About_CoreValue_Discription_1" xml:space="preserve">
+    <value>Tâm sáng, trí minh</value>
+  </data>
+  <data name="About_CoreValue_Discription_2" xml:space="preserve">
+    <value>Tư duy khác biệt</value>
+  </data>
+  <data name="About_CoreValue_Discription_3" xml:space="preserve">
+    <value>Hoàn thiện giá trị nhân cách</value>
+  </data>
+  <data name="About_CoreValue_Discription_4" xml:space="preserve">
+    <value>Theo đuổi khát vọng đến tận cùng</value>
+  </data>
+  <data name="About_CuThiThanhHuyen" xml:space="preserve">
+    <value>ThS. Cù Thị Thanh Huyền</value>
+  </data>
+  <data name="About_CuThiThanhHuyen_Discription" xml:space="preserve">
+    <value>Giảng viên khoa báo chí Trường Cao đẳng phát thanh truyền hình II Tp.HCM. Hơn 20 năm công tác và giảng dạy trong lĩnh vực truyền thông, báo chí và tâm lý học ứng dụng.</value>
+  </data>
+  <data name="About_Deliverer" xml:space="preserve">
+    <value>Báo cáo viên</value>
+  </data>
+  <data name="About_DevelopmentOrientation" xml:space="preserve">
+    <value>Định hướng phát triển</value>
+  </data>
+  <data name="About_DevelopmentOrientation_Discription" xml:space="preserve">
+    <value>Định hướng phát triển trong tương lai của PTC  là tập trung xây dựng và phát triển Kỹ năng sống; Hướng nghiệp – Dạy nghề; Tư vấn cấu trúc và chiến lược phát triển Doanh nghiệp; Giáo dục, đào tạo Đại học chuyên biệt trên phạm vi cả nước và vươn ra khu vực lân cận.</value>
+  </data>
+  <data name="About_Development_1" xml:space="preserve">
+    <value>Nhằm bắt nhịp cùng xu hướng phát triển của thế giới, Việt Nam đã và đang nỗ lực ứng dụng Khoa học – Kỹ thuật vào mọi lĩnh vực Kinh tế - Xã hội.</value>
+  </data>
+  <data name="About_Development_2" xml:space="preserve">
+    <value>Tuy nhiên, quá trình này gặp nhiều thách thức về năng lực, kỹ năng và hệ thống quản lý, nhận ra điều này, Tổng công ty Đầu tư và Giáo dục – PTC ra đời như một sự kết nối hài hòa giữa hệ thống chính sách với năng lực quản lý và cung ứng dịch vụ của mạng lưới nhân sự nhà nước.</value>
+  </data>
+  <data name="About_Development_3" xml:space="preserve">
+    <value>Cùng với những thành quả đạt được sau 10 năm hoạt động, PTC củng cố sứ mệnh của mình thông qua việc phát triển con người toàn diện song song với hệ thống giáo dục chính quy trong nhà trường, chính vì thế Viện Kỹ Năng Sống được thành lập.</value>
+  </data>
+  <data name="About_Development_4" xml:space="preserve">
+    <value>Với tầm nhìn về giá trị đạo đức và năng lực con người, Viện Kỹ Năng Sống được thiết kế chương trình đào tạo từ giai đoạn tiền hôn nhân, đến trẻ độ tuổi mầm non và tiếp tục qua các độ tuổi khác nhau đến khi định hình một cá thể trưởng thành.</value>
+  </data>
+  <data name="About_Development_5" xml:space="preserve">
+    <value>Với phương châm phát triển dựa trên nền tảng khoa học, PTC hình thành Viện Thống Kê - Ứng Dụng nhằm cập nhật, ứng dụng và phát triển các phương pháp nghiên cứu trên thế giới.</value>
+  </data>
+  <data name="About_Development_6" xml:space="preserve">
+    <value>Viện Thống kê - Ứng dụng được xem là khung sườn hướng đến sự hoàn thiện của PTC, đặc biệt là góp phần đào tạo nâng cao năng lực nghiên cứu cho những người làm trong lĩnh vực khoa học ứng dụng, tầng lớp tri thức và những ai quan tâm đến việc sử dụng dữ liệu trong việc ra quyết định hoặc xây dựng chiến lược phát triển.</value>
+  </data>
+  <data name="About_DinhVietHoa" xml:space="preserve">
+    <value>TS. Đinh Việt Hòa</value>
+  </data>
+  <data name="About_DinhVietHoa_Discription" xml:space="preserve">
+    <value>Giảng viên Học viện Quản lý và Lãnh đạo Châu Á – Thái Bình Dương (PAILEMA). Hơn 20 năm công tác và giảng dạy trong lĩnh vực kỹ năng lãnh đạo, mô hình tập đoàn, Triết học và khởi nghiệp</value>
+  </data>
+  <data name="About_DuongAnhSon" xml:space="preserve">
+    <value>PGS.TS Dương Anh Sơn</value>
+  </data>
+  <data name="About_DuongAnhSon_Discription" xml:space="preserve">
+    <value>Trưởng Khoa luật kinh tế, Trưởng bộ môn Luật thương mại Quốc Tế đại học Kinh tế - Luật. Hơn 25 năm công tác và giảng dạy trong lĩnh vực luật dân sự, luật thương mại quốc tế và luật hợp đồng.</value>
+  </data>
+  <data name="About_Expert" xml:space="preserve">
+    <value>Chuyên gia</value>
+  </data>
+  <data name="About_GrowupDate_1" xml:space="preserve">
+    <value>30/12/2016</value>
+  </data>
+  <data name="About_GrowupDate_2" xml:space="preserve">
+    <value>20/06/2016</value>
+  </data>
+  <data name="About_GrowupDate_3" xml:space="preserve">
+    <value>26/04/2016</value>
+  </data>
+  <data name="About_GrowupDate_4" xml:space="preserve">
+    <value>16/09/2015</value>
+  </data>
+  <data name="About_GrowupDate_5" xml:space="preserve">
+    <value>08/06/2015</value>
+  </data>
+  <data name="About_GrowupDate_6" xml:space="preserve">
+    <value>02/06/2014</value>
+  </data>
+  <data name="About_GrowupDate_7" xml:space="preserve">
+    <value>10/01/2014</value>
+  </data>
+  <data name="About_GrowupDate_8" xml:space="preserve">
+    <value>2004 – 2014</value>
+  </data>
+  <data name="About_GrowupDiscription_1" xml:space="preserve">
+    <value>PTC đổi địa chỉ về Tầng trệt, Tòa nhà Rosana, số 60 Nguyễn Đình Chiểu, P.Đa Kao, Quận 1, TP.HCM</value>
+  </data>
+  <data name="About_GrowupDiscription_2" xml:space="preserve">
+    <value>Công ty CP Đào tạo và Giáo dục PTC đổi tên thành Công ty CP Đầu tư và Giáo dục PTC</value>
+  </data>
+  <data name="About_GrowupDiscription_3" xml:space="preserve">
+    <value>Công ty CP Đào tạo và Giáo dục PTC thành lập chi nhánh</value>
+  </data>
+  <data name="About_GrowupDiscription_4" xml:space="preserve">
+    <value>PTC đăng ký kinh doanh với 32 nhóm ngành nghề</value>
+  </data>
+  <data name="About_GrowupDiscription_5" xml:space="preserve">
+    <value>Công ty CP Đào tạo và Giáo dục PTC thành lập VP đại diện tại Q7, TP.HCM</value>
+  </data>
+  <data name="About_GrowupDiscription_6" xml:space="preserve">
+    <value>PTC đăng ký kinh doanh với 29 nhóm ngành nghề</value>
+  </data>
+  <data name="About_GrowupDiscription_7" xml:space="preserve">
+    <value>Công ty Cổ phần Đào tạo và Giáo dục PTC thành lập</value>
+  </data>
+  <data name="About_GrowupDiscription_8" xml:space="preserve">
+    <value>Các lãnh đạo PTC ấp ủ ý tưởng và quá trình chuẩn bị kỹ càng lên đến 10 năm.</value>
+  </data>
+  <data name="About_HoangAnhTuan" xml:space="preserve">
+    <value>TS. Hoàng Anh Tuấn</value>
+  </data>
+  <data name="About_HoangAnhTuan_Discription" xml:space="preserve">
+    <value>Phó Tổng giám đốc công ty LD Cáp Taihan-Sacom, Giảng viên bộ môn tài chính kế toán Hiệp hội CFO Việt Nam. Hơn 15 năm hoạt động và giảng dạy trong lĩnh vực tài chính kế toán.</value>
+  </data>
+  <data name="About_HoThiSongQuynh" xml:space="preserve">
+    <value>TS. Hồ Thị Song Quỳnh</value>
+  </data>
+  <data name="About_HoThiSongQuynh_Discription" xml:space="preserve">
+    <value>Giảng viên khoa XHH &amp; Tâm lý LĐQL, Học viện Chính trị - Hành chính Khu vực II. Hơn 20 năm công tác và giảng dạy trong lĩnh vực Xã hội học và tâm lý LĐQL</value>
+  </data>
+  <data name="About_HuynhQuocAnh" xml:space="preserve">
+    <value>ThS. Huỳnh Quốc Anh</value>
+  </data>
+  <data name="About_HuynhQuocAnh_Discription" xml:space="preserve">
+    <value>Giảng viên khoa Quản trị kinh doanh, Đại học Bình Dương. Hơn 15 năm công tác và giảng dạy trong lĩnh vực quản trị kinh doanh, quan hệ kinh tế quốc tế.</value>
+  </data>
+  <data name="About_LaThiMai" xml:space="preserve">
+    <value>ThS. La Thị Mai</value>
+  </data>
+  <data name="About_LaThiMai_Discription" xml:space="preserve">
+    <value>Giảng viên khoa tài chính công, Học viện Hành chính Quốc gia, Cơ sở Tp.HCM. Hơn 15 năm hoạt động và giảng dạy trong lĩnh vực tài chính kế toán, tài chính tín dụng</value>
+  </data>
+  <data name="About_Lecture" xml:space="preserve">
+    <value>Giảng viên</value>
+  </data>
+  <data name="About_LeQuangCuong" xml:space="preserve">
+    <value>TS. Lê Quang Cường</value>
+  </data>
+  <data name="About_LeQuangCuong_Discription" xml:space="preserve">
+    <value>Trưởng bộ môn Thuế, Khoa tài chính công, Đại học kinh tế Tp.HCM. Hơn 15 năm công tác và giảng dạy trong lĩnh vực thuế, hoạch định thuế và phân tích chính sách thuế.</value>
+  </data>
+  <data name="About_LeThiTrucAnh" xml:space="preserve">
+    <value>TS. Lê Thị Trúc Anh</value>
+  </data>
+  <data name="About_LeThiTrucAnh_Discription" xml:space="preserve">
+    <value>Giảng viên bộ môn Văn hóa – Xã hội, trường Cán Bộ Tp.HCM. Hơn 20 năm công tác và giảng dạy trong lĩnh vực nghiệp vụ thư ký, văn hóa giao tiếp, văn hóa đô thị, văn hóa kinh doanh và văn hóa ứng dụng.</value>
+  </data>
+  <data name="About_LeTuanPhuoc" xml:space="preserve">
+    <value>TS. Lê Tấn Phước</value>
+  </data>
+  <data name="About_LeTuanPhuoc_Discription" xml:space="preserve">
+    <value>Giảng viên đại học Kinh tế Tp.HCM. Hơn 20 năm công tác và giảng dạy trong lĩnh vực nâng cao chất lượng tín dụng trong hoạt động ngân hàng, bất động sản, quản trị rủi ro.</value>
+  </data>
+  <data name="About_LeVanBay" xml:space="preserve">
+    <value>TS. Lê Văn Bảy</value>
+  </data>
+  <data name="About_LeVanBay_Discription" xml:space="preserve">
+    <value>Giảng viên trường Cán bộ quản lý thuộc VCCI (CBAM). Hơn 30 năm hoạt động và giảng dạy trong lĩnh vực soan thảo hợp đồng, thương mại quốc tế, đàm phán kinh doanh, logistics và chuỗi cung ứng.</value>
+  </data>
+  <data name="About_LeVuNam" xml:space="preserve">
+    <value>PGS.TS. Lê Vũ Nam</value>
+  </data>
+  <data name="About_LeVuNam_Discription" xml:space="preserve">
+    <value>Trưởng khoa Luật, Đại học Kinh tế - Luật. Hơn 30 năm công tác và giảng dạy trong lĩnh vực luật kinh tế, ngân hàng – chứng khoán, nghiên cứu và phát triển thị trường chứng khoán</value>
+  </data>
+  <data name="About_LuuVanPhu" xml:space="preserve">
+    <value>TS. Lưu Văn Phú</value>
+  </data>
+  <data name="About_LuuVanPhu_Discription" xml:space="preserve">
+    <value>Giảng viên cao cấp, Trưởng phòng đào tạo Học viện cán bộ Tp.HCM. Hơn 30 năm công tác và giảng dạy trong lĩnh vực quản lý và tổ chức nhân sự.</value>
+  </data>
+  <data name="About_Misson" xml:space="preserve">
+    <value>Sứ mạng</value>
+  </data>
+  <data name="About_Misson_Discription" xml:space="preserve">
+    <value>Mang đến nguồn năng lượng sống vô tận để khách hàng tự khám phá năng lực bản thân, tạo dựng bản sắc riêng biệt và theo đuổi đến tận cùng khát khao cuộc đời.</value>
+  </data>
+  <data name="About_NguyenChiMai" xml:space="preserve">
+    <value>ThS. Nguyễn Chi Mai</value>
+  </data>
+  <data name="About_NguyenChiMai_Discription" xml:space="preserve">
+    <value>Phó bộ môn tài chính công - Học viện Hành chính Quốc gia, Cơ sở Tp.HCM. Hơn 20 năm giảng dạy trong lĩnh vực tài chính kế toán, thuế giá trị gia tăng, tài chính tín dụng, lưu thông tiền tệ.</value>
+  </data>
+  <data name="About_NguyenDangPhuongTruyen" xml:space="preserve">
+    <value>ThS. Nguyễn Đặng Phương Truyền</value>
+  </data>
+  <data name="About_NguyenDangPhuongTruyen_Discription" xml:space="preserve">
+    <value>Giảng viên bộ môn văn bản và công nghệ hành chính, Học viện Hành chính quốc gia, cơ sở Tp.HCM. Hơn 10 năm công tác và giảng dạy trong lĩnh vực văn bản hành chính, công tác CCHC tại bộ phận 1 cửa, 1 cửa liên thông.</value>
+  </data>
+  <data name="About_NguyenDuyVinh" xml:space="preserve">
+    <value>Ông Nguyễn Duy Vĩnh</value>
+  </data>
+  <data name="About_NguyenDuyVinh_Discription" xml:space="preserve">
+    <value>Giảng viên Trường Trung cấp Văn thư lưu trữ. Hơn 15 năm công tác và giảng dạy trong lĩnh vực soạn thảo văn bản, chính lý và lưu trữ.</value>
+  </data>
+  <data name="About_NguyenHungThi" xml:space="preserve">
+    <value>Ông Nguyễn Hùng Thi</value>
+  </data>
+  <data name="About_NguyenHungThi_Discription" xml:space="preserve">
+    <value>Trưởng phòng tổ chức biên chế, Sở Nội Vụ tỉnh Đăk lăk. Hơn 20 năm công tác trong lĩnh vực Cải cách hành chính nhà nước, tổ chức biên chế.</value>
+  </data>
+  <data name="About_NguyenLyLai" xml:space="preserve">
+    <value>ThS. Nguyễn Ly Lai</value>
+  </data>
+  <data name="About_NguyenLyLai_Discription" xml:space="preserve">
+    <value>Chuyên sâu trong lĩnh vực công tác xã hội, quản lý/điều hành về CTXH, các nhóm, cá nhân, và hỗ trợ thực tiễn thực hành về CTXH; Giảng viên Đại học mở HCM; Tham gia và thực hiện nghiên cứu về khu vực làm việc xã hội.</value>
+  </data>
+  <data name="About_NguyenNgocToan" xml:space="preserve">
+    <value>ThS. Nguyễn Ngọc Toán</value>
+  </data>
+  <data name="About_NguyenNgocToan_Discription" xml:space="preserve">
+    <value>Giảng viên chính, Bộ môn Nhà nước &amp; Pháp luật, Học viện Hành chính Quốc Gia, Cơ sở Tp.HCM. Hơn 15 năm iảng dạy trong lĩnh vực nhà nước, pháp luật, quản lý nhà nước, hành chính tư pháp, thanh tra, giải quyết khiếu nại tố cáo.</value>
+  </data>
+  <data name="About_NguyenThiThanhHang" xml:space="preserve">
+    <value>ThS. Nguyễn Thị Thanh Hằng</value>
+  </data>
+  <data name="About_NguyenThiThanhHang_Discription" xml:space="preserve">
+    <value>Phó trưởng khoa Tâm lý học, Đại học Khoa học xã hội và nhân văn Tp.HCM. Hơn 25 năm công tác và giảng dạy trong lĩnh vực tâm lý học, tâm lý giáo dục.</value>
+  </data>
+  <data name="About_NguyenThiThuHuong" xml:space="preserve">
+    <value>TS. Nguyễn Thị Thu Hương</value>
+  </data>
+  <data name="About_NguyenThiThuHuong_Discription" xml:space="preserve">
+    <value>Giảng viên bộ môn quản lý ngân sách nhà nước, khoa Quản lý tài chính công, Học viện hậu cần – Bộ Quốc phòng. Hơn 15 năm công tác và giảng dạy trong lĩnh vực quản lý ngân sách, kỹ thuật thiết kế khung năng lực chương trình tập huấn.</value>
+  </data>
+  <data name="About_NguyenThiTuyetMai" xml:space="preserve">
+    <value>TS. Nguyễn Thị Tuyết Mai</value>
+  </data>
+  <data name="About_NguyenThiTuyetMai_Discription" xml:space="preserve">
+    <value>Giám đốc Trung tâm Giống Nông Nghiệp, sở Nông nghiệp và PTNT Vĩnh Long. Hơn 20 năm công tác và giảng dạy trong lĩnh vực chỉ dẫn địa lý giống cây trồng, kỹ năng mềm có liên quan.</value>
+  </data>
+  <data name="About_NguyenVanNhut" xml:space="preserve">
+    <value>TS. Nguyễn Văn Nhứt</value>
+  </data>
+  <data name="About_NguyenVanNhut_Discription" xml:space="preserve">
+    <value>Trưởng khoa quản lý hành chính nhà nước, Học viện cán bộ Tp,HCM. Hơn 30 năm công tác và giảng dạy trong lĩnh vực quản lý tổ chức hành chính nhà nước.</value>
+  </data>
+  <data name="About_NguyenVanTri" xml:space="preserve">
+    <value>ThS. Nguyễn Văn Trí</value>
+  </data>
+  <data name="About_NguyenVanTri_Discription" xml:space="preserve">
+    <value>Giảng viên khoa Luật Hành chính - Nhà nước, Đại học Luật Tp.HCM. Hơn 10 năm hoạt động trong lĩnh vực thanh tra, giải quyết tranh chấo, khiếu nại, tố cáo.</value>
+  </data>
+  <data name="About_OrganizationStructure" xml:space="preserve">
+    <value>Sơ đồ tổ chức</value>
+  </data>
+  <data name="About_PhamBinhAn" xml:space="preserve">
+    <value>ThS. Phạm Bình An</value>
+  </data>
+  <data name="About_PhamBinhAn_Discription" xml:space="preserve">
+    <value>Giám đốc Trung tâm hỗ trợ hội nhập WTO Tp.HCM. Hơn 30 năm công tác và giảng dạy trong lĩnh vực y, luật, quản lý kinh tế, tham mưu các chính sách và mô hình kinh tế/quản lý mới, công tác hội nhập kinh tế quốc tế.</value>
+  </data>
+  <data name="About_PhanHaiHo" xml:space="preserve">
+    <value>TS. Phan Hải Hồ</value>
+  </data>
+  <data name="About_PhanHaiHo_Discription" xml:space="preserve">
+    <value>Giảng viên khoa Luật, Học viện cán bộ Tp.HCM. Hơn 15 năm công tác và giảng dạy trong lĩnh vực tư pháp hộ tịch.</value>
+  </data>
+  <data name="About_PhanNgocTu" xml:space="preserve">
+    <value>ThS. Phan Ngọc Tú</value>
+  </data>
+  <data name="About_PhanNgocTu_Discription" xml:space="preserve">
+    <value>Phó Trưởng bộ môn tổ chức nhân sự, Học viện Hành chính Quốc gia, Cơ sở Tp.HCM. Hơn 25 năm công tác và giảng dạy trong lĩnh vực tổ chức nhân sự, văn hoá công sở, cải cách hành chính.</value>
+  </data>
+  <data name="About_PhanVanNhu" xml:space="preserve">
+    <value>ThS. Phan Văn Nhự</value>
+  </data>
+  <data name="About_PhanVanNhu_Discription" xml:space="preserve">
+    <value>Giảng viên Khoa tổ chức và Quản lý nhân sự, Học viện Hành chính Quốc gia, cơ sở Hà Nội. Hơn 25 năm công tác và giảng dạy trong lĩnh vực quản lý công, tổ chức và quản lý nhân sự.</value>
+  </data>
+  <data name="About_Specialists" xml:space="preserve">
+    <value>Danh sách nhân sự</value>
+  </data>
+  <data name="About_TaThiThanhTam" xml:space="preserve">
+    <value>TS. Tạ Thị Thanh Tâm</value>
+  </data>
+  <data name="About_TaThiThanhTam_Discription" xml:space="preserve">
+    <value>Phó trưởng phòng Quản lý khoa học, Học viện Hành chính Quốc Gia, Cơ sở Tp.HCM. Hơn 15 năm công tác và giảng dạy trong lĩnh vực khoa học và đào tạo, bồi dưỡng, xây dựng đội ngũ cán bộ nghiên cứu khoa học</value>
+  </data>
+  <data name="About_ToNhiA" xml:space="preserve">
+    <value>ThS. Tô Nhi A</value>
+  </data>
+  <data name="About_ToNhiA_Discription" xml:space="preserve">
+    <value>Giảng viên Trường Cao Đẳng Sư phạm Trung ương Tp.HCM. Hơn 15 năm công tác và giảng dạy trong lĩnh vực tâm lý học ứng dụng, giao tiếp truyền thông, kỹ năng thuyết trình và các kỹ năng mềm khác.</value>
+  </data>
+  <data name="About_TonThatHoangHai" xml:space="preserve">
+    <value>TS. Tôn Thất Hoàng Hải</value>
+  </data>
+  <data name="About_TonThatHoangHai_Discription" xml:space="preserve">
+    <value>Giảng viên đại học Công nghệ Sài Gòn. Hơn 15 năm công tác và giảng dạy trong lĩnh vực quản trị thương hiệu, quản trị chiến lược, chuyển giao công nghệ, quản trị chiêu thị.</value>
+  </data>
+  <data name="About_TranThiNga" xml:space="preserve">
+    <value>ThS. Trần Thị Ngà</value>
+  </data>
+  <data name="About_TranThiNga_Discription" xml:space="preserve">
+    <value>Giảng viên Khoa tổ chức nhân sự, Học viện Hành chính Quốc gia, Cơ sở Tp.HCM. Hơn 20 năm công tác và giảng dạy trong lĩnh vực Quản lý hành chính công, đạo đức công vụ và văn hoá công sở.</value>
+  </data>
+  <data name="About_TranThiThanhTra" xml:space="preserve">
+    <value>ThS. Trần Thị Thanh Trà</value>
+  </data>
+  <data name="About_TranThiThanhTra_Discription" xml:space="preserve">
+    <value>Giảng viên Khoa Xã Hội học, Công tác xã hội và Đông Nam Á học, Đại học Mở Tp.HCM. Hơn 15 năm công tác và giảng dạy trong lĩnh vực công tác xã hội, tư vấn tâm lý và các kỹ năng mềm, thực hiện chính sách trong DN.</value>
+  </data>
+  <data name="About_TrinhVietDung" xml:space="preserve">
+    <value>TS. Trịnh Việt Dũng</value>
+  </data>
+  <data name="About_TrinhVietDung_Discription" xml:space="preserve">
+    <value>Giảng viên Đại học Tôn Đức Thắng. Hơn 20 năm giảng dạy trong lĩnh vực quản trị kinh doanh, tài chính công, quản lý đô thị…</value>
+  </data>
+  <data name="About_TruongDinhTuyen" xml:space="preserve">
+    <value>TS. Trương Đình Tuyền</value>
+  </data>
+  <data name="About_TruongDinhTuyen_Discription" xml:space="preserve">
+    <value>Nguyên Bộ trưởng Bộ thương mại Việt Nam, Trưởng đoàn Đàm phán Chính phủ về kinh tế và thương mại quốc tế. Hơn 50 năm công tác và báo cáo trong lĩnh vực kinh tế và thương mại quốc tế.</value>
+  </data>
+  <data name="About_VanThiLoan" xml:space="preserve">
+    <value>TS. Văn Thị Loan</value>
+  </data>
+  <data name="About_VanThiLoan_Discription" xml:space="preserve">
+    <value>Giảng viên Đại học Kinh tế Tp.HCM. Hơn 25 năm công tác và giảng dạy trong lĩnh vực thống kê: nguyên lý thống kê, thống kê thương mại, thống kê doanh nghiệp, thống kê ứng dụng trong kinh doanh.</value>
+  </data>
+  <data name="About_Vison" xml:space="preserve">
+    <value>Tầm nhìn</value>
+  </data>
+  <data name="About_Vison_Discription" xml:space="preserve">
+    <value>“Trở thành một biểu tượng chuẩn mực về giáo dục và đào tạo tại Việt Nam. Góp phần định hình bản sắc duy nhất cho mỗi cá nhân, tổ chức và xã hội”.</value>
+  </data>
+  <data name="About_VoKimSon" xml:space="preserve">
+    <value>PGS.TS. Võ Kim Sơn</value>
+  </data>
+  <data name="About_VoKimSon_Discription" xml:space="preserve">
+    <value>Trưởng khoa tổ chức và quản lý nhân sự, Học viện hành chính Quốc gia, cơ sở Hà Nội. Hơn 25 năm công tác và giảng dạy trong lĩnh vực tổ chức hoạt động quản lý nhà nước, cải cách hành chính.</value>
+  </data>
+  <data name="About_VoThanhThu" xml:space="preserve">
+    <value>GS.TS. Võ Thanh Thu</value>
+  </data>
+  <data name="About_VoThanhThu_Discription" xml:space="preserve">
+    <value>Giảng viên cao cấp Đại học kinh tế Tp.HCM. Hơn 30 năm công tác và giảng dạy trong lĩnh vực quan hệ kinh tế, kinh doanh, đầu tư, thanh toán quốc tế.</value>
+  </data>
+  <data name="About_VoTrungTin" xml:space="preserve">
+    <value>ThS. Võ Trung Tín</value>
+  </data>
+  <data name="About_VoTrungTin_Discription" xml:space="preserve">
+    <value>Giảng viên khoa luật thương mại Đại học Luật Tp.HCM.  Hơn 15 năm công tác và giảng dạy trong lĩnh vực luật kinh tế và trọng tài.</value>
+  </data>
+  <data name="About_VuAnhPhap" xml:space="preserve">
+    <value>TS. Vũ Anh Pháp</value>
+  </data>
+  <data name="About_VuAnhPhap_Discription" xml:space="preserve">
+    <value>Phó Viện Trưởng Viện nghiên cứu và phát triển ĐBSCL. Đại học Cần Thơ. Hơn 25 năm công tác và giảng dạy trong lĩnh vực nghiên cứu khoa học cây lúa và ứng dụng Công nghệ sinh học trong nông nghiệp.</value>
+  </data>
+  <data name="About_VuVanHai" xml:space="preserve">
+    <value>ThS. Vũ Văn Hải</value>
+  </data>
+  <data name="About_VuVanHai_Discription" xml:space="preserve">
+    <value>Giảng viên Đại học Văn Lang. Hơn 20 năm công tác và giảng dạy trong lĩnh vực kinh doanh thương mại và dịch vụ.</value>
+  </data>
+  <data name="Letter_Header" xml:space="preserve">
+    <value>Thông điệp từ Chủ tịch hội đồng quản trị PTC</value>
+  </data>
+  <data name="Letter_p1" xml:space="preserve">
+    <value>Quý đối tác thân mến!</value>
+  </data>
+  <data name="Letter_p2" xml:space="preserve">
+    <value>Công ty Cổ phần Đầu tư và Giáo dục PTC trân trọng cảm ơn sự tin tưởng Quý đối tác trong việc phối hợp, hỗ trợ tổ chức các chương trình đào tạo, tổ chức sự kiện trong nhiều năm qua.</value>
+  </data>
+  <data name="Letter_p3" xml:space="preserve">
+    <value>Cùng với hơn 250 giảng viên, chuyên gia giàu kinh nghiệm của PTC – những người giỏi nhất, những người có kinh nghiệm thực tiễn nhất, những người đã vượt qua những thất bại để đến với thành công được nhiều nước công nhận – được tuyển chọn kỹ lưỡng, với có tâm sáng, trí minh và tư duy khác biệt. Công ty Cổ phần Đầu tư và Giáo Dục PTC đã cho ra đời nhiều nội dung chương trình đào tạo theo nhu cầu từng khách hàng; biên soạn tối ưu và cập nhật liên tục từ các quốc gia đi đầu trên thế giới trong lĩnh vực giáo dục kỹ năng, nghiệp vụ. Công ty Cổ phần Đầu tư và Giáo dục PTC - với sứ mệnh mang đến nguồn năng lượng sống vô tận để khách hàng tự khám phá năng lực bản thân, tạo dựng bản sắc riêng biệt và theo đuổi đến tận cùng khát khao cuộc đời – đã ngày càng đổi mới và hoàn thiện không ngừng trong tư vấn, giáo dục theo mô hình đào tạo thực tiễn tương tác hai chiều giữa Học viên – chuyên gia, quy trình đánh giá và đánh giá lại theo công nghệ khác biệt, khép kín.</value>
+  </data>
+  <data name="Letter_p4" xml:space="preserve">
+    <value>PTC chúng tôi rất hãnh diện - từ các chương trình tư vấn, đào tạo nghiệp vụ, kỹ năng này đã góp phần không nhỏ trong việc phát triển về tầm nhìn, về chiến lược các Đối tác, xây dựng được môi trường làm việc thuận lợi cho nhân viên, khả năng truyền đạt tầm nhìn Doanh nghiệp từ các lãnh đạo đó cho nhân viên một cách thuyết phục và tạo ra một môi trường làm việc thuận lợi cho nhân viên; củng cố niềm tin và lòng trung thành của đội ngũ nhân viên với tổ chức; giữ chân được người tài và sử dụng một cách tối ưu nguồn nhân lực của mình - đã mang lại nhiều thành công cho các đơn vị Hành chính sự nghiệp, các Doanh nghiệp trong và ngoài nước.</value>
+  </data>
+  <data name="Letter_p5" xml:space="preserve">
+    <value>PTC chúng tôi rất mong mỏi mãi luôn là những người bạn đường của Quý Đối tác không chỉ ở hiện tại, không chỉ khi thành công, mà còn là người đồng hành bất kỳ lúc nào của Quý Đối tác nhằm giúp Quý đối tác hoàn thành các dự định tốt đẹp trong tương lai trên con đường đi đến vinh quang của mình.</value>
+  </data>
+  <data name="Letter_p6" xml:space="preserve">
+    <value>Cuối cùng, với tất cả lòng nhiệt thành và quý mến, Đại diện Công ty Cổ phần Đầu tư và Giáo dục PTC chúc Quý đối tác luôn tràn đầy nhiệt huyết, hăng say trong công việc và gặt hái được thành công trong sự nghiệp!</value>
+  </data>
+  <data name="Letter_p7" xml:space="preserve">
+    <value>Trân trọng.</value>
+  </data>
+  <data name="Letter_p8" xml:space="preserve">
+    <value>Chủ tịch hội đồng quản trị</value>
+  </data>
+  <data name="Letter_p9" xml:space="preserve">
+    <value>Tiến sĩ Nguyễn Khánh Trung</value>
+  </data>
+  <data name="About_GrowthAndDevelopment" xml:space="preserve">
+    <value>Quá trình hình thành và phát triển</value>
+  </data>
+  <data name="Footer_City" xml:space="preserve">
+    <value>Phường DaKao, Quận 1 TP.HCM</value>
+  </data>
+  <data name="Footer_CopyRight" xml:space="preserve">
+    <value>Bản quyền thuộc về Công ty cổ phần đầu tư và giáo dục PTC</value>
+  </data>
+  <data name="Footer_FirstFloor" xml:space="preserve">
+    <value>Tầng trệt tòa nhà Rosana</value>
+  </data>
+  <data name="Footer_Street" xml:space="preserve">
+    <value>60, Nguyễn Đình Chiểu</value>
+  </data>
+  <data name="LS_Class1_Age" xml:space="preserve">
+    <value>(từ 3 đến 6  tuổi)</value>
+  </data>
+  <data name="LS_Class1_Customer" xml:space="preserve">
+    <value>Lứa tuổi mầm non (từ 3 đến 6 tuổi)</value>
+  </data>
+  <data name="LS_Class1_Lecture" xml:space="preserve">
+    <value>Đội ngũ bác sỹ chuyên khoa, chuyên gia tâm thần học, giảng viên ngành tâm lý, xã hội học</value>
+  </data>
+  <data name="LS_Class1_Message" xml:space="preserve">
+    <value>Làm thế nào để trẻ từ 03 đến 06 tuổi có thể chuyển các hoạt động thụ động tại trường thành kỹ năng sống thật sự trong cuộc sống nhằm hình thành được bản sắc riêng biệt, hoàn thiện nhân cách, đạo đức, lối sống là mục tiêu mà Viện KNS PTC hướng đến</value>
+  </data>
+  <data name="LS_Class1_Name" xml:space="preserve">
+    <value>Kỹ năng sống cho lứa tuổi mầm non</value>
+  </data>
+  <data name="LS_Class1_Target_1" xml:space="preserve">
+    <value>Giáo dục kỹ năng sống không chỉ trau dồi về các kỹ năng cần có cho cuộc sống của trẻ mà còn phải giúp trẻ hoàn thiện nhân cách, đạo đức, lối sống.</value>
+  </data>
+  <data name="LS_Class1_Target_2" xml:space="preserve">
+    <value>Để hình thành được nền tảng này, chương trình không chỉ đợi trẻ đi học mới áp dụng mà phải được thực hiện ngay từ khi trẻ chào đời và cha mẹ chính là những người thầy đầu tiên và quan trọng nhất để dạy trẻ những kỹ năng ấy.</value>
+  </data>
+  <data name="LS_Class1_Target_3" xml:space="preserve">
+    <value>Chắp cánh tương lai cho thế hệ trẻ Việt Nam - Giàu kiến thức - Hiểu Kỹ năng - Thấm nhuần nhân cách  và đạo đức làm người.</value>
+  </data>
+  <data name="LS_Class2_Age" xml:space="preserve">
+    <value>(từ 7 đến 12 tuổi)</value>
+  </data>
+  <data name="LS_Class2_Customer" xml:space="preserve">
+    <value>Lứa tuổi thiếu nhi (từ 07 đến 12 tuổi)</value>
+  </data>
+  <data name="LS_Class2_Message" xml:space="preserve">
+    <value>Trẻ ở độ tuổi 6 đến 12 thường có thay đổi gì về tâm lý lẫn thể chất? Khi bé bắt đầu vào lớp một - phương pháp học, cách thức học cũng thay đổi, hoạt động nhiều, hay tiếp xúc với môi trường bên ngoài và chuẩn bị bước vào tuổi dậy thì, Cha mẹ cần lưu tâm đặc biệt gì cho trẻ ở giai đoạn này?</value>
+  </data>
+  <data name="LS_Class2_Name" xml:space="preserve">
+    <value>Kỹ năng sống dành cho lứa tuổi thiếu nhi</value>
+  </data>
+  <data name="LS_Class2_Target_1" xml:space="preserve">
+    <value>-	Trang bị đầy đủ các kỹ năng phòng chống và hạn chế nạn bạo lực học đường</value>
+  </data>
+  <data name="LS_Class2_Target_2" xml:space="preserve">
+    <value>-	Biết cách xác lập mục tiêu cuộc sống</value>
+  </data>
+  <data name="LS_Class2_Target_3" xml:space="preserve">
+    <value>-	Thực hành các kỹ năng tập trung và phương pháp thi cử hiệu quả</value>
+  </data>
+  <data name="LS_Class3_Age" xml:space="preserve">
+    <value>(từ 13 đến 15 tuổi)</value>
+  </data>
+  <data name="LS_Class3_Customer" xml:space="preserve">
+    <value>Lứa tuổi vị thành niên (từ 13 đến 15 tuổi)</value>
+  </data>
+  <data name="LS_Class3_Message" xml:space="preserve">
+    <value>Ở lứa tuổi vị thành niên bắt đầu có những bộc lộ về cá tính và sở thích riêng, biết quan tâm tới các vấn đề xã hội xung quanh mình. Trẻ dần có những biểu hiện của người lớn và cảm thấy giữa mình và ba mẹ có những khác biệt. Trẻ có thể nói dối ba mẹ một số điều và trẻ không muốn quá dựa dẫm vào bố mẹ nữa. Vậy trẻ có phải là đứa trẻ hư hỏng? Cha mẹ cần lưu tâm đặc biệt gì về kỹ năng cho trẻ ở giai đoạn này?</value>
+  </data>
+  <data name="LS_Class3_Name" xml:space="preserve">
+    <value>Kỹ năng sống dành cho lứa tuổi vị thành niên</value>
+  </data>
+  <data name="LS_Class3_Target_1" xml:space="preserve">
+    <value>-	Trang bị đầy đủ các kỹ năng có liên quan đến quản trị tài chính cá nhân.</value>
+  </data>
+  <data name="LS_Class3_Target_2" xml:space="preserve">
+    <value>-	Bổ sung kiến thức Bình đẳng giới - Những hiểu biết về giới ở độ tuổi vị thành niên.</value>
+  </data>
+  <data name="LS_Class3_Target_3" xml:space="preserve">
+    <value>-	Hiểu về luật dân sự - những quyền hạn và trách nhiệm của tuổi vị thành niên.</value>
+  </data>
+  <data name="LS_Class4_Age" xml:space="preserve">
+    <value>(từ 16 đến 20 tuổi)</value>
+  </data>
+  <data name="LS_Class4_Customer" xml:space="preserve">
+    <value>Lứa tuổi thành niên (từ 16 đến 20 tuổi)</value>
+  </data>
+  <data name="LS_Class4_Message" xml:space="preserve">
+    <value>Ở độ tuổi từ 16 đến 20 có những thay đổi rõ rệt về mặt thể chất và tâm sinh lý, lúc này trẻ trở nên yếu đuối và dễ bị tổn thương nhất! Trẻ tự nhận thức rõ về bản thân mình hơn do đó không muốn bị coi là trẻ con, muốn khẳng định sự độc lập của mình với gia đình và bạn bè. Trẻ cũng muốn khẳng định mình, xóa bỏ đi hình ảnh “trẻ con” của mình để mang vào cái vỏ của người lớn. Cha mẹ cần lưu tâm đặc biệt gì về kỹ năng cho trẻ ở giai đoạn này?</value>
+  </data>
+  <data name="LS_Class4_Name" xml:space="preserve">
+    <value>Kỹ năng sống dành cho lứa tuổi thành niên</value>
+  </data>
+  <data name="LS_Class4_Target_1" xml:space="preserve">
+    <value>-	Trang bị các kỹ năng liên quan đến thuyết phục và đàm phán</value>
+  </data>
+  <data name="LS_Class4_Target_2" xml:space="preserve">
+    <value>-	Thực hành các kỹ năng quản lý thời gian hiệu quả.</value>
+  </data>
+  <data name="LS_Class4_Target_3" xml:space="preserve">
+    <value>-	Bổ sung Kỹ năng lãnh đạo bản thân và xây dựng hình ảnh cá nhân</value>
+  </data>
+  <data name="LS_Class5_Age" xml:space="preserve">
+    <value>(từ 18 tuổi trở lên)</value>
+  </data>
+  <data name="LS_Class5_Customer" xml:space="preserve">
+    <value>Lứa tuổi thanh niên (từ 18 tuổi trở lên).</value>
+  </data>
+  <data name="LS_Class5_Lecture" xml:space="preserve">
+    <value>Đội ngũ chuyên gia tư vấn cấu trúc doanh nghiệp, doanh nhân khởi nghiệp, giảng viên kinh tế</value>
+  </data>
+  <data name="LS_Class5_Message" xml:space="preserve">
+    <value>Trong cộng đồng khởi nghiệp, có biết bao nhiêu người bạn đã một thời cùng khởi nghiệp, cùng đi học, cùng máu lửa, cùng làm. Mỗi người một con đường, một lựa chọn riêng, nhưng tất cả đều quyết tâm khởi nghiệp. Nhưng, điều kỳ diệu và cũng là điều tuyệt vời nhất của khởi nghiệp là gì? Và làm sao để khởi nghiệp thành công?</value>
+  </data>
+  <data name="LS_Class5_Name" xml:space="preserve">
+    <value>Kỹ năng mềm và kiến thức khởi nghiệp cho lứa tuổi thanh niên</value>
+  </data>
+  <data name="LS_Class5_Target_1" xml:space="preserve">
+    <value>-	Trang bị đầy đủ kiến thức về kinh tế như kỹ năng lập chiến lược và kế hoạch sản xuất kinh doanh… để có thể phát triển một ý tưởng kinh doanh thành một dự án kinh doanh thực sự trong thực tế và mang tính khả thi cao.</value>
+  </data>
+  <data name="LS_Class5_Target_2" xml:space="preserve">
+    <value>-	Rèn luyện các kỹ năng cần thiết để xây dựng một kế hoạch kinh doanh chi tiết để có thể trình bày, giới thiệu với các nhà đầu tư tài chính và làm cơ sở để vận hành doanh nghiệp của cá nhân.</value>
+  </data>
+  <data name="LS_Class5_Target_3" xml:space="preserve">
+    <value>-	Thực hành thông qua các bài tập/ dự án thực tế để có thái độ làm việc chuyên nghiệp và khát khao thành công trong sự nghiệp.</value>
+  </data>
+  <data name="LS_Class6_Age" xml:space="preserve">
+    <value>Giảng viên nguồn mong muốn trở thành 1 giảng viên chuyên nghiệp</value>
+  </data>
+  <data name="LS_Class6_Customer" xml:space="preserve">
+    <value>Giảng viên nguồn của các trường hoặc những người khao khát trở thành giảng viên chuyên nghiệp trong lương lai</value>
+  </data>
+  <data name="LS_Class6_Lecture" xml:space="preserve">
+    <value>Đội ngũ chuyên gia đào tạo, đánh giá chất lượng, giáo sư, phó giáo sư, giảng viên đầu ngành, cao cấp</value>
+  </data>
+  <data name="LS_Class6_Message" xml:space="preserve">
+    <value>Một hệ thống giáo dục thành công là một hệ thống quan tâm nhiều hơn tới việc tìm ra đúng người muốn làm công việc này cả đời! Chẳng có bí quyết giáo dục nào hết. Cũng chẳng có công thức bí mật nào về việc giảng viên này đang làm đúng? còn giảng viên kia đang làm sai? Chỉ là chúng ta cố gắng thử những thứ mới mẻ và sáng tạo, trao quyền cho giáo viên nhiều hơn mà thôi! Nhìn người học để biết chất lượng giảng dạy</value>
+  </data>
+  <data name="LS_Class6_Name" xml:space="preserve">
+    <value>Kỹ năng và kiến thức dành cho giảng viên nguồn</value>
+  </data>
+  <data name="LS_Class6_Target_1" xml:space="preserve">
+    <value>Trang bị đầy đủ các kiến thức, kỹ năng và chương trình nghiên cứu sư phạm.</value>
+  </data>
+  <data name="LS_Class6_Target_2" xml:space="preserve">
+    <value>Thực tập giảng dạy tại các cơ sở riêng của các trường hoặc liên kết nhằm phát triển kỹ năng của các giáo viên tương lai với nhiều lớp, nhiều lứa tuổi học sinh ở các giai đoạn khác nhau.</value>
+  </data>
+  <data name="LS_Class6_Target_3" xml:space="preserve">
+    <value>Bổ sung kỹ năng và kiến thức dạy từng chuyên đề hoặc dạy nhiều chuyên đề có thể hoán chuyển công việc bằng cách chỉ bổ sung thêm các chứng chỉ còn thiếu chứ không cần học lại.</value>
+  </data>
+  <data name="LS_CouncilOfScience" xml:space="preserve">
+    <value>Hội đồng nghiên cứu của viện kỹ năng sống PTC</value>
+  </data>
+  <data name="LS_DoHongQuan" xml:space="preserve">
+    <value>ThS. Đỗ Hồng Quân</value>
+  </data>
+  <data name="LS_DoHongQuan_Discription" xml:space="preserve">
+    <value>Giảng viên Đại học Mở, Tp.HCM. Hơn 15 năm công tác và giảng dạy trong lĩnh vực xã hội học.</value>
+  </data>
+  <data name="LS_DuongVanThang" xml:space="preserve">
+    <value>TS. Dương Văn Thắng</value>
+  </data>
+  <data name="LS_DuongVanThang_Discription" xml:space="preserve">
+    <value>Giảng viên khoa Quản lý Giáo dục trường Đại học Giáo dục ĐHQG Hà Nội.</value>
+  </data>
+  <data name="LS_Function" xml:space="preserve">
+    <value>Chức năng của viện kỹ năng sống PTC</value>
+  </data>
+  <data name="LS_Function_Content" xml:space="preserve">
+    <value>Với phương châm xây dựng người Việt trưởng thành nhân cách, phát huy tối đa năng lực, đóng góp cho sự phát triển xã hội, chúng tôi cam kết nỗ lực huấn luyện và đồng hành cùng bạn qua từng giai đoạn phát triển</value>
+  </data>
+  <data name="LS_Function_Discription" xml:space="preserve">
+    <value>Đồng hành cùng bạn qua từng giai đoạn phát triển</value>
+  </data>
+  <data name="LS_Name" xml:space="preserve">
+    <value>Viện kỹ năng sống PTC</value>
+  </data>
+  <data name="LS_Number_1a" xml:space="preserve">
+    <value>Phát triển đội ngũ</value>
+  </data>
+  <data name="LS_Number_1b" xml:space="preserve">
+    <value>Giảng viên</value>
+  </data>
+  <data name="LS_Number_2a" xml:space="preserve">
+    <value>Giảng dạy cho hơn</value>
+  </data>
+  <data name="LS_Number_2b" xml:space="preserve">
+    <value>trường mầm non</value>
+  </data>
+  <data name="LS_Number_3a" xml:space="preserve">
+    <value>Tổ chức</value>
+  </data>
+  <data name="LS_Number_3b" xml:space="preserve">
+    <value>lớp Kỹ năng sống</value>
+  </data>
+  <data name="LS_Number_4a" xml:space="preserve">
+    <value>Đào tạo hơn</value>
+  </data>
+  <data name="LS_Number_4b" xml:space="preserve">
+    <value>học viên</value>
+  </data>
+  <data name="LS_PhamVanTru" xml:space="preserve">
+    <value>Bs. Phạm Văn Trụ</value>
+  </data>
+  <data name="LS_PhamVanTru_Discription" xml:space="preserve">
+    <value>Phó GĐ Bệnh viện Tâm thần Tp.HCM. Chuyên gia khoa Tâm thần và Tâm lý Y học.</value>
+  </data>
+  <data name="LS_Premarried_Customer" xml:space="preserve">
+    <value>Lứa tuổi thanh niên, các cặp đôi đang yêu nhau và có ý định kết hôn</value>
+  </data>
+  <data name="LS_Premarried_Discription" xml:space="preserve">
+    <value>Hạnh phúc gia đình là một trong những thách đố, cam go đối với các gia đình trẻ hiện nay.  Khuynh hướng muốn bứt phá mọi rào cản, chủ trương tự do tình dục đang làm rạn nứt đời sống hôn nhân gia đình. Kết quả khảo sát của PTC cho thấy, phần lớn các bạn trẻ đang yêu nhau hoặc sắp kết hôn chưa có thái độ đúng về tình yêu, chưa có ý thức trách nhiệm và hoàn toàn không có kiến thức về xây dựng đời sống hôn nhân trong tương lai…
+Vậy, làm thế nào để có tình yêu đích thực? Làm thế nào để có một hôn nhân bền vững? Và làm cách nào để “xây dựng tương lai” cho một gia đình trẻ?</value>
+  </data>
+  <data name="LS_Premarried_Lecture" xml:space="preserve">
+    <value>Đội ngũ bác sĩ chuyên khoa, chuyên gia tâm thần học, giảng viên ngành tâm lý, xã hội học.</value>
+  </data>
+  <data name="LS_Premarried_Name" xml:space="preserve">
+    <value>Kỹ năng sống và kiến thức Tiền hôn nhân</value>
+  </data>
+  <data name="LS_Premarried_Target_1" xml:space="preserve">
+    <value>Giúp các bạn trẻ có một chọn lựa khôn ngoan và một hướng đi đúng đắn trong đời sống hôn nhân gia đình.</value>
+  </data>
+  <data name="LS_Premarried_Target_2" xml:space="preserve">
+    <value>Hiểu những nội dung căn bản về tình yêu của giới trẻ, về tình yêu trong hôn nhân.</value>
+  </data>
+  <data name="LS_Premarried_Target_3" xml:space="preserve">
+    <value>Trách nhiệm làm cha làm mẹ và những điều hữu ích liên quan đến luân lý để xây dựng tương lai.</value>
+  </data>
+  <data name="LS_WalkWithYou" xml:space="preserve">
+    <value>PTC - Đồng hành cùng bạn qua từng giai đoạn phát triển</value>
+  </data>
+  <data name="PA_Class1_Customer" xml:space="preserve">
+    <value>Các nhà lãnh đạo, Doanh nhân hoặc những người khao khát trở thành nhà lãnh đạo trong tương lai</value>
+  </data>
+  <data name="PA_Class1_Message_1" xml:space="preserve">
+    <value>Thay đổi nền tảng hệ thống cơ bản và các hệ thống chức năng hiện có của doanh nghiệp để tạo ra mô hình hệ thống mới với các chức năng và đặc tính mới nhất, có khả năng cạnh tranh cao và hiệu quả tối ưu.       </value>
+  </data>
+  <data name="PA_Class1_Message_2" xml:space="preserve">
+    <value>Định hướng khách hàng và tập trung phát huy lợi thế của doanh nghiệp để mang lại giá trị gia tăng cho khách hàng nhằm phát triển doanh nghiệp bền vững.</value>
+  </data>
+  <data name="PA_Class1_Name" xml:space="preserve">
+    <value>Kỹ năng mềm và kiến thức lãnh đạo dành cho doanh nhân</value>
+  </data>
+  <data name="PA_Class1_Target_1" xml:space="preserve">
+    <value>Thiết lập được cơ cấu tổ chức và cơ chế điều hành phù hợp với định hướng phát triển và tái lập các quy trình kinh doanh theo định hướng khách hàng và hiệu quả.</value>
+  </data>
+  <data name="PA_Class1_Target_2" xml:space="preserve">
+    <value>Cải tiến các quá trình bằng thống kê (SPC) và các chỉ số kiểm soát quá trình (KPIs).</value>
+  </data>
+  <data name="PA_Class1_Target_3" xml:space="preserve">
+    <value>Xây dựng môi trường văn hoá cải tiến và thích nghi với sự thay đổi.</value>
+  </data>
+  <data name="PA_Class2_Customer" xml:space="preserve">
+    <value>Cán bộ, công chức viên chức nhà nước.</value>
+  </data>
+  <data name="PA_Class2_Message" xml:space="preserve">
+    <value>Làm thế nào để cải cách thể chế? Làm thế nào để xây dựng, nâng cao chất lượng đội ngũ cán bộ, công chức, viên chức, chú trọng cải cách chính sách tiền lương nhằm tạo động lực thực sự để cán bộ, công chức, viên chức thực thi công vụ có chất lượng và hiệu quả cao? Làm thế nào để nâng cao chất lượng dịch vụ hành chính và chất lượng dịch vụ công?</value>
+  </data>
+  <data name="PA_Class2_Name" xml:space="preserve">
+    <value>Kỹ năng mềm và Kiến thức Hành chính Nhà nước</value>
+  </data>
+  <data name="PA_Class2_Target_1" xml:space="preserve">
+    <value>Trang bị và cập nhật cho cán bộ, công chức viên chức những kiến thức chung về quản lý, lãnh đạo.</value>
+  </data>
+  <data name="PA_Class2_Target_2" xml:space="preserve">
+    <value>Đào tạo, bồi dưỡng và rèn luyện những kỹ năng mềm thiết yếu gắn với chức danh, yêu cầu vị trí việc làm của cán bộ, công chức viên chức các cấp.</value>
+  </data>
+  <data name="PA_Class2_Target_3" xml:space="preserve">
+    <value>Góp phần xây dựng hành vi và thái độ làm việc phù hợp của cán bộ, công chức viên chức các cấp.</value>
+  </data>
+  <data name="PA_CouncilOfScience" xml:space="preserve">
+    <value>Hội đồng khoa học viện nghiên cứu</value>
+  </data>
+  <data name="PA_Customer" xml:space="preserve">
+    <value>Đối tượng</value>
+  </data>
+  <data name="PA_DeputyDirectorOfInstitute" xml:space="preserve">
+    <value>Phó viện trưởng</value>
+  </data>
+  <data name="PA_DinhDuyHoa" xml:space="preserve">
+    <value>TS. Đinh Duy Hòa</value>
+  </data>
+  <data name="PA_DinhDuyHoa_Discription" xml:space="preserve">
+    <value>Nguyên Vụ Trưởng, Vụ Cải cách Hành chính, Bộ Nội Vụ. Hơn
+35 năm công tác và giảng dạy trong lĩnh vực Cải cách hành
+chính, xây dựng văn hoá công sở và đạo đức công vụ.</value>
+  </data>
+  <data name="PA_DirectorOfInstitute" xml:space="preserve">
+    <value>Viện trưởng</value>
+  </data>
+  <data name="PA_GroupOfExperts" xml:space="preserve">
+    <value>Đội ngũ chuyên gia</value>
+  </data>
+  <data name="PA_GroupOfExperts_Discription_1" xml:space="preserve">
+    <value>Báo cáo viên, cán bộ lãnh đạo cấp Bộ, sở ngành phù hợp với yêu cầu của khoá học.</value>
+  </data>
+  <data name="PA_GroupOfExperts_Discription_2" xml:space="preserve">
+    <value>Nhà hoạch định chính sách vĩ mô, các nhà quản trị - điều hành các tổ chức kinh tế, các viện nghiên cứu và các doanh nghiệp thành công trong và ngoài nước.</value>
+  </data>
+  <data name="PA_GroupOfExperts_Discription_3" xml:space="preserve">
+    <value>Nhà quản lý, khoa học có kinh nghiệm, uy tín và trình độ chuyên môn phù hợp với nội dung chương trình, tài liệu.</value>
+  </data>
+  <data name="PA_HuynhVanThong" xml:space="preserve">
+    <value>TS. Huỳnh Văn Thông</value>
+  </data>
+  <data name="PA_HuynhVanThong_Discription" xml:space="preserve">
+    <value>Trưởng khoa Báo chí truyển thông, Đại học KHXH &amp; Nhân
+văn. Hơn 20 năm công tác và giảng dạy trong lĩnh vực ngôn
+ngữ học, báo chí truyền thông, du lịch, ngôn ngữ hành
+chính, nghiệp vụ thư ký, kỹ năng giao tiếp.</value>
+  </data>
+  <data name="PA_Institute" xml:space="preserve">
+    <value>Đội ngũ nhân sự</value>
+  </data>
+  <data name="PA_LectureHaveJoined" xml:space="preserve">
+    <value>SỐ GIẢNG VIÊN ĐÃ TUYỂN DỤNG</value>
+  </data>
+  <data name="PA_LectureHaveJoined_Discription" xml:space="preserve">
+    <value>SỐ GIẢNG VIÊN ĐÃ TUYỂN DỤNG QUA CÁC NĂM (2014 - 2017)</value>
+  </data>
+  <data name="PA_LeMinhCong" xml:space="preserve">
+    <value>TS. Lê Minh Công</value>
+  </data>
+  <data name="PA_LeMinhCong_Discription" xml:space="preserve">
+    <value>Giảng viên Khoa tâm lý học, Trường KHXH và Nhân văn
+Tp.HCM. Hơn 10 năm công tác và giảng dạy trong lĩnh vực
+tâm lý, tâm thần học, sức khoẻ có liên quan đến vấn đề
+tâm thần.</value>
+  </data>
+  <data name="PA_Member" xml:space="preserve">
+    <value>Thành viên</value>
+  </data>
+  <data name="PA_Name" xml:space="preserve">
+    <value>Viện Hành chính công PTC</value>
+  </data>
+  <data name="PA_NgoThanhCan" xml:space="preserve">
+    <value>PGS. TS. Ngô Thành Can</value>
+  </data>
+  <data name="PA_NgoThanhCan_Discription" xml:space="preserve">
+    <value>Phó trưởng khoa tổ chức và quản lý nhân sự, Học viện Hành
+chính Quốc gia, Cơ sở Hà Nội. Hơn 30 năm công tác và giảng
+dạy trong lĩnh vực tổ chức, quản lý nhân sự, đạo đức công
+vụ, văn hoá công sở.</value>
+  </data>
+  <data name="PA_NguyenHongTin" xml:space="preserve">
+    <value>TS. Nguyễn Hồng Tín</value>
+  </data>
+  <data name="PA_NguyenHongTin_Discription" xml:space="preserve">
+    <value>Giảng viên Viện NC – Phát triển ĐBSCL (MDI) – Đại học Cần Thơ. Hơn 15 năm công tác và giảng dạy trong lĩnh vực Bảo tồn và Phát triển đa dạng sinh học cộng đồng ĐBSCL, thích ứng biến đổi khí hậu</value>
+  </data>
+  <data name="PA_NguyenKhanhTrung" xml:space="preserve">
+    <value>TS. Nguyễn Khánh Trung</value>
+  </data>
+  <data name="PA_NguyenKhanhTrung_Discription" xml:space="preserve">
+    <value>Giảng viên khoa quản trị kinh doanh, Đại học Kinh tế - Luật Tp.Hồ Chí Minh. Hơn 20 năm công tác và giảng dạy trong lĩnh vực tư vấn nhượng quyền thương mại, xây dựng chiến lược, vận hành và phát triển chuỗi hệ thống kinh doanh</value>
+  </data>
+  <data name="PA_NguyenThanhDung" xml:space="preserve">
+    <value>ThS. Nguyễn Thanh Dũng</value>
+  </data>
+  <data name="PA_NguyenThanhDung_Discription" xml:space="preserve">
+    <value>Trưởng bộ môn Quản trị - Vận tải, Trường CĐ Giao thông Vận tải III. Hơn 10 năm công tác và giảng dạy trong lĩnh vực quản lý giao thông vận tải, thanh tra kinh tế - xã hội.</value>
+  </data>
+  <data name="PA_NguyenVanBang" xml:space="preserve">
+    <value>NGƯT. TS. Nguyễn Văn Bảng</value>
+  </data>
+  <data name="PA_NguyenVanBang_Discription" xml:space="preserve">
+    <value>Giảng viên cao cấp Đại học Quốc Gia Tp.HCM. Hơn 40 năm
+công tác và giảng dạy trong lĩnh vực lý luận chính trị, các
+hoạt động xã hội đoàn thể.</value>
+  </data>
+  <data name="PA_NguyenVanThu" xml:space="preserve">
+    <value>PGS.TS. Nguyễn Văn Thủ</value>
+  </data>
+  <data name="PA_NguyenVanThu_Discription" xml:space="preserve">
+    <value>Giảng viên cao cấp khoa Tổ chức và nhân sự hành chính, Học viện Hành chính quốc gia, CS Tp.HCM. Hơn 30 năm công tác và giảng dạy trong lĩnh vực tổ chức cán bộ, đào tạo, bồi dưỡng cán bộ, công chức nhà nước, cải cách hành chính.</value>
+  </data>
+  <data name="PA_PhamVanChat" xml:space="preserve">
+    <value>TS. Phạm Văn Chắt</value>
+  </data>
+  <data name="PA_PhamVanChat_Discription" xml:space="preserve">
+    <value>Báo cáo viên - Bộ công thương VN. Hơn 40 năm công tác và
+giảng dạy trong lĩnh vực trọng tài viên Luật kinh tế quốc tế,
+Hội nhập kinh tế quốc tế.</value>
+  </data>
+  <data name="PA_ProviceHaveBeenContacted" xml:space="preserve">
+    <value>TỔNG SỐ TỈNH THÀNH ĐÃ TƯƠNG TÁC</value>
+  </data>
+  <data name="PA_ProviceHaveBeenContacted_Discription" xml:space="preserve">
+    <value>TỔNG SỐ TỈNH THÀNH ĐÃ TƯƠNG TÁC (đến năm 2017)</value>
+  </data>
+  <data name="PA_SomeActivities_Class1" xml:space="preserve">
+    <value>Lớp bồi dưỡng kỹ năng giao tiếp hành chính, nâng cao năng lực thực hiện cơ chế một nữa - năm 2017</value>
+  </data>
+  <data name="PA_SomeActivities_Class10" xml:space="preserve">
+    <value>Lớp bồi dưỡng nghiệp vụ cán bộ làm công tác văn hóa, thể thao cơ sở năm 2015</value>
+  </data>
+  <data name="PA_SomeActivities_Class11" xml:space="preserve">
+    <value>Khóa tập huấn xây dựng tầm nhìn, sữ mệnh, thương hiệu cá nhân và PR công chúng</value>
+  </data>
+  <data name="PA_SomeActivities_Class12" xml:space="preserve">
+    <value>Lớp tập huấn chuyên sâu kỹ năng giao tiếp, văn hóa công sở và đạo đức công vụ</value>
+  </data>
+  <data name="PA_SomeActivities_Class2" xml:space="preserve">
+    <value>Lớp bồi dưỡng kỹ năng tổng hợp, xây dựng kế hoạch đề án,báo cáo</value>
+  </data>
+  <data name="PA_SomeActivities_Class3" xml:space="preserve">
+    <value>Lớp bồi dưỡng lãnh đạo, quản lý cấp phòng khóa 2</value>
+  </data>
+  <data name="PA_SomeActivities_Class4" xml:space="preserve">
+    <value>Lớp bồi dưỡng lãnh đạo, quản lý cấp phòng khóa 3</value>
+  </data>
+  <data name="PA_SomeActivities_Class5" xml:space="preserve">
+    <value>Lớp bồi dưỡng Nghiệp vụ công tác dư luận xã hội</value>
+  </data>
+  <data name="PA_SomeActivities_Class6" xml:space="preserve">
+    <value>Lớp bồi dưỡng lãnh đạo, quản lý cấp phòng khóa 2</value>
+  </data>
+  <data name="PA_SomeActivities_Class7" xml:space="preserve">
+    <value>Lớp bồi dưỡng kỹ năng giao tiếp, văn hóa công sở và đạo đức công vụ</value>
+  </data>
+  <data name="PA_SomeActivities_Class8" xml:space="preserve">
+    <value>Lớp bồi dưỡng kỹ năng giao tiếp, văn hóa công sở và đạo đức công vụ</value>
+  </data>
+  <data name="PA_SomeActivities_Class9" xml:space="preserve">
+    <value>Lớp bồi dưỡng tham mưu đề xuất giải quyết công việc cho cán bộ công chức cấp xã</value>
+  </data>
+  <data name="PA_SomeActivities_Content" xml:space="preserve">
+    <value>Khóa học kỹ năng mềm cho cán bộ công nhân viên chức ở các tỉnh</value>
+  </data>
+  <data name="PA_SomeActivities_Header" xml:space="preserve">
+    <value>Một vài hoạt động tiêu biểu</value>
+  </data>
+  <data name="PA_StudentHaveJoined" xml:space="preserve">
+    <value>số học viên đã tham dự qua các năm</value>
+  </data>
+  <data name="PA_StudentHaveJoined_Discription" xml:space="preserve">
+    <value>SỐ HỌC VIÊN ĐÃ THAM DỰ QUA CÁC NĂM (2014 - 2017)</value>
+  </data>
+  <data name="PA_Target" xml:space="preserve">
+    <value>Mục tiêu</value>
+  </data>
+  <data name="PA_TrainingMethod" xml:space="preserve">
+    <value>Phương pháp huấn luyện</value>
+  </data>
+  <data name="PA_TrainingMethod_Discription_1" xml:space="preserve">
+    <value>Thảo luận nhóm, thảo luận với chuyên gia, động não (Brainstorming)</value>
+  </data>
+  <data name="PA_TrainingMethod_Discription_2" xml:space="preserve">
+    <value>Nghiên cứu tình huống (Case study)</value>
+  </data>
+  <data name="PA_TrainingMethod_Discription_3" xml:space="preserve">
+    <value>Bài tập tự đánh giá (Self-assesement)</value>
+  </data>
+  <data name="PA_TrainingMethod_Discription_4" xml:space="preserve">
+    <value>Thuyết trình, diễn thuyết ngắn (Mini-lecture)</value>
+  </data>
+  <data name="PA_TrainingMethod_Discription_5" xml:space="preserve">
+    <value>Bài tập các nhân/nhóm, thực hành đóng vai (Role play)</value>
+  </data>
+  <data name="PA_TrainingMethod_Discription_6" xml:space="preserve">
+    <value>Hoạt động trò chơi (Learning games)</value>
+  </data>
+  <data name="PA_TranLong" xml:space="preserve">
+    <value>TS. Trần Long</value>
+  </data>
+  <data name="PA_TranLong_Discription" xml:space="preserve">
+    <value>Trường bộ môn văn hóa VN, Đại học KHXH &amp; Nhân văn Tp.HCM. Hơn 20 năm công tác và giảng dạy trong lĩnh vực văn hóa, ngôn ngữ học, biên tập viên các Tạp chí khoa học chính trị.</value>
+  </data>
+  <data name="PA_WhyPTC" xml:space="preserve">
+    <value>Lý do lựa chọn PTC?</value>
+  </data>
+  <data name="PA_WhyPTC_Content_1" xml:space="preserve">
+    <value>Đơn vị có hơn 10 năm kinh nghiệm tư vấn và đào tạo trong – ngoài nước với mô hình đào tạo 2 chiều với sự tương tác Học viên – Chuyên gia – Thực tiễn</value>
+  </data>
+  <data name="PA_WhyPTC_Content_2" xml:space="preserve">
+    <value>Đội ngũ chuyên gia chất lượng được tuyển chọn kỹ lưỡng và có trình độ sư phạm cũng như kinh nghiệm thực tế cho từng dịch vụ cụ thể.</value>
+  </data>
+  <data name="PA_WhyPTC_Content_3" xml:space="preserve">
+    <value>Tài liệu được biên soạn tối ưu bởi các chuyên gia của Viện nghiên cứu hành chính công PTC – hàng đầu trong nhiều lĩnh vực và được cập nhật liên tục theo xu hướng mới.</value>
+  </data>
+  <data name="PA_WhyPTC_Ending" xml:space="preserve">
+    <value>Cho dù bạn bắt đầu tìm kiếm công việc đầu tiên hay đang trên đà phát triển sự nghiệp thì PTC sẽ cung cấp cho bạn những kiến thức và kỹ năng thực tế để hoàn thành công việc xuất sắc và chuyên nghiệp nhất. Linh hoạt, thực tiễn trong nội dung giảng dạy, bằng cấp PTC có giá trị và luôn được các nhà tuyển dụng hàng đầu tin tưởng.</value>
+  </data>
+  <data name="ST_Bussiness" xml:space="preserve">
+    <value>doanh nghiệp</value>
+  </data>
+  <data name="ST_CouncilOfScience" xml:space="preserve">
+    <value>Hội đồng nghiên cứu viện thống kê ứng dụng PTC</value>
+  </data>
+  <data name="ST_Discription" xml:space="preserve">
+    <value>Định hướng trong năm 2018, Viện Thống kê - Ứng dụng PTC tập trung xây dựng đội ngũ chuyên gia nòng cốt chất lượng và bao quát các lĩnh vực, mở rộng số lượng học viên và doanh nghiệp được tư vấn và đặc biệt là nghiên cứu các phương pháp  mới  khoa học và tiệm cận với thế giới. Qua đó, truyền tải các kiến thức hàn lâm ứng dụng.</value>
+  </data>
+  <data name="ST_Function" xml:space="preserve">
+    <value>Chức năng của viện thống kê ứng dụng PTC</value>
+  </data>
+  <data name="ST_LeMinhTruong" xml:space="preserve">
+    <value>ThS. Lê Minh Trường</value>
+  </data>
+  <data name="ST_LeMinhTruong_Discription" xml:space="preserve">
+    <value>Chuyên sâu trong lĩnh vực phân tích dữ liệu thống kê khoa Toán thống kê. Giảng dạy môn phân tích dữ liệu với phần mềm SPSS, AMOS, Tham gia thỉnh giảng các chương trình về nghiên cứu khoa học trong kinh doanh phân tích dữ liệu thuộc đối tác của Trung tâm phân tích dữ liệu khoa toán thống kê Đại học kinh tế Tp.HCM</value>
+  </data>
+  <data name="ST_Name" xml:space="preserve">
+    <value>Viện Thống kê ứng dụng PTC</value>
+  </data>
+  <data name="ST_ScientificPapers" xml:space="preserve">
+    <value>bài viết</value>
+  </data>
+</root>

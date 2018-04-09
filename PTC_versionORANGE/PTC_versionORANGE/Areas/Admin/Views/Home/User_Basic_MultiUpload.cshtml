@@ -1,0 +1,43 @@
+﻿@{
+    ViewBag.Title = "UploadFile";
+}
+<div id="MyPartialViewUserBasicUpload">
+    <h2>Cập nhật hàng loạt</h2>
+
+    <form id="UserBasicMultiUploadForm" enctype="multipart/form-data">
+
+
+        <input name="file" type="file" /> <br />
+
+        <input type="submit" value="Tải lên" />
+
+        @ViewBag.Message
+        @if ((ViewBag.ErrorFileName != "") && (ViewBag.ErrorFileName != null))
+        {
+            <div>
+                @Html.ActionLink("Download", "UserBasic_Download", "Home", new { filename = ViewBag.ErrorFileName }, null)
+            </div>
+
+        }
+
+    </form>
+
+    @Html.ActionLink("Download template", "UserBasic_Download", "Home", new { filename = "UserBasic_Template.xlsx" }, null)
+</div>
+<script type="text/javascript">
+    $('#UserBasicMultiUploadForm').on('submit', function (e) {
+        e.preventDefault();
+        var formData = new FormData($(this)[0]);
+        $.ajax({
+            type: 'POST',
+            url: 'Admin/Home/User_Basic_MultiUpload',
+            data: formData,
+            cache: false,
+            contentType: false,
+            processData: false,
+            success: function (data) {
+                $('#MyPartialViewUserBasicUpload').html(data);
+            }
+        });
+    });
+</script>

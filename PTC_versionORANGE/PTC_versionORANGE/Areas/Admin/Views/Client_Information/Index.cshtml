@@ -1,0 +1,172 @@
+﻿@model IEnumerable<PTC_versionORANGE.Models.Client_Information>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Client_Code)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Client_Short_Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Client_Full_Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Approach_Year)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EM_Code)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EM_Full_Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CL_Field_Code)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CL_Field_Full_Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Client_Phone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Client_website)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Client_mail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Client_Owner)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Client_Owner_Phone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Client_Owner_Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Client_Principal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Client_Principal_Phone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Client_Principal_Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Address_Detail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Address_District)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Note)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Type)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CreateDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CreateBy)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Client_Code)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Client_Short_Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Client_Full_Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Approach_Year)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EM_Code)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EM_Full_Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CL_Field_Code)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CL_Field_Full_Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Client_Phone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Client_website)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Client_mail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Client_Owner)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Client_Owner_Phone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Client_Owner_Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Client_Principal)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Client_Principal_Phone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Client_Principal_Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Address_Detail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Address_District)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Status)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Note)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Type)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CreateDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CreateBy)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Client_ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Client_ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Client_ID })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,101 @@
+﻿
+
+@model IEnumerable<PTC_versionORANGE.Models.EM_List>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = null;
+}
+
+<h2>Index</h2>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#MyEMlistTable").DataTable({
+            "autoWidth": true
+        });
+    });
+</script>
+
+<table id="MyEMlistTable" class="display">
+    <thead>
+        <tr>
+
+            <th style="width:8%;">
+                @Html.DisplayNameFor(model => model.EM_Full_Name)
+            </th>
+            <th style="width:10%;">
+                @Html.DisplayNameFor(model => model.EM_Position_Full_Name)
+            </th>
+            <th style="width:40%;">
+                @Html.DisplayNameFor(model => model.Contract_Code)
+            </th>
+
+            <th style="width:20% !important;">
+                Ngày tạo
+            </th>
+            <th style="width:12%;">
+                Trạng thái
+            </th>
+            <th style="width:10%; background:none;"></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+           
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EM_Full_Name) 
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EM_Position_Full_Name) 
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Contract_Code)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Signal_Day)/@Html.DisplayFor(modelItem => item.Signal_Month) /@Html.DisplayFor(modelItem => item.Signal_Year)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EM_Status)
+                    </td>
+
+                    <td>
+                        <a onclick="ShowEMListEdit(@item.EM_ID)" data-toggle="modal" href="#" data-target="#Large_Modal">Sửa</a>
+                        @* @Html.ActionLink("Edit", "Edit", new { id = item.User_ID },new { data_toggle="#modal",data_target="#Large_Modal" }) |*@
+                        @Html.ActionLink("Chi tiết", "Details", new { id = item.EM_ID }) |
+                        <a onclick="ShowDeleteModalWarning(@item.EM_ID)" data-toggle="modal" href="#" data-target="#Small_Modal">Xóa</a>
+                    </td>
+
+                </tr>
+        }
+    </tbody>
+
+</table>
+<script>
+    function ShowEMListEdit(id) {
+        $.ajax({
+            url: 'Admin/Home/EMList_Edit/' + id,
+            success: function (data) {
+                $('#Large_Modal .modal-dialog .modal-content').html(data);
+            }
+        });
+    }
+    function ShowDeleteModalWarning(id) {
+        $.ajax({
+            url: 'Admin/Home/User_Basic_Delete/' + id,
+            success: function (data) {
+                $('#Small_Modal .modal-dialog .modal-content').html(data);
+            }
+        });
+    }
+</script>
+<style>
+    .paging_simple_numbers a {
+        color: white !important;
+    }
+
+    #mytable {
+        width: 100% !important;
+    }
+</style>

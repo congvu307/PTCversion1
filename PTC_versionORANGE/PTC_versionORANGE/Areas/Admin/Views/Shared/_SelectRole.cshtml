@@ -1,0 +1,43 @@
+﻿<h2>Chọn vai trò để đăng nhập</h2>
+
+<script>
+    function SetCurrentRole(id) {
+        $.ajax({
+            url: 'SelectRole/?role=' + id
+        });
+    }
+    
+    function SetCurrentPosition(id) {
+        alert(id);  
+        $.ajax({
+            url: 'Admin/Home/SelectPosition',
+            data: { position: id },
+            success: function (data) {
+            }
+        }); 
+    }
+</script>
+@{
+    try
+    {
+        if (Int32.Parse(Request.Cookies["NumberRole"].Value) == 1)
+        {
+
+        }
+        for (int i = 0; i < Int32.Parse(Request.Cookies["NumberRole"].Value); i++)
+        {
+            if (Request.Cookies[i.ToString()].Value != "EM")
+            {
+                <a href="#"onclick="SetCurrentRole('@Request.Cookies[i.ToString()].Value')">@Request.Cookies[i.ToString()].Value</a>
+            }
+        }
+        for (int i = 10; i < Int32.Parse(Request.Cookies["NumberEMPosition"].Value); i++)
+        {
+            <a href="#" onclick='SetCurrentPosition("@Request.Cookies[i.ToString()].Value.ToString()")'>@Request.Cookies[i.ToString()].Value</a><br />
+        }
+    }
+    catch
+    {
+
+    }
+}

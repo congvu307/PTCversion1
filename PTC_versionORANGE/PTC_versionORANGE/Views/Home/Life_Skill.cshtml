@@ -1,0 +1,453 @@
+﻿
+@{
+    ViewBag.Title = "PTC - " + PTC_versionORANGE.Resources.Resource.Life_Skills;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="TA-center">
+    <img src="~/Content/Life_Skill/LS-grown-UP.png" style="width:90%;height:auto;" />
+    <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.LS_WalkWithYou</h5>
+</div>
+<h1 class="text-orange LS-header">@PTC_versionORANGE.Resources.Resource.LS_Function</h1>
+<p style="text-align:center;  margin-bottom:3em;" class="text-gray">@PTC_versionORANGE.Resources.Resource.LS_Function_Discription</p>
+
+<!--function-->
+<section>
+    <div class="row TA-center">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <img style="width:90%;height:auto;" src="~/Content/Life_Skill/LS-function.png"/>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            
+            <h5 style="padding:5em 15%;" class="text-gray TA-center">
+                <strong style="font-size:180%;">"
+                </strong>@PTC_versionORANGE.Resources.Resource.LS_Function_Content
+                <strong style="font-size:180%;">"
+                </strong>
+            </h5>
+        </div>
+    </div>
+</section>
+
+<!--GrouwnUp-->
+<section>
+    
+</section>
+<section style="background-color:#f3f3f3;padding: 2em 0;">
+
+    <div class="row" style="margin-bottom:2em;">
+        <div style="text-align:center;" class="col-lg-6">
+            <img class="LS-img" src="~/Content/Life_Skill/life-skill-lecture.png" />
+            <h1 style="font-size:200%;" class="text-gray"><small>@PTC_versionORANGE.Resources.Resource.LS_Number_1a </small><strong class="text-orange">100</strong> <small> @PTC_versionORANGE.Resources.Resource.LS_Number_1b</small></h1>
+        </div>
+        <div style="text-align:center;" class="col-lg-6">
+            <img class="LS-img" src="~/Content/Life_Skill/life-skill-school.png" />
+            <h1 style="font-size:200%;" class="text-gray"><small>@PTC_versionORANGE.Resources.Resource.LS_Number_2a</small><strong class="text-orange">100</strong> <small> @PTC_versionORANGE.Resources.Resource.LS_Number_2b</small></h1>
+        </div>
+    </div>
+
+    <div class="row" style="margin-bottom:2em;">
+        <div style="text-align:center;" class="col-lg-6">
+            <img class="LS-img" src="~/Content/Life_Skill/life-skill-class.png" />
+            <h1 style="font-size:200%;" class="text-gray"><small>@PTC_versionORANGE.Resources.Resource.LS_Number_3a </small><strong class="text-orange">2500</strong> <small> @PTC_versionORANGE.Resources.Resource.LS_Number_3b</small></h1>
+        </div>
+        <div style="text-align:center;" class="col-lg-6">
+            <img class="LS-img" src="~/Content/Life_Skill/life-skill-student.png" />
+            <h1 style="font-size:200%;" class="text-gray"><small>@PTC_versionORANGE.Resources.Resource.LS_Number_4a </small><strong class="text-orange">62500</strong> <small>@PTC_versionORANGE.Resources.Resource.LS_Number_4b</small></h1>
+        </div>
+    </div>
+
+</section>
+
+<!--Re married-->
+<section>
+    <div class="row" id="LS-PreMarried">
+        <div class="col-lg-6 col-sm-12">
+            <h2 class="text-white" id="LS-PreMarried-header">@PTC_versionORANGE.Resources.Resource.LS_Premarried_Name</h2>
+            <p id="LS-PreMarried-content" class="text-white">
+                @PTC_versionORANGE.Resources.Resource.LS_Premarried_Discription
+            </p>
+        </div>
+        <div style="margin-top:2em;" class="col-lg-6 col-sm-12">
+            <div id="accordion">
+                <div class="card LS-PreMarried-card">
+                    <div style="border:none;" class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <strong class="text-orange">@PTC_versionORANGE.Resources.Resource.PA_Target</strong>
+                            </button>
+                        </h5>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <p class="text-gray">
+                                @PTC_versionORANGE.Resources.Resource.LS_Premarried_Target_1<br />
+                                @PTC_versionORANGE.Resources.Resource.LS_Premarried_Target_2<br />
+                                @PTC_versionORANGE.Resources.Resource.LS_Premarried_Target_3
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card LS-PreMarried-card">
+                    <div style="border:none;" class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <strong class="text-orange">@PTC_versionORANGE.Resources.Resource.PA_Customer</strong>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            <p class="text-gray">
+                                @PTC_versionORANGE.Resources.Resource.LS_Premarried_Customer
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card LS-PreMarried-card">
+                    <div style="border:none;" class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <strong class="text-orange">@PTC_versionORANGE.Resources.Resource.About_Lecture</strong>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                            <p class="text-gray">
+                                @PTC_versionORANGE.Resources.Resource.LS_Premarried_Lecture
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section style="margin-bottom: 3em;">
+    <div class="row">
+        <!--3 tới 6-->
+        <div style="text-align:center;" class="col-lg-4 col-sm-12">
+            <div class="LS-container">
+                <img src="~/Content/Life_Skill/LS-kindergarten.jpg" alt="Avatar" class="LS-image">
+                <div class="LS-overlay">
+                    <div class="LS-text">
+                        @PTC_versionORANGE.Resources.Resource.LS_Class1_Message
+                    </div>
+                </div>
+            </div>
+            <h4 class="text-orange LS-content-header">@PTC_versionORANGE.Resources.Resource.LS_Class1_Name</h4>
+            <p>@PTC_versionORANGE.Resources.Resource.LS_Class1_Age</p>
+            <div id="LS-kindergarten-accordion">
+                <div class="btn-group btn-group-sm" role="group">
+                    <button type="button" aria-expanded="true" aria-controls="LS-kindergarten-collapseOne" data-toggle="collapse" data-target="#LS-kindergarten-collapseOne" class="btn btn-warning mybackground text-white">@PTC_versionORANGE.Resources.Resource.PA_Target</button>
+                    <button type="button" aria-expanded="true" aria-controls="LS-kindergarten-collapseTwo" data-toggle="collapse" data-target="#LS-kindergarten-collapseTwo" class="btn btn-warning mybackground collapsed  text-white">@PTC_versionORANGE.Resources.Resource.About_Lecture</button>
+                    <button type="button" aria-expanded="true" aria-controls="LS-kindergarten-collapseThree" data-toggle="collapse" data-target="#LS-kindergarten-collapseThree" class="btn btn-warning mybackground collapsed  text-white">@PTC_versionORANGE.Resources.Resource.PA_Customer</button>
+                </div>
+                <div style="border:none;" class="card">
+
+                    <div id="LS-kindergarten-collapseOne" class="collapse show" data-parent="#LS-kindergarten-accordion">
+                        <div class="card-body text-gray LS-card-body">
+                            @PTC_versionORANGE.Resources.Resource.LS_Class1_Target_1<br />
+                            @PTC_versionORANGE.Resources.Resource.LS_Class1_Target_2<br />
+                            @PTC_versionORANGE.Resources.Resource.LS_Class1_Target_3
+                        </div>
+                    </div>
+                </div>
+                <div style="border:none;" class="card">
+                    <div id="LS-kindergarten-collapseTwo" class="collapse" data-parent="#LS-kindergarten-accordion">
+                        <div class="LS-card-body text-gray  card-body">
+                            @PTC_versionORANGE.Resources.Resource.LS_Class1_Lecture
+                        </div>
+                    </div>
+                </div>
+                <div style="border:none;" class="card">
+                    <div id="LS-kindergarten-collapseThree" class="collapse" data-parent="#LS-kindergarten-accordion">
+                        <div class="card-body LS-card-body">
+                            <p class="text-gray">
+                                @PTC_versionORANGE.Resources.Resource.LS_Class1_Customer
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 7 tới 12-->
+        <div style="text-align:center;" class="col-lg-4 col-sm-12">
+            <div class="LS-container">
+                <img src="~/Content/Life_Skill/LS-kid.jpg" alt="Avatar" class="LS-image">
+                <div class="LS-overlay">
+                    <div class="LS-text">
+                        @PTC_versionORANGE.Resources.Resource.LS_Class2_Message
+                    </div>
+                </div>
+            </div>
+            <h4 class="text-orange LS-content-header">@PTC_versionORANGE.Resources.Resource.LS_Class2_Name</h4>
+            <p>(from 7 to 12 years old)</p>
+            <div id="LS-kid-accordion">
+                <div class="btn-group btn-group-sm" role="group">
+                    <button type="button" aria-expanded="true" aria-controls="LS-kid-collapseOne" data-toggle="collapse" data-target="#LS-kid-collapseOne" class="btn btn-warning mybackground text-white">@PTC_versionORANGE.Resources.Resource.PA_Target</button>
+                    <button type="button" aria-expanded="true" aria-controls="LS-kid-collapseTwo" data-toggle="collapse" data-target="#LS-kid-collapseTwo" class="btn btn-warning mybackground collapsed  text-white">@PTC_versionORANGE.Resources.Resource.About_Lecture</button>
+                    <button type="button" aria-expanded="true" aria-controls="LS-kid-collapseThree" data-toggle="collapse" data-target="#LS-kid-collapseThree" class="btn btn-warning mybackground collapsed  text-white">@PTC_versionORANGE.Resources.Resource.PA_Customer</button>
+                </div>
+                <div style="border:none;" class="card">
+
+                    <div id="LS-kid-collapseOne" class="collapse show" data-parent="#LS-kid-accordion">
+                        <div class="card-body text-gray LS-card-body">
+                            @PTC_versionORANGE.Resources.Resource.PA_Class2_Target_1<br />
+                            @PTC_versionORANGE.Resources.Resource.PA_Class2_Target_2<br />
+                            @PTC_versionORANGE.Resources.Resource.PA_Class2_Target_3<br />
+
+
+                        </div>
+                    </div>
+                </div>
+                <div style="border:none;" class="card">
+                    <div id="LS-kid-collapseTwo" class="collapse" data-parent="#LS-kid-accordion">
+                        <div class="LS-card-body text-gray  card-body">
+                            @PTC_versionORANGE.Resources.Resource.LS_Class1_Lecture
+                        </div>
+                    </div>
+                </div>
+                <div style="border:none;" class="card">
+                    <div id="LS-kid-collapseThree" class="collapse" data-parent="#LS-kid-accordion">
+                        <div class="card-body LS-card-body">
+                            <p class="text-gray">
+                                @PTC_versionORANGE.Resources.Resource.PA_Class2_Customer
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--13 tới 15-->
+        <div style="text-align:center;" class="col-lg-4 col-sm-12">
+            <div class="LS-container">
+                <img src="~/Content/Life_Skill/LS-children.jpg" alt="Avatar" class="LS-image">
+                <div class="LS-overlay">
+                    <div class="LS-text">
+                        @PTC_versionORANGE.Resources.Resource.LS_Class3_Message
+                    </div>
+                </div>
+            </div>
+            <h4 class="text-orange LS-content-header">@PTC_versionORANGE.Resources.Resource.LS_Class3_Name </h4>
+            <p>@PTC_versionORANGE.Resources.Resource.LS_Class3_Age</p>
+            <div id="LS-children-accordion">
+                <div class="btn-group btn-group-sm" role="group">
+                    <button type="button" aria-expanded="true" aria-controls="LS-children-collapseOne" data-toggle="collapse" data-target="#LS-children-collapseOne" class="btn btn-warning mybackground text-white">@PTC_versionORANGE.Resources.Resource.PA_Target</button>
+                    <button type="button" aria-expanded="true" aria-controls="LS-children-collapseTwo" data-toggle="collapse" data-target="#LS-children-collapseTwo" class="btn btn-warning mybackground collapsed  text-white">@PTC_versionORANGE.Resources.Resource.About_Lecture</button>
+                    <button type="button" aria-expanded="true" aria-controls="LS-children-collapseThree" data-toggle="collapse" data-target="#LS-children-collapseThree" class="btn btn-warning mybackground collapsed  text-white">@PTC_versionORANGE.Resources.Resource.PA_Customer</button>
+                </div>
+                <div style="border:none;" class="card">
+
+                    <div id="LS-children-collapseOne" class="collapse show" data-parent="#LS-children-accordion">
+                        <div class="card-body text-gray LS-card-body">
+                            @PTC_versionORANGE.Resources.Resource.LS_Class3_Target_1<br />
+                            @PTC_versionORANGE.Resources.Resource.LS_Class3_Target_2<br />
+                            @PTC_versionORANGE.Resources.Resource.LS_Class3_Target_3
+
+                        </div>
+                    </div>
+                </div>
+                <div style="border:none;" class="card">
+                    <div id="LS-children-collapseTwo" class="collapse" data-parent="#LS-children-accordion">
+                        <div class="LS-card-body text-gray  card-body">
+                            @PTC_versionORANGE.Resources.Resource.LS_Class1_Lecture
+                        </div>
+                    </div>
+                </div>
+                <div style="border:none;" class="card">
+                    <div id="LS-children-collapseThree" class="collapse" data-parent="#LS-children-accordion">
+                        <div class="card-body LS-card-body">
+                            <p class="text-gray">
+                                @PTC_versionORANGE.Resources.Resource.LS_Class3_Customer
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="row">
+        <!--16 tới 20-->
+        <div style="text-align:center;" class="col-lg-4 col-sm-12">
+            <div class="LS-container">
+                <img src="~/Content/Life_Skill/LS-adolescent.jpg" alt="Avatar" class="LS-image">
+                <div class="LS-overlay">
+                    <div class="LS-text">
+                        @PTC_versionORANGE.Resources.Resource.LS_Class4_Message
+                    </div>
+                </div>
+            </div>
+            <h4 class="text-orange LS-content-header">@PTC_versionORANGE.Resources.Resource.LS_Class4_Name</h4>
+            <p style="min-height:48px;">@PTC_versionORANGE.Resources.Resource.LS_Class4_Age</p>
+            <div id="LS-adolescent-accordion">
+                <div class="btn-group btn-group-sm" role="group">
+                    <button type="button" aria-expanded="true" aria-controls="LS-adolescent-collapseOne" data-toggle="collapse" data-target="#LS-adolescent-collapseOne" class="btn btn-warning mybackground text-white">@PTC_versionORANGE.Resources.Resource.PA_Target</button>
+                    <button type="button" aria-expanded="true" aria-controls="LS-adolescent-collapseTwo" data-toggle="collapse" data-target="#LS-adolescent-collapseTwo" class="btn btn-warning mybackground collapsed  text-white">@PTC_versionORANGE.Resources.Resource.About_Lecture</button>
+                    <button type="button" aria-expanded="true" aria-controls="LS-adolescent-collapseThree" data-toggle="collapse" data-target="#LS-adolescent-collapseThree" class="btn btn-warning mybackground collapsed  text-white">@PTC_versionORANGE.Resources.Resource.PA_Customer</button>
+                </div>
+                <div style="border:none;" class="card">
+
+                    <div id="LS-adolescent-collapseOne" class="collapse show" data-parent="#LS-adolescent-accordion">
+                        <div class="card-body text-gray LS-card-body">
+                            @PTC_versionORANGE.Resources.Resource.LS_Class4_Target_1<br />
+                            @PTC_versionORANGE.Resources.Resource.LS_Class4_Target_2<br />
+                            @PTC_versionORANGE.Resources.Resource.LS_Class4_Target_3
+
+                        </div>
+                    </div>
+                </div>
+                <div style="border:none;" class="card">
+                    <div id="LS-adolescent-collapseTwo" class="collapse" data-parent="#LS-adolescent-accordion">
+                        <div class="LS-card-body text-gray  card-body">
+                            @PTC_versionORANGE.Resources.Resource.LS_Class1_Lecture
+                        </div>
+                    </div>
+                </div>
+                <div style="border:none;" class="card">
+                    <div id="LS-adolescent-collapseThree" class="collapse" data-parent="#LS-adolescent-accordion">
+                        <div class="card-body LS-card-body">
+                            <p class="text-gray">
+                                @PTC_versionORANGE.Resources.Resource.LS_Class4_Customer
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--16 to abouv-->
+        <div style="text-align:center;" class="col-lg-4 col-sm-12">
+            <div class="LS-container">
+                <img src="~/Content/Life_Skill/LS-adolescent2.jpg" alt="Avatar" class="LS-image">
+                <div class="LS-overlay">
+                    <div class="LS-text">
+                        @PTC_versionORANGE.Resources.Resource.LS_Class5_Message
+                    </div>
+                </div>
+            </div>
+            <h4 class="text-orange LS-content-header">@PTC_versionORANGE.Resources.Resource.LS_Class5_Name</h4>
+            <p style="min-height:48px;">@PTC_versionORANGE.Resources.Resource.LS_Class5_Age</p>
+            <div id="LS-adolescent2-accordion">
+                <div class="btn-group btn-group-sm" role="group">
+                    <button type="button" aria-expanded="true" aria-controls="LS-adolescent2-collapseOne" data-toggle="collapse" data-target="#LS-adolescent2-collapseOne" class="btn btn-warning mybackground text-white">@PTC_versionORANGE.Resources.Resource.PA_Target</button>
+                    <button type="button" aria-expanded="true" aria-controls="LS-adolescent2-collapseTwo" data-toggle="collapse" data-target="#LS-adolescent2-collapseTwo" class="btn btn-warning mybackground collapsed  text-white">@PTC_versionORANGE.Resources.Resource.About_Lecture</button>
+                    <button type="button" aria-expanded="true" aria-controls="LS-adolescent2-collapseThree" data-toggle="collapse" data-target="#LS-adolescent2-collapseThree" class="btn btn-warning mybackground collapsed  text-white">@PTC_versionORANGE.Resources.Resource.PA_Customer</button>
+                </div>
+                <div style="border:none;" class="card">
+
+                    <div id="LS-adolescent2-collapseOne" class="collapse show" data-parent="#LS-adolescent2-accordion">
+                        <div class="card-body text-gray LS-card-body">
+                            @PTC_versionORANGE.Resources.Resource.LS_Class5_Target_1<br />
+                            @PTC_versionORANGE.Resources.Resource.LS_Class5_Target_2<br />
+                            @PTC_versionORANGE.Resources.Resource.LS_Class5_Target_3
+
+                        </div>
+                    </div>
+                </div>
+                <div style="border:none;" class="card">
+                    <div id="LS-adolescent2-collapseTwo" class="collapse" data-parent="#LS-adolescent2-accordion">
+                        <div class="LS-card-body text-gray  card-body">
+                            @PTC_versionORANGE.Resources.Resource.LS_Class5_Lecture
+                        </div>
+                    </div>
+                </div>
+                <div style="border:none;" class="card">
+                    <div id="LS-adolescent2-collapseThree" class="collapse" data-parent="#LS-adolescent2-accordion">
+                        <div class="card-body LS-card-body">
+                            <p class="text-gray">
+                                @PTC_versionORANGE.Resources.Resource.LS_Class5_Customer
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--For teacher-->
+        <div style="text-align:center;" class="col-lg-4 col-sm-12">
+            <div class="LS-container">
+                <img src="~/Content/Life_Skill/LS-teacher.jpg" alt="Avatar" class="LS-image">
+                <div class="LS-overlay">
+                    <div class="LS-text">
+                        @PTC_versionORANGE.Resources.Resource.LS_Class6_Message
+                    </div>
+                </div>
+            </div>
+            <h4 class="text-orange LS-content-header">@PTC_versionORANGE.Resources.Resource.LS_Class6_Name</h4>
+            <p style="min-height:48px;">
+                @PTC_versionORANGE.Resources.Resource.LS_Class6_Age
+            </p>
+            <div id="LS-teacher-accordion">
+                <div class="btn-group btn-group-sm" role="group">
+                    <button type="button" aria-expanded="true" aria-controls="LS-teacher-collapseOne" data-toggle="collapse" data-target="#LS-teacher-collapseOne" class="btn btn-warning mybackground text-white">@PTC_versionORANGE.Resources.Resource.PA_Target</button>
+                    <button type="button" aria-expanded="true" aria-controls="LS-teacher-collapseTwo" data-toggle="collapse" data-target="#LS-teacher-collapseTwo" class="btn btn-warning mybackground collapsed  text-white">@PTC_versionORANGE.Resources.Resource.About_Lecture</button>
+                    <button type="button" aria-expanded="true" aria-controls="LS-teacher-collapseThree" data-toggle="collapse" data-target="#LS-teacher-collapseThree" class="btn btn-warning mybackground collapsed  text-white">@PTC_versionORANGE.Resources.Resource.PA_Customer</button>
+                </div>
+                <div style="border:none;" class="card">
+
+                    <div id="LS-teacher-collapseOne" class="collapse show" data-parent="#LS-teacher-accordion">
+                        <div class="card-body text-gray LS-card-body">
+                            @PTC_versionORANGE.Resources.Resource.LS_Class6_Target_1<br />
+                            @PTC_versionORANGE.Resources.Resource.LS_Class6_Target_2<br />
+                            @PTC_versionORANGE.Resources.Resource.LS_Class6_Target_3
+                        </div>
+                    </div>
+                </div>
+                <div style="border:none;" class="card">
+                    <div id="LS-teacher-collapseTwo" class="collapse" data-parent="#LS-teacher-accordion">
+                        <div class="LS-card-body text-gray  card-body">
+                            @PTC_versionORANGE.Resources.Resource.LS_Class6_Lecture
+                        </div>
+                    </div>
+                </div>
+                <div style="border:none;" class="card">
+                    <div id="LS-teacher-collapseThree" class="collapse" data-parent="#LS-teacher-accordion">
+                        <div class="card-body LS-card-body">
+                            <p class="text-gray">
+                                @PTC_versionORANGE.Resources.Resource.LS_Class6_Customer
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Life skills diagram-->
+<section>
+    <h1 style="margin-bottom:1em;" class="text-orange index-header">@PTC_versionORANGE.Resources.Resource.LS_CouncilOfScience</h1>
+    <div class="row">
+        <div class="col-lg-6 col-md-6 TA-center">
+            <img style="width:50%;height:auto;" src="~/Content/About/about-chairman.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.PA_DirectorOfInstitute</h5>
+            <h3>@PTC_versionORANGE.Resources.Resource.PA_NguyenKhanhTrung</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.PA_NguyenKhanhTrung_Discription</p>
+        </div>
+        <div class="col-lg-6 col-md-6 TA-center">
+            <img style="width:50%;height:auto;" src="~/Content/About/about-deputy-LS.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.PA_DeputyDirectorOfInstitute</h5>
+            <h3>@PTC_versionORANGE.Resources.Resource.LS_DoHongQuan</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.LS_DoHongQuan_Discription</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6 TA-center">
+            <img style="width:50%;height:auto;" src="~/Content/About/about-science.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.About_Expert</h5>
+            <h3>@PTC_versionORANGE.Resources.Resource.LS_DuongVanThang</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.LS_DuongVanThang_Discription</p>
+        </div>
+        <div class="col-lg-6 TA-center">
+            <img style="width:50%;height:auto;" src="~/Content/About/about-science.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.About_Expert</h5>
+            <h3>@PTC_versionORANGE.Resources.Resource.LS_PhamVanTru</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.LS_PhamVanTru_Discription</p>
+        </div>
+    </div>
+</section>

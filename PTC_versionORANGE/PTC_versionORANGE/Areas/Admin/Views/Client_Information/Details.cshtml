@@ -1,0 +1,211 @@
+﻿@model PTC_versionORANGE.Models.Client_Information
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Client_Information</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Client_Code)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Client_Code)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Client_Short_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Client_Short_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Client_Full_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Client_Full_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Approach_Year)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Approach_Year)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EM_Code)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EM_Code)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EM_Full_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EM_Full_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CL_Field_Code)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CL_Field_Code)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CL_Field_Full_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CL_Field_Full_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Client_Phone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Client_Phone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Client_website)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Client_website)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Client_mail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Client_mail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Client_Owner)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Client_Owner)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Client_Owner_Phone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Client_Owner_Phone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Client_Owner_Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Client_Owner_Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Client_Principal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Client_Principal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Client_Principal_Phone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Client_Principal_Phone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Client_Principal_Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Client_Principal_Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address_Detail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address_Detail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address_District)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address_District)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Note)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Note)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Type)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreateDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreateDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreateBy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreateBy)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Client_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

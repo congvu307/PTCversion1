@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PTCModelStoreContainer" CdmEntityContainer="PTCEntities">
+    <EntitySetMapping Name="Client_Information">
+      <EntityTypeMapping TypeName="PTCModel.Client_Information">
+        <MappingFragment StoreEntitySet="Client_Information">
+          <ScalarProperty Name="Client_ID" ColumnName="Client_ID" />
+          <ScalarProperty Name="Client_Code" ColumnName="Client_Code" />
+          <ScalarProperty Name="Client_Short_Name" ColumnName="Client_Short_Name" />
+          <ScalarProperty Name="Client_Full_Name" ColumnName="Client_Full_Name" />
+          <ScalarProperty Name="Approach_Year" ColumnName="Approach_Year" />
+          <ScalarProperty Name="EM_Code" ColumnName="EM_Code" />
+          <ScalarProperty Name="EM_Full_Name" ColumnName="EM_Full_Name" />
+          <ScalarProperty Name="CL_Field_Code" ColumnName="CL_Field_Code" />
+          <ScalarProperty Name="CL_Field_Full_Name" ColumnName="CL_Field_Full_Name" />
+          <ScalarProperty Name="Client_Phone" ColumnName="Client_Phone" />
+          <ScalarProperty Name="Client_website" ColumnName="Client_website" />
+          <ScalarProperty Name="Client_mail" ColumnName="Client_mail" />
+          <ScalarProperty Name="Client_Owner" ColumnName="Client_Owner" />
+          <ScalarProperty Name="Client_Owner_Phone" ColumnName="Client_Owner_Phone" />
+          <ScalarProperty Name="Client_Owner_Email" ColumnName="Client_Owner_Email" />
+          <ScalarProperty Name="Client_Principal" ColumnName="Client_Principal" />
+          <ScalarProperty Name="Client_Principal_Phone" ColumnName="Client_Principal_Phone" />
+          <ScalarProperty Name="Client_Principal_Email" ColumnName="Client_Principal_Email" />
+          <ScalarProperty Name="Address_Detail" ColumnName="Address_Detail" />
+          <ScalarProperty Name="Address_District" ColumnName="Address_District" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EM_List">
+      <EntityTypeMapping TypeName="PTCModel.EM_List">
+        <MappingFragment StoreEntitySet="EM_List">
+          <ScalarProperty Name="EM_Position_Code" ColumnName="EM_Position_Code" />
+          <ScalarProperty Name="EM_Position_Full_Name" ColumnName="EM_Position_Full_Name" />
+          <ScalarProperty Name="EM_ID" ColumnName="EM_ID" />
+          <ScalarProperty Name="User_Code" ColumnName="User_Code" />
+          <ScalarProperty Name="EM_Code" ColumnName="EM_Code" />
+          <ScalarProperty Name="EM_Full_Name" ColumnName="EM_Full_Name" />
+          <ScalarProperty Name="Contract_Code" ColumnName="Contract_Code" />
+          <ScalarProperty Name="Signal_Day" ColumnName="Signal_Day" />
+          <ScalarProperty Name="Signal_Month" ColumnName="Signal_Month" />
+          <ScalarProperty Name="Signal_Year" ColumnName="Signal_Year" />
+          <ScalarProperty Name="EM_Status" ColumnName="EM_Status" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ref_District">
+      <EntityTypeMapping TypeName="PTCModel.Ref_District">
+        <MappingFragment StoreEntitySet="Ref_District">
+          <ScalarProperty Name="District_ID" ColumnName="District_ID" />
+          <ScalarProperty Name="District_Name" ColumnName="District_Name" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Province_ID" ColumnName="Province_ID" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ref_Province">
+      <EntityTypeMapping TypeName="PTCModel.Ref_Province">
+        <MappingFragment StoreEntitySet="Ref_Province">
+          <ScalarProperty Name="Province_Name" ColumnName="Province_Name" />
+          <ScalarProperty Name="Province_ID" ColumnName="Province_ID" />
+          <ScalarProperty Name="Province_Short_Name" ColumnName="Province_Short_Name" />
+          <ScalarProperty Name="Province_Level" ColumnName="Province_Level" />
+          <ScalarProperty Name="Region_ID" ColumnName="Region_ID" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ref_Region">
+      <EntityTypeMapping TypeName="PTCModel.Ref_Region">
+        <MappingFragment StoreEntitySet="Ref_Region">
+          <ScalarProperty Name="Region_ID" ColumnName="Region_ID" />
+          <ScalarProperty Name="Region_Full_Name" ColumnName="Region_Full_Name" />
+          <ScalarProperty Name="Region_Short_Name" ColumnName="Region_Short_Name" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User_Basic">
+      <EntityTypeMapping TypeName="PTCModel.User_Basic">
+        <MappingFragment StoreEntitySet="User_Basic">
+          <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+          <ScalarProperty Name="User_Code" ColumnName="User_Code" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="User_First_Name" ColumnName="User_First_Name" />
+          <ScalarProperty Name="User_Last_Name" ColumnName="User_Last_Name" />
+          <ScalarProperty Name="User_Alternative_Name" ColumnName="User_Alternative_Name" />
+          <ScalarProperty Name="User_DoB_Day" ColumnName="User_DoB_Day" />
+          <ScalarProperty Name="User_DoB_Month" ColumnName="User_DoB_Month" />
+          <ScalarProperty Name="User_DoB_Year" ColumnName="User_DoB_Year" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Address_Detail" ColumnName="Address_Detail" />
+          <ScalarProperty Name="Address_District" ColumnName="Address_District" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+          <ScalarProperty Name="Client_Code" ColumnName="Client_Code" />
+          <ScalarProperty Name="Education_Type_Code" ColumnName="Education_Type_Code" />
+          <ScalarProperty Name="Job_Type_Code" ColumnName="Job_Type_Code" />
+          <ScalarProperty Name="Job_Detail" ColumnName="Job_Detail" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="Check_EMPosition" FunctionName="PTCModel.Store.Check_EMPosition" />
+    <FunctionImportMapping FunctionImportName="Check_Login" FunctionName="PTCModel.Store.Check_Login" />
+    <FunctionImportMapping FunctionImportName="Check_Role" FunctionName="PTCModel.Store.Check_Role" />
+    <FunctionImportMapping FunctionImportName="Find_Region_By_District" FunctionName="PTCModel.Store.Find_Region_By_District" />
+    <FunctionImportMapping FunctionImportName="FindIDbyUserCode" FunctionName="PTCModel.Store.FindIDbyUserCode" />
+  </EntityContainerMapping>
+</Mapping>

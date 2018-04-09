@@ -1,0 +1,509 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="PTCModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Client_Information">
+          <Key>
+            <PropertyRef Name="Client_ID" />
+          </Key>
+          <Property Name="Client_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Client_Code" Type="nvarchar" MaxLength="255" />
+          <Property Name="Client_Short_Name" Type="nvarchar" MaxLength="255" />
+          <Property Name="Client_Full_Name" Type="nvarchar" MaxLength="255" />
+          <Property Name="Approach_Year" Type="int" />
+          <Property Name="EM_Code" Type="nvarchar" MaxLength="255" />
+          <Property Name="EM_Full_Name" Type="nvarchar" MaxLength="255" />
+          <Property Name="CL_Field_Code" Type="nvarchar" MaxLength="255" />
+          <Property Name="CL_Field_Full_Name" Type="nvarchar" MaxLength="255" />
+          <Property Name="Client_Phone" Type="nvarchar" MaxLength="255" />
+          <Property Name="Client_website" Type="nvarchar" MaxLength="255" />
+          <Property Name="Client_mail" Type="nvarchar" MaxLength="255" />
+          <Property Name="Client_Owner" Type="nvarchar" MaxLength="255" />
+          <Property Name="Client_Owner_Phone" Type="nvarchar" MaxLength="255" />
+          <Property Name="Client_Owner_Email" Type="nvarchar" MaxLength="255" />
+          <Property Name="Client_Principal" Type="nvarchar" MaxLength="255" />
+          <Property Name="Client_Principal_Phone" Type="nvarchar" MaxLength="255" />
+          <Property Name="Client_Principal_Email" Type="nvarchar" MaxLength="255" />
+          <Property Name="Address_Detail" Type="nvarchar" MaxLength="255" />
+          <Property Name="Address_District" Type="int" />
+          <Property Name="Status" Type="nvarchar" MaxLength="255" />
+          <Property Name="Note" Type="nvarchar" MaxLength="255" />
+          <Property Name="Type" Type="nvarchar" MaxLength="255" />
+          <Property Name="CreateDate" Type="datetime" />
+          <Property Name="CreateBy" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="EM_List">
+          <Key>
+            <PropertyRef Name="EM_ID" />
+          </Key>
+          <Property Name="EM_Position_Code" Type="nvarchar" MaxLength="255" />
+          <Property Name="EM_Position_Full_Name" Type="nvarchar" MaxLength="255" />
+          <Property Name="EM_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="User_Code" Type="nvarchar" MaxLength="255" />
+          <Property Name="EM_Code" Type="nvarchar" MaxLength="255" />
+          <Property Name="EM_Full_Name" Type="nvarchar" MaxLength="255" />
+          <Property Name="Contract_Code" Type="nvarchar" MaxLength="255" />
+          <Property Name="Signal_Day" Type="int" />
+          <Property Name="Signal_Month" Type="int" />
+          <Property Name="Signal_Year" Type="int" />
+          <Property Name="EM_Status" Type="nvarchar" MaxLength="255" />
+          <Property Name="Note" Type="nvarchar" MaxLength="255" />
+          <Property Name="CreateDate" Type="datetime" />
+          <Property Name="CreateBy" Type="int" />
+        </EntityType>
+        <EntityType Name="Ref_District">
+          <Key>
+            <PropertyRef Name="District_ID" />
+          </Key>
+          <Property Name="District_ID" Type="int" Nullable="false" />
+          <Property Name="District_Name" Type="nvarchar" MaxLength="255" />
+          <Property Name="Level" Type="nvarchar" MaxLength="255" />
+          <Property Name="Province_ID" Type="int" />
+          <Property Name="Status" Type="nvarchar" MaxLength="255" />
+          <Property Name="Note" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="Ref_Province">
+          <Key>
+            <PropertyRef Name="Province_ID" />
+          </Key>
+          <Property Name="Province_Name" Type="nvarchar" MaxLength="255" />
+          <Property Name="Province_ID" Type="int" Nullable="false" />
+          <Property Name="Province_Short_Name" Type="nvarchar" MaxLength="255" />
+          <Property Name="Province_Level" Type="nvarchar" MaxLength="255" />
+          <Property Name="Region_ID" Type="int" />
+          <Property Name="Status" Type="nvarchar" MaxLength="255" />
+          <Property Name="Note" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="Ref_Region">
+          <Key>
+            <PropertyRef Name="Region_ID" />
+          </Key>
+          <Property Name="Region_ID" Type="int" Nullable="false" />
+          <Property Name="Region_Full_Name" Type="nvarchar" MaxLength="255" />
+          <Property Name="Region_Short_Name" Type="nvarchar" MaxLength="255" />
+          <Property Name="Status" Type="nvarchar" MaxLength="255" />
+          <Property Name="Note" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'PTC.dbo.Ref_UserRole' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Ref_UserRole">
+          <Property Name="Role_ID" Type="float" />
+          <Property Name="Role_Code" Type="nvarchar" MaxLength="255" />
+          <Property Name="Role_Short_Name" Type="nvarchar" MaxLength="255" />
+          <Property Name="Role_Full_Name" Type="nvarchar" MaxLength="255" />
+          <Property Name="Status" Type="nvarchar" MaxLength="255" />
+          <Property Name="Note" Type="nvarchar" MaxLength="255" />
+        </EntityType>-->
+        <EntityType Name="User_Basic">
+          <Key>
+            <PropertyRef Name="User_ID" />
+          </Key>
+          <Property Name="User_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="User_Code" Type="nvarchar" MaxLength="255" />
+          <Property Name="Password" Type="nvarchar" MaxLength="255" />
+          <Property Name="User_First_Name" Type="nvarchar" MaxLength="255" />
+          <Property Name="User_Last_Name" Type="nvarchar" MaxLength="255" />
+          <Property Name="User_Alternative_Name" Type="nvarchar" MaxLength="255" />
+          <Property Name="User_DoB_Day" Type="int" />
+          <Property Name="User_DoB_Month" Type="int" />
+          <Property Name="User_DoB_Year" Type="int" />
+          <Property Name="Gender" Type="nvarchar" MaxLength="255" />
+          <Property Name="Address_Detail" Type="nvarchar" MaxLength="255" />
+          <Property Name="Address_District" Type="int" />
+          <Property Name="Email" Type="nvarchar" MaxLength="255" />
+          <Property Name="Phone" Type="nvarchar" MaxLength="255" />
+          <Property Name="Role" Type="nvarchar" MaxLength="255" />
+          <Property Name="Client_Code" Type="nvarchar" MaxLength="255" />
+          <Property Name="Education_Type_Code" Type="nvarchar" MaxLength="255" />
+          <Property Name="Job_Type_Code" Type="nvarchar" MaxLength="255" />
+          <Property Name="Job_Detail" Type="nvarchar" MaxLength="255" />
+          <Property Name="Status" Type="nvarchar" MaxLength="255" />
+          <Property Name="Note" Type="nvarchar" MaxLength="255" />
+          <Property Name="CreateDate" Type="datetime" />
+          <Property Name="CreateBy" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <Association Name="FK_Ref_District_Ref_Province">
+          <End Role="Ref_Province" Type="Self.Ref_Province" Multiplicity="0..1" />
+          <End Role="Ref_District" Type="Self.Ref_District" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Ref_Province">
+              <PropertyRef Name="Province_ID" />
+            </Principal>
+            <Dependent Role="Ref_District">
+              <PropertyRef Name="Province_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Ref_Province_Ref_Region">
+          <End Role="Ref_Region" Type="Self.Ref_Region" Multiplicity="0..1" />
+          <End Role="Ref_Province" Type="Self.Ref_Province" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Ref_Region">
+              <PropertyRef Name="Region_ID" />
+            </Principal>
+            <Dependent Role="Ref_Province">
+              <PropertyRef Name="Region_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="Check_EMPosition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="User_Code" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="Check_Login" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Username" Type="nvarchar" Mode="In" />
+          <Parameter Name="Password" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="Check_Role" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="usercode" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="Find_Region_By_District" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="District_ID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="FindIDbyUserCode" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="User_Code" Type="nvarchar" Mode="In" />
+        </Function>
+        <EntityContainer Name="PTCModelStoreContainer">
+          <EntitySet Name="Client_Information" EntityType="Self.Client_Information" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="EM_List" EntityType="Self.EM_List" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Ref_District" EntityType="Self.Ref_District" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Ref_Province" EntityType="Self.Ref_Province" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Ref_Region" EntityType="Self.Ref_Region" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="User_Basic" EntityType="Self.User_Basic" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Ref_District_Ref_Province" Association="Self.FK_Ref_District_Ref_Province">
+            <End Role="Ref_Province" EntitySet="Ref_Province" />
+            <End Role="Ref_District" EntitySet="Ref_District" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Ref_Province_Ref_Region" Association="Self.FK_Ref_Province_Ref_Region">
+            <End Role="Ref_Region" EntitySet="Ref_Region" />
+            <End Role="Ref_Province" EntitySet="Ref_Province" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="PTCModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Client_Information">
+          <Key>
+            <PropertyRef Name="Client_ID" />
+          </Key>
+          <Property Name="Client_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Client_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Client_Short_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Client_Full_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Approach_Year" Type="Int32" />
+          <Property Name="EM_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="EM_Full_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="CL_Field_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="CL_Field_Full_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Client_Phone" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Client_website" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Client_mail" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Client_Owner" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Client_Owner_Phone" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Client_Owner_Email" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Client_Principal" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Client_Principal_Phone" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Client_Principal_Email" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Address_Detail" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Address_District" Type="Int32" />
+          <Property Name="Status" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Note" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Type" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="CreateDate" Type="DateTime" Precision="3" />
+          <Property Name="CreateBy" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="EM_List">
+          <Key>
+            <PropertyRef Name="EM_ID" />
+          </Key>
+          <Property Name="EM_Position_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="EM_Position_Full_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="EM_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="User_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="EM_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="EM_Full_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Contract_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Signal_Day" Type="Int32" />
+          <Property Name="Signal_Month" Type="Int32" />
+          <Property Name="Signal_Year" Type="Int32" />
+          <Property Name="EM_Status" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Note" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="CreateDate" Type="DateTime" Precision="3" />
+          <Property Name="CreateBy" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Ref_District">
+          <Key>
+            <PropertyRef Name="District_ID" />
+          </Key>
+          <Property Name="District_ID" Type="Int32" Nullable="false" />
+          <Property Name="District_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Level" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Province_ID" Type="Int32" />
+          <Property Name="Status" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Note" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Ref_Province" Relationship="Self.FK_Ref_District_Ref_Province" FromRole="Ref_District" ToRole="Ref_Province" />
+        </EntityType>
+        <EntityType Name="Ref_Province">
+          <Key>
+            <PropertyRef Name="Province_ID" />
+          </Key>
+          <Property Name="Province_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Province_ID" Type="Int32" Nullable="false" />
+          <Property Name="Province_Short_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Province_Level" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Region_ID" Type="Int32" />
+          <Property Name="Status" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Note" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Ref_District" Relationship="Self.FK_Ref_District_Ref_Province" FromRole="Ref_Province" ToRole="Ref_District" />
+          <NavigationProperty Name="Ref_Region" Relationship="Self.FK_Ref_Province_Ref_Region" FromRole="Ref_Province" ToRole="Ref_Region" />
+        </EntityType>
+        <EntityType Name="Ref_Region">
+          <Key>
+            <PropertyRef Name="Region_ID" />
+          </Key>
+          <Property Name="Region_ID" Type="Int32" Nullable="false" />
+          <Property Name="Region_Full_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Region_Short_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Status" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Note" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Ref_Province" Relationship="Self.FK_Ref_Province_Ref_Region" FromRole="Ref_Region" ToRole="Ref_Province" />
+        </EntityType>
+        <EntityType Name="User_Basic">
+          <Key>
+            <PropertyRef Name="User_ID" />
+          </Key>
+          <Property Name="User_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="User_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Password" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="User_First_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="User_Last_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="User_Alternative_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="User_DoB_Day" Type="Int32" />
+          <Property Name="User_DoB_Month" Type="Int32" />
+          <Property Name="User_DoB_Year" Type="Int32" />
+          <Property Name="Gender" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Address_Detail" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Address_District" Type="Int32" />
+          <Property Name="Email" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Phone" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Role" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Client_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Education_Type_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Job_Type_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Job_Detail" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Status" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Note" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="CreateDate" Type="DateTime" Precision="3" />
+          <Property Name="CreateBy" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <Association Name="FK_Ref_District_Ref_Province">
+          <End Role="Ref_Province" Type="Self.Ref_Province" Multiplicity="0..1" />
+          <End Role="Ref_District" Type="Self.Ref_District" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Ref_Province">
+              <PropertyRef Name="Province_ID" />
+            </Principal>
+            <Dependent Role="Ref_District">
+              <PropertyRef Name="Province_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Ref_Province_Ref_Region">
+          <End Role="Ref_Region" Type="Self.Ref_Region" Multiplicity="0..1" />
+          <End Role="Ref_Province" Type="Self.Ref_Province" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Ref_Region">
+              <PropertyRef Name="Region_ID" />
+            </Principal>
+            <Dependent Role="Ref_Province">
+              <PropertyRef Name="Region_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="PTCEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Client_Information" EntityType="Self.Client_Information" />
+          <EntitySet Name="EM_List" EntityType="Self.EM_List" />
+          <EntitySet Name="Ref_District" EntityType="Self.Ref_District" />
+          <EntitySet Name="Ref_Province" EntityType="Self.Ref_Province" />
+          <EntitySet Name="Ref_Region" EntityType="Self.Ref_Region" />
+          <EntitySet Name="User_Basic" EntityType="Self.User_Basic" />
+          <AssociationSet Name="FK_Ref_District_Ref_Province" Association="Self.FK_Ref_District_Ref_Province">
+            <End Role="Ref_Province" EntitySet="Ref_Province" />
+            <End Role="Ref_District" EntitySet="Ref_District" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Ref_Province_Ref_Region" Association="Self.FK_Ref_Province_Ref_Region">
+            <End Role="Ref_Region" EntitySet="Ref_Region" />
+            <End Role="Ref_Province" EntitySet="Ref_Province" />
+          </AssociationSet>
+          <FunctionImport Name="Check_EMPosition" ReturnType="Collection(String)">
+            <Parameter Name="User_Code" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="Check_Login" ReturnType="Collection(Boolean)">
+            <Parameter Name="Username" Mode="In" Type="String" />
+            <Parameter Name="Password" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="Check_Role" ReturnType="Collection(String)">
+            <Parameter Name="usercode" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="Find_Region_By_District" ReturnType="Collection(Int32)">
+            <Parameter Name="District_ID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="FindIDbyUserCode" ReturnType="Collection(Int32)">
+            <Parameter Name="User_Code" Mode="In" Type="String" />
+          </FunctionImport>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="PTCModelStoreContainer" CdmEntityContainer="PTCEntities">
+          <EntitySetMapping Name="Client_Information">
+            <EntityTypeMapping TypeName="PTCModel.Client_Information">
+              <MappingFragment StoreEntitySet="Client_Information">
+                <ScalarProperty Name="Client_ID" ColumnName="Client_ID" />
+                <ScalarProperty Name="Client_Code" ColumnName="Client_Code" />
+                <ScalarProperty Name="Client_Short_Name" ColumnName="Client_Short_Name" />
+                <ScalarProperty Name="Client_Full_Name" ColumnName="Client_Full_Name" />
+                <ScalarProperty Name="Approach_Year" ColumnName="Approach_Year" />
+                <ScalarProperty Name="EM_Code" ColumnName="EM_Code" />
+                <ScalarProperty Name="EM_Full_Name" ColumnName="EM_Full_Name" />
+                <ScalarProperty Name="CL_Field_Code" ColumnName="CL_Field_Code" />
+                <ScalarProperty Name="CL_Field_Full_Name" ColumnName="CL_Field_Full_Name" />
+                <ScalarProperty Name="Client_Phone" ColumnName="Client_Phone" />
+                <ScalarProperty Name="Client_website" ColumnName="Client_website" />
+                <ScalarProperty Name="Client_mail" ColumnName="Client_mail" />
+                <ScalarProperty Name="Client_Owner" ColumnName="Client_Owner" />
+                <ScalarProperty Name="Client_Owner_Phone" ColumnName="Client_Owner_Phone" />
+                <ScalarProperty Name="Client_Owner_Email" ColumnName="Client_Owner_Email" />
+                <ScalarProperty Name="Client_Principal" ColumnName="Client_Principal" />
+                <ScalarProperty Name="Client_Principal_Phone" ColumnName="Client_Principal_Phone" />
+                <ScalarProperty Name="Client_Principal_Email" ColumnName="Client_Principal_Email" />
+                <ScalarProperty Name="Address_Detail" ColumnName="Address_Detail" />
+                <ScalarProperty Name="Address_District" ColumnName="Address_District" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Note" ColumnName="Note" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EM_List">
+            <EntityTypeMapping TypeName="PTCModel.EM_List">
+              <MappingFragment StoreEntitySet="EM_List">
+                <ScalarProperty Name="EM_Position_Code" ColumnName="EM_Position_Code" />
+                <ScalarProperty Name="EM_Position_Full_Name" ColumnName="EM_Position_Full_Name" />
+                <ScalarProperty Name="EM_ID" ColumnName="EM_ID" />
+                <ScalarProperty Name="User_Code" ColumnName="User_Code" />
+                <ScalarProperty Name="EM_Code" ColumnName="EM_Code" />
+                <ScalarProperty Name="EM_Full_Name" ColumnName="EM_Full_Name" />
+                <ScalarProperty Name="Contract_Code" ColumnName="Contract_Code" />
+                <ScalarProperty Name="Signal_Day" ColumnName="Signal_Day" />
+                <ScalarProperty Name="Signal_Month" ColumnName="Signal_Month" />
+                <ScalarProperty Name="Signal_Year" ColumnName="Signal_Year" />
+                <ScalarProperty Name="EM_Status" ColumnName="EM_Status" />
+                <ScalarProperty Name="Note" ColumnName="Note" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Ref_District">
+            <EntityTypeMapping TypeName="PTCModel.Ref_District">
+              <MappingFragment StoreEntitySet="Ref_District">
+                <ScalarProperty Name="District_ID" ColumnName="District_ID" />
+                <ScalarProperty Name="District_Name" ColumnName="District_Name" />
+                <ScalarProperty Name="Level" ColumnName="Level" />
+                <ScalarProperty Name="Province_ID" ColumnName="Province_ID" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Note" ColumnName="Note" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Ref_Province">
+            <EntityTypeMapping TypeName="PTCModel.Ref_Province">
+              <MappingFragment StoreEntitySet="Ref_Province">
+                <ScalarProperty Name="Province_Name" ColumnName="Province_Name" />
+                <ScalarProperty Name="Province_ID" ColumnName="Province_ID" />
+                <ScalarProperty Name="Province_Short_Name" ColumnName="Province_Short_Name" />
+                <ScalarProperty Name="Province_Level" ColumnName="Province_Level" />
+                <ScalarProperty Name="Region_ID" ColumnName="Region_ID" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Note" ColumnName="Note" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Ref_Region">
+            <EntityTypeMapping TypeName="PTCModel.Ref_Region">
+              <MappingFragment StoreEntitySet="Ref_Region">
+                <ScalarProperty Name="Region_ID" ColumnName="Region_ID" />
+                <ScalarProperty Name="Region_Full_Name" ColumnName="Region_Full_Name" />
+                <ScalarProperty Name="Region_Short_Name" ColumnName="Region_Short_Name" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Note" ColumnName="Note" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="User_Basic">
+            <EntityTypeMapping TypeName="PTCModel.User_Basic">
+              <MappingFragment StoreEntitySet="User_Basic">
+                <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+                <ScalarProperty Name="User_Code" ColumnName="User_Code" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="User_First_Name" ColumnName="User_First_Name" />
+                <ScalarProperty Name="User_Last_Name" ColumnName="User_Last_Name" />
+                <ScalarProperty Name="User_Alternative_Name" ColumnName="User_Alternative_Name" />
+                <ScalarProperty Name="User_DoB_Day" ColumnName="User_DoB_Day" />
+                <ScalarProperty Name="User_DoB_Month" ColumnName="User_DoB_Month" />
+                <ScalarProperty Name="User_DoB_Year" ColumnName="User_DoB_Year" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="Address_Detail" ColumnName="Address_Detail" />
+                <ScalarProperty Name="Address_District" ColumnName="Address_District" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Role" ColumnName="Role" />
+                <ScalarProperty Name="Client_Code" ColumnName="Client_Code" />
+                <ScalarProperty Name="Education_Type_Code" ColumnName="Education_Type_Code" />
+                <ScalarProperty Name="Job_Type_Code" ColumnName="Job_Type_Code" />
+                <ScalarProperty Name="Job_Detail" ColumnName="Job_Detail" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Note" ColumnName="Note" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="Check_EMPosition" FunctionName="PTCModel.Store.Check_EMPosition" />
+          <FunctionImportMapping FunctionImportName="Check_Login" FunctionName="PTCModel.Store.Check_Login" />
+          <FunctionImportMapping FunctionImportName="Check_Role" FunctionName="PTCModel.Store.Check_Role" />
+          <FunctionImportMapping FunctionImportName="Find_Region_By_District" FunctionName="PTCModel.Store.Find_Region_By_District" />
+          <FunctionImportMapping FunctionImportName="FindIDbyUserCode" FunctionName="PTCModel.Store.FindIDbyUserCode" />
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

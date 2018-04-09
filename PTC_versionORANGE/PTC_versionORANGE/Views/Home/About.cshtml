@@ -1,0 +1,676 @@
+﻿@{
+    ViewBag.Title = "PTC - " + PTC_versionORANGE.Resources.Resource.menuAbout;
+}
+
+@*<div style="position:fixed; z-index:9999; top:5 em;" class="btn-group btn-group-sm btn-group-vertical" role="group" aria-label="...">
+        <button type="button" class="btn btn-secondary">grouw and develop</button>
+        <button type="button" class="btn btn-secondary">visson, mission, core value</button>
+        <button type="button" class="btn btn-secondary">Development orientation</button>
+        <button type="button" class="btn btn-secondary">Organization structue</button>
+        <button type="button" class="btn btn-secondary">Specialist and lectures</button>
+    </div>
+    <img id="about-image" src="~/Content/About/about-us.jpeg" />*@
+
+
+<!--grouw and develop-->
+<section>
+    <div id="Growth-Development">
+        <h1 style=" margin-bottom:3em;" class="text-orange index-header">@PTC_versionORANGE.Resources.Resource.About_GrowthAndDevelopment</h1>
+        <!--row 1-->
+        <div class="row">
+            <div class="col-lg-3 col-md-6 about-growth">
+                <h1 style="min-height:3em;" class="text-gray">@PTC_versionORANGE.Resources.Resource.About_GrowupDate_1 <br /></h1>
+                <p class="text-gray">
+                    @PTC_versionORANGE.Resources.Resource.About_GrowupDiscription_1
+                </p>
+            </div>
+            <div class="col-lg-3 col-md-6 about-growth">
+                <h1 style="min-height:3em;" class="text-gray">@PTC_versionORANGE.Resources.Resource.About_GrowupDate_2 <br /></h1>
+                <p class="text-gray">
+                    @PTC_versionORANGE.Resources.Resource.About_GrowupDiscription_2
+                </p>
+            </div>
+            <div class="col-lg-3 col-md-6 about-growth">
+                <h1 style="min-height:3em;" class="text-gray">@PTC_versionORANGE.Resources.Resource.About_GrowupDate_3 <br /></h1>
+                <p class="text-gray">
+                    @PTC_versionORANGE.Resources.Resource.About_GrowupDiscription_3
+                </p>
+            </div>
+            <div class="col-lg-3 col-md-6 about-growth">
+                <h1 style="min-height:3em;" class="text-gray">@PTC_versionORANGE.Resources.Resource.About_GrowupDate_4 <br /></h1>
+                <p class="text-gray">
+                    @PTC_versionORANGE.Resources.Resource.About_GrowupDiscription_4
+                </p>
+            </div>
+        </div>
+
+        <!--row 2-->
+        <div class="row">
+            <div class="col-lg-3 col-md-6 about-growth">
+                <h1 style="min-height:3em;" class="text-gray">@PTC_versionORANGE.Resources.Resource.About_GrowupDate_5 <br /></h1>
+                <p class="text-gray">
+                    @PTC_versionORANGE.Resources.Resource.About_GrowupDiscription_5
+                </p>
+            </div>
+            <div class="col-lg-3 col-md-6 about-growth">
+                <h1 style="min-height:3em;" class="text-gray">@PTC_versionORANGE.Resources.Resource.About_GrowupDate_6 <br /></h1>
+                <p class="text-gray">
+                    @PTC_versionORANGE.Resources.Resource.About_GrowupDiscription_6
+                </p>
+            </div>
+            <div class="col-lg-3 col-md-6 about-growth">
+                <h1 style="min-height:3em;" class="text-gray">@PTC_versionORANGE.Resources.Resource.About_GrowupDate_7 <br /></h1>
+                <p class="text-gray">
+                    @PTC_versionORANGE.Resources.Resource.About_GrowupDiscription_7
+                </p>
+            </div>
+            <div class="col-lg-3 col-md-6 about-growth">
+                <h1 style="min-height:3em;" class="text-gray">@PTC_versionORANGE.Resources.Resource.About_GrowupDate_8 <br /></h1>
+                <p class="text-gray">
+                    @PTC_versionORANGE.Resources.Resource.About_GrowupDiscription_8
+                </p>
+            </div>
+        </div>
+
+        <p class="text-gray" id="about-development">
+            @PTC_versionORANGE.Resources.Resource.About_Development_1<br />
+            @PTC_versionORANGE.Resources.Resource.About_Development_2<br />
+            @PTC_versionORANGE.Resources.Resource.About_Development_3
+            <br />
+            @PTC_versionORANGE.Resources.Resource.About_Development_4<br />
+            @PTC_versionORANGE.Resources.Resource.About_Development_5<br />
+            @PTC_versionORANGE.Resources.Resource.About_Development_6
+        </p>
+    </div>
+</section>
+
+<!--visson, mission, core value-->
+<section class="collapse  show" id="about-visson-misson-corevalue" style="margin:0 2em;" data-parent="#about-accordion">
+    <h1 class="text-orange index-header">
+        @PTC_versionORANGE.Resources.Resource.About_Vison ,  @PTC_versionORANGE.Resources.Resource.About_Misson , @PTC_versionORANGE.Resources.Resource.About_CoreValue
+    </h1>
+    <p id="index-SBU-discription" class="text-gray"></p>
+    <div class="row">
+        <!--About-Visson-->
+        <div style="text-align:center" class=" col-lg-4 col-sm-12">
+            <div style="margin-bottom:1em;">
+                <img class="mybackground index-SBU-img" src="~/Content/About/about-vission.png" />
+            </div>
+            <h4 class="index-SBU-header text-uppercase">@PTC_versionORANGE.Resources.Resource.About_Vison</h4>
+            <p class="text-gray index-SBU-p">
+                @PTC_versionORANGE.Resources.Resource.About_Vison_Discription
+            </p>
+
+        </div>
+        <!--About-mission-->
+        <div style="text-align:center" class=" col-lg-4  col-sm-12">
+            <div style="margin-bottom:1em;">
+                <img class="mybackground index-SBU-img" src="~/Content/About/about-misson.png" />
+            </div>
+            <h4 class="index-SBU-header text-uppercase">@PTC_versionORANGE.Resources.Resource.About_Misson</h4>
+            <p class="text-gray index-SBU-p">
+                @PTC_versionORANGE.Resources.Resource.About_Misson_Discription
+            </p>
+        </div>
+
+        <!--About-corevalue-->
+        <div style="text-align:center" class=" col-lg-4  col-sm-12">
+            <div style="margin-bottom:1em;">
+                <img class="mybackground index-SBU-img" src="~/Content/About/about-core-value.png" />
+            </div>
+            <h4 class="index-SBU-header text-uppercase">@PTC_versionORANGE.Resources.Resource.About_CoreValue</h4>
+            <p class="text-gray index-SBU-p">
+                <strong>@PTC_versionORANGE.Resources.Resource.About_CoreValue_Discription_1</strong><br />
+                @PTC_versionORANGE.Resources.Resource.About_CoreValue_Discription_2<br />
+                @PTC_versionORANGE.Resources.Resource.About_CoreValue_Discription_3<br />
+                @PTC_versionORANGE.Resources.Resource.About_CoreValue_Discription_4
+            </p>
+        </div>
+    </div>
+</section>
+
+<!--Development orientation-->
+<section>
+    <div id="about-development-orientation">
+        <h1 style="margin-bottom:1em;" class="text-orange index-header">@PTC_versionORANGE.Resources.Resource.About_DevelopmentOrientation</h1>
+        <p class="text-gray" style="padding: 1em 15%;  text-align:center;">
+            @PTC_versionORANGE.Resources.Resource.About_DevelopmentOrientation_Discription
+        </p>
+    </div>
+</section>
+<!--Organization structue-->
+<section style="text-align:center;">
+    <h1 style="margin-bottom:1em;" class="text-orange index-header">@PTC_versionORANGE.Resources.Resource.About_OrganizationStructure</h1>
+    <img style="width:80%;" src="~/Content/About/about-chart.png" />
+</section>
+
+<!--Specialist and lectures-->
+<section>
+    <h1 style="margin-bottom:1em;" class="text-orange index-header">@PTC_versionORANGE.Resources.Resource.About_Specialists</h1>
+    <!--row 1-->
+    <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12 TA-center">
+            <img style="margin-bottom:1em; width:70%;height:auto;" src="~/Content/About/about-lecture-Female.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.About_Expert</h5>
+            <h3 style="min-height:66px;">@PTC_versionORANGE.Resources.Resource.About_TaThiThanhTam</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.About_TaThiThanhTam_Discription</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 TA-center">
+            <img style="width:70%;height:auto;" src="~/Content/About/about-lecture-Man.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.About_Expert</h5>
+            <h3 style="min-height:66px;">@PTC_versionORANGE.Resources.Resource.About_PhanHaiHo</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.About_PhanHaiHo_Discription</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 TA-center">
+            <img style="width:70%;height:auto;" src="~/Content/About/about-lecture-Man.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.About_Expert</h5>
+            <h3 style="min-height:66px;">@PTC_versionORANGE.Resources.Resource.About_VoKimSon</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.About_VoKimSon_Discription</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 TA-center">
+            <img style="width:70%;height:auto;" src="~/Content/About/about-lecture-Man.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.About_Expert</h5>
+            <h3 style="min-height:66px;">@PTC_versionORANGE.Resources.Resource.About_LeQuangCuong</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.About_LeQuangCuong_Discription</p>
+        </div>
+    </div>
+
+    <!--row 2-->
+    <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12 TA-center">
+            <img style="width:70%;height:auto;" src="~/Content/About/about-lecture-Man.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.About_Expert</h5>
+            <h3 style="min-height:66px;">@PTC_versionORANGE.Resources.Resource.About_HoangAnhTuan</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.About_HoangAnhTuan_Discription</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 TA-center">
+            <img style="width:70%;height:auto;" src="~/Content/About/about-lecture-Man.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.About_Expert</h5>
+            <h3 style="min-height:66px;">@PTC_versionORANGE.Resources.Resource.About_LeVanBay</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.About_LeVanBay_Discription</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 TA-center">
+            <img style="margin-bottom:1em; width:70%;height:auto;" src="~/Content/About/about-lecture-Female.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.About_Expert</h5>
+            <h3 style="min-height:66px;">@PTC_versionORANGE.Resources.Resource.About_NguyenThiThuHuong</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.About_NguyenThiThuHuong_Discription</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 TA-center">
+            <img style="width:70%;height:auto;" src="~/Content/About/about-lecture-Man.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.About_Expert</h5>
+            <h3 style="min-height:66px;">@PTC_versionORANGE.Resources.Resource.About_VuAnhPhap</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.About_VuAnhPhap_Discription</p>
+        </div>
+    </div>
+
+    <!--row 3-->
+    <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12 TA-center">
+            <img style="width:70%;height:auto;" src="~/Content/About/about-lecture-Man.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.About_Expert</h5>
+            <h3 style="min-height:66px;">@PTC_versionORANGE.Resources.Resource.About_DinhVietHoa</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.About_DinhVietHoa_Discription</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 TA-center">
+            <img style="width:70%;height:auto;" src="~/Content/About/about-lecture-Man.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.About_Deliverer</h5>
+            <h3 style="min-height:66px;">@PTC_versionORANGE.Resources.Resource.About_AuXuanDon</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.About_AuXuanDon_Discription</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 TA-center">
+            <img style="margin-bottom:1em; width:70%;height:auto;" src="~/Content/About/about-lecture-Female.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.About_Expert</h5>
+            <h3 style="min-height:66px;">@PTC_versionORANGE.Resources.Resource.About_LeThiTrucAnh</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.About_LeThiTrucAnh_Discription</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 TA-center">
+            <img style="margin-bottom:1em; width:70%;height:auto;" src="~/Content/About/about-lecture-Female.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.About_Deliverer</h5>
+            <h3 style="min-height:66px;">@PTC_versionORANGE.Resources.Resource.About_NguyenThiTuyetMai</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.About_NguyenThiTuyetMai_Discription</p>
+        </div>
+    </div>
+
+    <!--row 4-->
+    <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12 TA-center">
+            <img style="width:70%;height:auto;" src="~/Content/About/about-lecture-Man.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.About_Expert</h5>
+            <h3 style="min-height:66px;">@PTC_versionORANGE.Resources.Resource.About_LeVuNam</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.About_LeVuNam_Discription</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 TA-center">
+            <img style="width:70%;height:auto;" src="~/Content/About/about-lecture-Man.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.About_Expert</h5>
+            <h3 style="min-height:66px;">@PTC_versionORANGE.Resources.Resource.About_LeTuanPhuoc</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.About_LeTuanPhuoc_Discription</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 TA-center">
+            <img style=" width:70%;height:auto;" src="~/Content/About/about-lecture-Man.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.About_Expert</h5>
+            <h3 style="min-height:66px;">@PTC_versionORANGE.Resources.Resource.About_TruongDinhTuyen</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.About_TruongDinhTuyen_Discription</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 TA-center">
+            <img style="width:70%;height:auto;" src="~/Content/About/about-lecture-Man.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.About_Expert</h5>
+            <h3 style="min-height:66px;">@PTC_versionORANGE.Resources.Resource.About_DuongAnhSon</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.About_DuongAnhSon_Discription</p>
+        </div>
+    </div>
+
+    <!--row 5-->
+    <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12 TA-center">
+            <img style="width:70%;height:auto;" src="~/Content/About/about-lecture-Man.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.About_Expert</h5>
+            <h3 style="min-height:66px;">@PTC_versionORANGE.Resources.Resource.About_TonThatHoangHai</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.About_TonThatHoangHai_Discription</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 TA-center">
+            <img style="width:70%;height:auto; margin-bottom:1em;" src="~/Content/About/about-lecture-Female.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.About_Expert</h5>
+            <h3 style="min-height:66px;">@PTC_versionORANGE.Resources.Resource.About_VanThiLoan</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.About_VanThiLoan_Discription</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 TA-center">
+            <img style=" width:70%;height:auto; margin-bottom:1em;" src="~/Content/About/about-lecture-Female.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.About_Expert</h5>
+            <h3 style="min-height:66px;">@PTC_versionORANGE.Resources.Resource.About_VoThanhThu</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.About_VoThanhThu_Discription</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 TA-center">
+            <img style="width:70%;height:auto;" src="~/Content/About/about-lecture-Man.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.About_Expert</h5>
+            <h3 style="min-height:66px;">@PTC_versionORANGE.Resources.Resource.About_LuuVanPhu</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.About_LuuVanPhu_Discription</p>
+        </div>
+    </div>
+
+    <!--row 6-->
+    <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12 TA-center">
+            <img style="width:70%;height:auto;" src="~/Content/About/about-lecture-Man.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.About_Expert</h5>
+            <h3 style="min-height:66px;">@PTC_versionORANGE.Resources.Resource.About_NguyenVanNhut</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.About_NguyenVanNhut_Discription/p>
+</div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 TA-center">
+            <img style="width:70%;height:auto;" src="~/Content/About/about-lecture-Man.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.About_Expert</h5>
+            <h3 style="min-height:66px;">@PTC_versionORANGE.Resources.Resource.About_BuiHongQuan</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.About_BuiHongQuan_Discription</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 TA-center">
+            <img style="margin-bottom:1em; width:70%;height:auto;" src="~/Content/About/about-lecture-Female.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.About_Expert</h5>
+            <h3 style="min-height:66px;">@PTC_versionORANGE.Resources.Resource.About_HoThiSongQuynh</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.About_HoThiSongQuynh_Discription</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 TA-center">
+            <img style="width:70%;height:auto;" src="~/Content/About/about-lecture-Man.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.About_Lecture</h5>
+            <h3 style="min-height:66px;">@PTC_versionORANGE.Resources.Resource.About_HuynhQuocAnh</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.About_HuynhQuocAnh_Discription</p>
+        </div>
+    </div>
+
+    <!--row 7-->
+    <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12 TA-center">
+            <img style="width:70%;height:auto;" src="~/Content/About/about-lecture-Man.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.About_Lecture</h5>
+            <h3 style="min-height:66px;">@PTC_versionORANGE.Resources.Resource.About_VuVanHai</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.About_VuVanHai_Discription</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 TA-center">
+            <img style="width:70%;height:auto; margin-bottom:1em;" src="~/Content/About/about-lecture-Female.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.About_Lecture</h5>
+            <h3 style="min-height:66px;">@PTC_versionORANGE.Resources.Resource.About_NguyenChiMai</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.About_NguyenChiMai_Discription</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 TA-center">
+            <img style="margin-bottom:1em; width:70%;height:auto;" src="~/Content/About/about-lecture-Female.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.About_Lecture</h5>
+            <h3 style="min-height:66px;">@PTC_versionORANGE.Resources.Resource.About_LaThiMai</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.About_LaThiMai_Discription</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 TA-center">
+            <img style="width:70%;height:auto;" src="~/Content/About/about-lecture-Man.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.About_Lecture</h5>
+            <h3 style="min-height:66px;">@PTC_versionORANGE.Resources.Resource.About_NguyenVanTri</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.About_NguyenVanTri_Discription</p>
+        </div>
+    </div>
+
+    <!--row 8-->
+    <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12 TA-center">
+            <img style="width:70%;height:auto;" src="~/Content/About/about-lecture-Man.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.About_Deliverer</h5>
+            <h3 style="min-height:66px;">@PTC_versionORANGE.Resources.Resource.About_NguyenHungThi</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.About_NguyenHungThi_Discription</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 TA-center">
+            <img style="width:70%;height:auto;" src="~/Content/About/about-lecture-Man.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.About_Lecture</h5>
+            <h3 style="min-height:66px;">@PTC_versionORANGE.Resources.Resource.About_NguyenNgocToan</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.About_NguyenNgocToan_Discription</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 TA-center">
+            <img style=" width:70%;height:auto;" src="~/Content/About/about-lecture-Man.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.About_Lecture</h5>
+            <h3 style="min-height:66px;">@PTC_versionORANGE.Resources.Resource.About_TrinhVietDung</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.About_TrinhVietDung_Discription</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 TA-center">
+            <img style="width:70%;height:auto;" src="~/Content/About/about-lecture-Man.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.About_Lecture</h5>
+            <h3 style="min-height:66px;">@PTC_versionORANGE.Resources.Resource.About_PhanNgocTu</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.About_PhanNgocTu_Discription</p>
+        </div>
+    </div>
+
+    <!--Row 9-->
+    <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12 TA-center">
+            <img style="width:70%;height:auto; margin-bottom:1em;" src="~/Content/About/about-lecture-Female.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.About_Lecture</h5>
+            <h3 style="min-height:66px;">@PTC_versionORANGE.Resources.Resource.About_TranThiNga</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.About_TranThiNga_Discription</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 TA-center">
+            <img style="width:70%;height:auto;" src="~/Content/About/about-lecture-Man.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.About_Lecture</h5>
+            <h3 style="min-height:66px;">@PTC_versionORANGE.Resources.Resource.About_NguyenDuyVinh</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.About_NguyenDuyVinh_Discription</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 TA-center">
+            <img style=" width:70%;height:auto;" src="~/Content/About/about-lecture-Man.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.About_Lecture</h5>
+            <h3 style="min-height:66px;">@PTC_versionORANGE.Resources.Resource.About_ChauDinhLinh</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.About_ChauDinhLinh_Discription</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 TA-center">
+            <img style="width:70%;height:auto; margin-bottom:1em;" src="~/Content/About/about-lecture-Female.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.About_Lecture</h5>
+            <h3 style="min-height:66px;">@PTC_versionORANGE.Resources.Resource.About_TranThiThanhTra</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.About_TranThiThanhTra_Discription</p>
+        </div>
+    </div>
+
+    <!--row 10-->
+    <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12 TA-center">
+            <img style="width:70%;height:auto;" src="~/Content/About/about-lecture-Man.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.About_Deliverer</h5>
+            <h3 style="min-height:66px;">@PTC_versionORANGE.Resources.Resource.About_PhamBinhAn</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.About_PhamBinhAn_Discription</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 TA-center">
+            <img style="width:70%;height:auto;" src="~/Content/About/about-lecture-Man.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.About_Lecture</h5>
+            <h3 style="min-height:66px;">@PTC_versionORANGE.Resources.Resource.About_CaoMinhNhut</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.About_CaoMinhNhut_Discription</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 TA-center">
+            <img style=" width:70%;height:auto; margin-bottom:1em;" src="~/Content/About/about-lecture-Female.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.About_Lecture</h5>
+            <h3 style="min-height:66px;">@PTC_versionORANGE.Resources.Resource.About_NguyenThiThanhHang</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.About_NguyenThiThanhHang_Discription</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 TA-center">
+            <img style="width:70%;height:auto;" src="~/Content/About/about-lecture-Man.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.About_Lecture</h5>
+            <h3 style="min-height:66px;">@PTC_versionORANGE.Resources.Resource.About_VoTrungTin</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.About_VoTrungTin_Discription</p>
+        </div>
+    </div>
+
+    <!--row 11-->
+    <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12 TA-center">
+            <img style="width:70%;height:auto;" src="~/Content/About/about-lecture-Man.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.About_Lecture</h5>
+            <h3 style="min-height:66px;">@PTC_versionORANGE.Resources.Resource.About_PhanVanNhu</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.About_PhanVanNhu_Discription</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 TA-center">
+            <img style="width:70%;height:auto; margin-bottom:1em;" src="~/Content/About/about-lecture-Female.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.About_Lecture</h5>
+            <h3 style="min-height:66px;">@PTC_versionORANGE.Resources.Resource.About_CuThiThanhHuyen</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.About_CuThiThanhHuyen_Discription</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 TA-center">
+            <img style=" width:70%;height:auto;  margin-bottom:1em;" src="~/Content/About/about-lecture-Female.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.About_Lecture</h5>
+            <h3 style="min-height:66px;">@PTC_versionORANGE.Resources.Resource.About_NguyenDangPhuongTruyen</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.About_NguyenDangPhuongTruyen_Discription</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 TA-center">
+            <img style="width:70%;height:auto; margin-bottom:1em;" src="~/Content/About/about-lecture-Female.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.About_Lecture</h5>
+            <h3 style="min-height:66px;">@PTC_versionORANGE.Resources.Resource.About_ToNhiA</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.About_ToNhiA_Discription</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12 TA-center">
+            <img style="width:70%;height:auto;" src="~/Content/About/about-lecture-Man.png" />
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.About_Expert</h5>
+            <h3 style="min-height:66px;">@PTC_versionORANGE.Resources.Resource.About_NguyenLyLai</h3>
+            <p class="text-gray">@PTC_versionORANGE.Resources.Resource.About_NguyenLyLai_Discription</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 TA-center" style="padding-top:5em;">
+            <h5 class="text-gray">@PTC_versionORANGE.Resources.Resource.About_Anymore</h5>
+        </div>
+
+        <div class="offset-6">
+
+        </div>
+
+    </div>
+    <div>
+        <p style="font-size:150%" class="text-gray TA-center">
+            @PTC_versionORANGE.Resources.Resource.About_100years_1<br />
+            @PTC_versionORANGE.Resources.Resource.About_100years_2<br />
+            @PTC_versionORANGE.Resources.Resource.About_100years_3
+        </p>
+    </div>
+</section>
+
+
+
+@*<section>
+        <div id="about-accordion">
+            <div style="margin-top:2em;" class="d-flex justify-content-center ">
+                <button class="btn btn-warning about-collapse-button mybackground text-white" type="button" data-toggle="collapse" data-target="#Growth-Development" aria-expanded="true" aria-controls="Growth-Development">
+                    Growth & Development
+                </button>
+                <button class=" collapsed btn btn-warning about-collapse-button mybackground text-white" type="button" data-toggle="collapse" data-target="#about-visson-misson-corevalue" aria-expanded="false" aria-controls="about-visson-misson-corevalue">
+                    Visson, Mission, Core value
+                </button>
+
+            </div>
+            <!--Growth-Development-->
+            <div class="collapse" id="Growth-Development" data-parent="#about-accordion">
+                <h1 style=" margin-bottom:3em;" class="text-orange index-header">Growth and Development</h1>
+                <!--row 1-->
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 about-growth">
+                        <h1 style="min-height:3em;" class="text-gray">December 30<sup>th</sup><br />2016</h1>
+                        <p class="text-gray">
+                            PTC changed its head office location to
+                            Rosana Building, at Ground Floor, on 60 Nguyen Dinh Chieu
+                            Street, Dakao Ward, District 1, HCMC
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 about-growth">
+                        <h1 style="min-height:3em;" class="text-gray">June 20<sup>th</sup><br /> 2016</h1>
+                        <p class="text-gray">
+                            PTC changed its name from PTC Training and
+                            Education Joint Stock Company to PTC Investment and Education
+                            Joint Stock Company
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 about-growth">
+                        <h1 style="min-height:3em;" class="text-gray">April 26<sup>th</sup><br /> 2016</h1>
+                        <p class="text-gray">
+                            PTC had its first subsidiary
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 about-growth">
+                        <h1 style="min-height:3em;" class="text-gray">September 16<sup>th</sup><br /> 2015</h1>
+                        <p class="text-gray">
+                            PTC registered business operation with 32
+                            careers
+                        </p>
+                    </div>
+                </div>
+
+                <!--row 2-->
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 about-growth">
+                        <h1 style="min-height:3em;" class="text-gray">June 08<sup>th</sup><br />2015</h1>
+                        <p class="text-gray">
+                            PTC established its first head office in district 7,
+                            HCMC
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 about-growth">
+                        <h1 style="min-height:3em;" class="text-gray">June 02<sup>nd</sup><br />2014</h1>
+                        <p class="text-gray">
+                            PTC registered business operation with 29 careers.
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 about-growth">
+                        <h1 style="min-height:3em;" class="text-gray">January 10<sup>th</sup><br />2014</h1>
+                        <p class="text-gray">
+                            PTC Training and Education Joint Stock
+                            Company was established.
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 about-growth">
+                        <h1 style="min-height:3em;" class="text-gray">From 2004 to 2014<br /></h1>
+                        <p class="text-gray">
+                            together, PTC’s board of chairmans created
+                            and formed business plans up to <strong>10 years</strong>.
+                        </p>
+                    </div>
+                </div>
+
+                <p class="text-gray" id="about-development">
+                    In order to catch up with the world developing trend, Viet Nam has
+                    made a lot of effort to apply latest modern technology into
+                    Economics and Social activities.<br />
+                    However, there are troubles due to lack of essential abilities, skills
+                    and managing system. By recognizing this current status of our
+                    country, We – PTC Investment and Education were born in order
+                    not only to stablize government policies and managing capability
+                    but also to provide services for government’s human resources.<br />
+                    Coming along with what we have done within 10 years, We – PTC
+                    are reinforcing our mission by developing people and education
+                    system. That’s the reason why LifeSkill Institute was established.
+                    <br />
+                    By recognizing ethical values and human capabilities, LifeSkill
+                    Institue was designed with training programs that are suitable with
+                    a variety of types of people, which are before engagement course,
+                    soft-skills and lifeskills for kindergarten children, primary children,
+                    secondary children and teenagers courses.<br />
+                    By committing to improve within science base, PTC created
+                    Statistics Institute in order to update, apply and develop research
+                    methods that are being used all over the world.<br />
+                    Statistics Institue is a core element in our system, especially it
+                    provides modern and professional research methods and skills for
+                    those who are strongly interested in analyzing datas for making
+                    business decisions or building business stategies.
+                </p>
+            </div>
+
+            <!--vison, mission, corevalue-->
+            <section class="collapse  show" id="about-visson-misson-corevalue" style="margin:0 2em;" data-parent="#about-accordion">
+                <h1 class="text-orange index-header">Visson, Misson, Core Value</h1>
+                <p id="index-SBU-discription" class="text-gray"></p>
+                <div class="row">
+                    <!--About-Visson-->
+                    <div style="text-align:center" class=" col-lg-4 col-sm-12">
+                        <div style="margin-bottom:1em;">
+                            <img class="mybackground index-SBU-img" src="~/Content/About/about-vission.png" />
+                        </div>
+                        <h4 class="index-SBU-header">VISION</h4>
+                        <p class="text-gray index-SBU-p">
+                            “Becoming a brand symbol of education and skill development in
+                            Viet Nam. Contributing the spirit of creating self-indentities for
+                            individuals, organizations and the society”.
+                        </p>
+
+                    </div>
+                    <!--About-mission-->
+                    <div style="text-align:center" class=" col-lg-4  col-sm-12">
+                        <div style="margin-bottom:1em;">
+                            <img class="mybackground index-SBU-img" src="~/Content/About/about-misson.png" />
+                        </div>
+                        <h4 class="index-SBU-header">MISSION</h4>
+                        <p class="text-gray index-SBU-p">
+                            “Creating unlimited source of energy for customers to discover
+                            their potential, as well as creating their own brand image, targets
+                            and follow their life goals until the end of the world”.
+                        </p>
+                    </div>
+
+                    <!--About-corevalue-->
+                    <div style="text-align:center" class=" col-lg-4  col-sm-12">
+                        <div style="margin-bottom:1em;">
+                            <img class="mybackground index-SBU-img" src="~/Content/About/about-core-value.png" />
+                        </div>
+                        <h4 class="index-SBU-header">CORE VALUE</h4>
+                        <p class="text-gray index-SBU-p">
+                            <strong>Warm heart, bright mind</strong><br />
+                            Different thinking<br />
+                            Completing personality<br />
+                            Following your passion until the end of the world.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <div id="about-development-orientation">
+                <h1 style="margin-bottom:1em;" class="text-orange index-header">Development orientation</h1>
+                <p class="text-gray" style="padding: 1em 15%;  text-align:center;">In the future, PTC will make every single effort to focus on building and improving Lifeskill; Career orientation – Vocational; consulting structure and strategic plan for businesses; Educating and specializing university curriculum not only in Vietnam but also other nearby countries.</p>
+            </div>
+        </div>
+    </section>*@
